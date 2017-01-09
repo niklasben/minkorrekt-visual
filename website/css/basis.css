@@ -1,0 +1,17 @@
+/* Global Definitions */
+
+:root
+{
+    --colourBlack: #000;
+    --colourWhite: #fff;
+}
+
+
+/* Basis */
+
+html,
+body
+{
+    width: 100%;
+    height: 100%;
+}
