@@ -31,13 +31,13 @@ Vermutlich JSON-Dateien mit folgendem Inhalt
 ### Struktur der JSON-Dateien
 
 -   Folgennummer
-    -   Folgenname
-    -   URL
-    -   Sonderfolge
+-   Folgenname
+-   URL
+-   Sonderfolge
     -   Version
-        -   MB
-    -   Abspiellänge
-    -   Beschreibungstext
+    -   MB
+-   Abspiellänge
+-   Beschreibungstext
 
 ## Website
 
