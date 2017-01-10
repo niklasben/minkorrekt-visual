@@ -4,14 +4,26 @@ Methodisch inkorrekte Auswertung des Methodisch Inkorrekt Podcast.
 
 ## Crawler
 
-1.  Folgennummer
-2.  Folgenname
-3.  Datum (Datetime)
-4.  URL
-5.  MB je Version
-6.  Abspiellänge
-7.  Beschreibungstext
-8.  Sonderfolge: Ig-Nobelpreis bzw. Nobelpreis
+Soll gegen den Feed laufen: <http://minkorrekt.de/feed/m4a/>
+
+1.  &lt;title>
+    1.  Folgennummer
+    2.  Folgenname
+2.  &lt;pubDate>
+    -   Datum
+3.  &lt;link>
+    -   URL
+4.  &lt;itunes:duration>
+    -   Abspiellänge
+5.  &lt;itunes:subtitle>
+    1.  Folgenname
+    2.  Sonderfolgen wie:
+        -   Nobelpreis
+        -   Ig-Nobelpreis
+        -   Jahresrückblick
+6.  &lt;content:encoded> (&lt;p>)
+    1.  Beschreibungstext
+    2.  Chinagadget der Woche
 
 ### Exclude
 
@@ -22,22 +34,28 @@ Methodisch inkorrekte Auswertung des Methodisch Inkorrekt Podcast.
 
 ### Was genau?
 
-Vermutlich JSON-Dateien mit folgendem Inhalt
-
-1.  Folgennummer | Folgenname | URL | MB je Version | Länge
-2.  Sonderfolgen: Ig-Nobelpreis + Nobelpreis
-3.  Word Count | NN/NE | Namen | Deskriptoren
+Vermutlich folgende JSON-Dateien:
+1.  Alle Folgen
+2.  Sonderfolgen (Nobelpreis, Ig-Nobelpreis und Jahresrückblick)
+3.  Chinagadgets
+4.  Word Count | NN/NE | Namen | Deskriptoren
 
 ### Struktur der JSON-Dateien
 
--   Folgennummer
--   Folgenname
--   URL
--   Sonderfolge
-    -   Version
-    -   MB
--   Abspiellänge
--   Beschreibungstext
+1.  Alle Folgen und Sonderfolgen:
+    -   Folgennummer
+        -   Folgenname
+        -   Datum
+        -   Abspiellänge
+        -   URL
+        -   Sonderfolge (Nobelpreis, Ig-Nobelpreis, Jahresrückblick)
+        -   Beschreibungstext
+2.  Chinagadgets
+    -   Folgennummer
+        -   Folgenname
+        -   Datum
+        -   URL
+        -   Chinagadget der Woche
 
 ## Website
 

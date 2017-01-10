@@ -1,21 +1,31 @@
 # -*- coding: utf-8 -*-
 import scrapy
+from scrapy.selector import Selector
 from scrapy.linkextractors import LinkExtractor
 from scrapy.spiders import CrawlSpider, Rule
+from scrapy.http import Request
+
+from crawler.items import CrawlerItem
 
 
 class MiGeneralSpider(CrawlSpider):
     name = 'mi_general'
     allowed_domains = ['minkorrekt.de']
-    start_urls = ['http://minkorrekt.de/']
+    start_urls = ['http://minkorrekt.de/feed/m4a/']
 
     rules = (
-        Rule(LinkExtractor(allow=r'Items/'),
-             callback='parse_item', follow=True),
+        Rule(LinkExtractor(
+            allow=('http://minkorrekt.de/feed/m4a/'),
+            unique=True),
+            callback='parse_item',
+            follow=True),
     )
 
     def parse_item(self, response):
-        i = {}
+        '''Return scraped items.'''
+        sel = Selector(response)
+        sites = sel.xpath('//body')
+        items = []
 
         '''
         Das hier sollen die zu crawlenden Objekte werden

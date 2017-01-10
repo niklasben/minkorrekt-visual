@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:bitlove="http://bitlove.org" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:psc="http://podlove.org/simple-chapters" xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:fh="http://purl.org/syndication/history/1.0">
+
+	<channel>
+		<title>Methodisch inkorrekt</title>
+		<link>http://minkorrekt.de</link>
+		<description>der methodisch inkorrekte Wissenschaftspodcast</description>
+		<lastBuildDate>Tue, 10 Jan 2017 08:00:35 +0000</lastBuildDate>
+
+		<image>
+			<url>http://minkorrekt.de/wp-content/cache/podlove/67/2193777f638039d26446e56cb3e279/methodisch-inkorrekt_original.jpg</url>
+			<title>Methodisch inkorrekt</title>
+			<link>http://minkorrekt.de</link>
+		</image>
+		<atom:link rel="self" type="application/rss+xml" title="Methodisch inkorrekt (m4a Audio)" href="http://minkorrekt.de/feed/m4a/" />
+		<atom:link rel="alternate" type="application/rss+xml" title="Methodisch inkorrekt (MP3 Audio)" href="http://minkorrekt.de/feed/mp3/" />
+		<atom:link rel="first" href="http://minkorrekt.de/feed/m4a/" />
+		<language>de-DE</language>
+		<atom:link rel="payment" title="Flattr this!" href="https://flattr.com/submit/auto?user_id=methodischinkorrekt&amp;popout=1&amp;url=http%3A%2F%2Fminkorrekt.de%2F&amp;language=de_DE&amp;category=audio&amp;title=Methodisch+inkorrekt&amp;description=der+methodisch+inkorrekte+Wissenschaftspodcast&amp;tags=Podcast%2C+Science"
+			type="text/html" />
+		<generator>Podlove Podcast Publisher v2.4.1</generator>
+		<itunes:author>Methodisch inkorrekt!</itunes:author>
+		<itunes:summary>Alle zwei Wochen treffen sich Nicolas Wöhrl und Reinhard Remfort um über interessante aktuelle Forschung, Experimente und ihrem wissenschaftlichen Alltag im allgemeinen zu reden. Fachübergreifend, abwechslungsreich, unstrukturiert, hoffnungslos subjektiv
+			und immer garantiert methodisch inkorrekt.</itunes:summary>
+		<itunes:category text="Science &amp; Medicine"></itunes:category>
+		<itunes:category text="Society &amp; Culture"></itunes:category>
+		<itunes:category text="Education">
+			<itunes:category text="Higher Education"></itunes:category>
+		</itunes:category>
+
+		<itunes:owner>
+			<itunes:name>Reinhard Remfort und Nicolas Wöhrl</itunes:name>
+			<itunes:email>info@methodisch-inkorrekt.de</itunes:email>
+		</itunes:owner>
+		<itunes:image href="http://minkorrekt.de/wp-content/cache/podlove/67/2193777f638039d26446e56cb3e279/methodisch-inkorrekt_original.jpg" />
+		<itunes:subtitle>der methodisch inkorrekte Wissenschaftspodcast</itunes:subtitle>
+		<itunes:block>no</itunes:block>
+		<itunes:explicit>yes</itunes:explicit>
+
+
+		<item>
+			<title>Minkorrekt Folge 88 „Jahresrückblick 2016“</title>
+			<link>http://minkorrekt.de/minkorrekt-folge-88-jahresrueckblick-2016/</link>
+			<pubDate>Tue, 10 Jan 2017 08:00:35 +0000</pubDate>
+			<guid isPermaLink="false">podlove-2017-01-10t07:36:25+00:00-1a6aad3ed76ab78</guid>
+			<description>
+				<![CDATA[Folge 88 vom 10.01.2017 diesmal mit einer bunten Mischung aus 2016]]>
+			</description>
+			<atom:link rel="payment" title="Flattr this!" href="https://flattr.com/submit/auto?user_id=methodischinkorrekt&amp;popout=1&amp;url=http%3A%2F%2Fminkorrekt.de%2Fminkorrekt-folge-88-jahresrueckblick-2016%2F&amp;language=de_DE&amp;category=audio&amp;title=Minkorrekt+Folge+88+%E2%80%9EJahresr%C3%BCckblick+2016%E2%80%9C&amp;description=Folge+vom+10.01.2017+Intro+war+der+Song+der+Closing+Session+des+33C3+angelehnt+an+%26%238220%3BLike+mich+am+Arsch%26%238221%3B+Die+Shownotes+folgen+im+Laufe+des+Tages%26%238230%3B&amp;tags=Podcast%2C+Science"
+				type="text/html" />
+			<atom:link rel="http://podlove.org/deep-link" href="http://minkorrekt.de/minkorrekt-folge-88-jahresrueckblick-2016/#" />
+			<enclosure url="http://minkorrekt.de/podlove/file/1056/s/feed/c/m4a/methodisch_inkorrekt_Folge_88.m4a" length="206840459" type="audio/mp4" bitlove:guid="http://minkorrekt.de/podlove/file/1056" />
+			<itunes:duration>04:38:07</itunes:duration>
+			<itunes:author>Methodisch inkorrekt!</itunes:author>
+			<itunes:subtitle>&quot;Jahresrückblick 2016&quot; direkt vom Jahresrückblick der Wissenschaft</itunes:subtitle>
+			<itunes:summary>Folge 88 vom 10.01.2017 diesmal mit einer bunten Mischung aus 2016</itunes:summary>
+			<content:encoded>
+				<![CDATA[<p>Folge vom 10.01.2017</p>
+<p>Intro war der Song der Closing Session des 33C3 angelehnt an &#8220;Like mich am Arsch&#8221;</p>
+<p>Die Shownotes folgen im Laufe des Tages&#8230;</p>
+<p><a href="http://minkorrekt.de/?flattrss_redirect&amp;id=1687&amp;md5=14fcf090a3742070fb0ae1054fe0d697"><img src="http://minkorrekt.de/wp-content/plugins/flattr/img/flattr-badge-white.png" srcset="http://minkorrekt.de/wp-content/plugins/flattr/img/flattr-badge-white.png, http://minkorrekt.de/wp-content/plugins/flattr/img/flattr-badge-white@2x.png 2xhttp://minkorrekt.de/wp-content/plugins/flattr/img/flattr-badge-white.png, http://minkorrekt.de/wp-content/plugins/flattr/img/flattr-badge-white@3x.png 3x" alt="Flattr this!"/></a></p>]]>
+			</content:encoded>
+			<psc:chapters xmlns:psc="http://podlove.org/simple-chapters" version="1.2">
+				<psc:chapter start="00:00:00.000" title="Intro" />
+				<psc:chapter start="00:04:09.335" title="Begr&#xFC;&#xDF;ung" />
+				<psc:chapter start="00:04:46.357" title="Wie l&#xE4;ufts bei uns? (33c3)" />
+				<psc:chapter start="00:21:47.050" title="Calliope" />
+				<psc:chapter start="00:51:10.986" title="Themen der Woche" />
+				<psc:chapter start="00:55:08.405" title="Januar" />
+				<psc:chapter start="01:15:26.464" title="Februar" />
+				<psc:chapter start="01:43:29.290" title="M&#xE4;rz" />
+				<psc:chapter start="01:56:40.533" title="April" />
+				<psc:chapter start="02:10:01.482" title="Mai" />
+				<psc:chapter start="02:29:33.546" title="Juni" />
+				<psc:chapter start="02:45:40.567" title="Musik" />
+				<psc:chapter start="02:50:03.439" title="Chinagadget" />
+				<psc:chapter start="03:00:20.240" title="Juli" />
+				<psc:chapter start="03:14:45.349" title="August" />
+				<psc:chapter start="03:26:55.589" title="September" />
+				<psc:chapter start="04:03:08.154" title="November" />
+				<psc:chapter start="04:17:35.962" title="Dezember" />
+				<psc:chapter start="04:24:46.074" title="Zusammenfassung" />
+				<psc:chapter start="04:25:28.912" title="Amazon Kauf der Woche" />
+				<psc:chapter start="04:31:21.178" title="Hausmeisterei" />
+				<psc:chapter start="04:34:20.946" title="Rausschmei&#xDF;er" />
+			</psc:chapters>
+		</item>
+
+	</channel>
+	</rss>
