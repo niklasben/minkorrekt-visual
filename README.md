@@ -32,6 +32,8 @@ Soll gegen den Feed laufen: <http://minkorrekt.de/feed/m4a/>
 
 ## Data
 
+Evtl. erst crawlen und nachfolgend mit Python oder Bash bearbeiten, um Folgennummer|Folgenname bzw. Beschreibung|Chinagadget zu separieren
+
 ### Was genau?
 
 Vermutlich folgende JSON-Dateien:
