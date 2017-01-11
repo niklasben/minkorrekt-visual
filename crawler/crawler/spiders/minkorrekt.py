@@ -1,7 +1,11 @@
 # -*- coding: utf-8 -*-
-from scrapy.spiders import XMLFeedSpider
+import sys
 
+from scrapy.spiders import XMLFeedSpider
 from crawler.items import CrawlerItem
+
+reload(sys)
+sys.setdefaultencoding('utf8')
 
 
 class MinkorrektSpider(XMLFeedSpider):
@@ -38,8 +42,10 @@ class MinkorrektSpider(XMLFeedSpider):
                                  '\s{1}(.*)\s{1}\+\d{4}$')
         i['url'] = node.xpath('link/text()').extract()
         i['duration'] = node.xpath('itunes:duration/text()').extract()
-        # i['titlesub'] = node.xpath('itunes:subtitle/text()').extract()
-        i['specials'] = node.xpath('content:encoded/text()').extract()
+        i['titlesub'] = node.xpath('itunes:subtitle/text()').extract()
+        i['specials'] = node.xpath(
+            'title/text()').re(ur'.*[\u201e|\u201c](?:(Ig-Nobelpreis|' +
+                               'Nobelpreis|Jahresrückblick)).*')
         i['description'] = node.xpath('content:encoded/text()').extract()
         # i['china'] = node.xpath('content:encoded/text()').re(r'china|China(.*)')
 

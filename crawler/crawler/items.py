@@ -21,7 +21,7 @@ class CrawlerItem(scrapy.Item):
     pubtime = scrapy.Field()
     url = scrapy.Field()
     duration = scrapy.Field()
-    # titlesub = scrapy.Field()
+    titlesub = scrapy.Field()
     specials = scrapy.Field()
     description = scrapy.Field()
     # china = scrapy.Field()
