@@ -9,16 +9,19 @@ import scrapy
 
 
 class CrawlerItem(scrapy.Item):
+    '''Save scraped information in variables.'''
     # define the fields for your item here like:
     # name = scrapy.Field()
     # pass
 
-    # number = scrapy.Field()
+    number = scrapy.Field()
     titlemain = scrapy.Field()
     pubdate = scrapy.Field()
+    pubday = scrapy.Field()
+    pubtime = scrapy.Field()
     url = scrapy.Field()
     duration = scrapy.Field()
-    titlesub = scrapy.Field()
+    # titlesub = scrapy.Field()
     specials = scrapy.Field()
-    # description = scrapy.Field()
+    description = scrapy.Field()
     # china = scrapy.Field()

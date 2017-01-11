@@ -5,6 +5,8 @@ from crawler.items import CrawlerItem
 
 
 class MinkorrektSpider(XMLFeedSpider):
+    '''Spider to crawl the m4a-Feed.'''
+
     name = 'minkorrekt'
     allowed_domains = ['minkorrekt.de']
     start_urls = ['http://minkorrekt.de/feed/m4a/']
@@ -19,21 +21,26 @@ class MinkorrektSpider(XMLFeedSpider):
     iterator = 'iternodes'  # you can change this; see the docs
     itertag = 'item'  # change it accordingly
 
-    # def parse_node(self, response, selector):
     def parse_node(self, response, node):
         '''self.logger.info('This is a <%s> node!: %s',
                          self.itertag, ''.join(node.extract()))'''
 
         i = CrawlerItem()
 
-        #i['number'] = node.xpath('title/text()').extract()
-        i['titlemain'] = node.xpath('title/text()').extract()
-        i['pubdate'] = node.xpath('pubDate/text()').extract()
+        i['number'] = node.xpath('title/text()').re(r'Folge\s*(\d{0,3}[ab]?)')
+        i['titlemain'] = node.xpath(
+            'title/text()').re(r'Folge\s*\d*\W+(.*)\W{1}')
+        i['pubdate'] = node.xpath(
+            'pubDate/text()').re(r'^\w{3}[,]\s{1}(.*)\s\d{2}[:]\d{2}[:]\d{2}')
+        i['pubday'] = node.xpath('pubDate/text()').re(r'^(.*)[,]')
+        i['pubtime'] = node.xpath(
+            'pubDate/text()').re(r'^\w{3}[,]\s{1}\d{2}\s{1}\w{3}\s{1}\d{4}' +
+                                 '\s{1}(.*)\s{1}\+\d{4}$')
         i['url'] = node.xpath('link/text()').extract()
         i['duration'] = node.xpath('itunes:duration/text()').extract()
-        i['titlesub'] = node.xpath('itunes:subtitle/text()').extract()
+        # i['titlesub'] = node.xpath('itunes:subtitle/text()').extract()
         i['specials'] = node.xpath('content:encoded/text()').extract()
-        # i['description'] = node.xpath('').extract()
-        # i['china'] = node.xpath('').extract()
+        i['description'] = node.xpath('content:encoded/text()').extract()
+        # i['china'] = node.xpath('content:encoded/text()').re(r'china|China(.*)')
 
         return i

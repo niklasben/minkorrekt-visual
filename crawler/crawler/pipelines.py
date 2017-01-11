@@ -11,7 +11,7 @@ import json
 class CrawlerPipeline(object):
 
     def open_spider(self, spider):
-        self.file = open('testsave.jl', 'w+b')
+        self.file = open('../data/complete.jl', 'w+b')
 
     def close_spider(self, spider):
         self.file.close()
