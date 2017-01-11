@@ -22,12 +22,11 @@ class MinkorrektSpider(XMLFeedSpider):
         ('content', 'http://purl.org/rss/1.0/modules/content/'),
         ('fh', 'http://purl.org/syndication/history/1.0')
     ]
-    iterator = 'iternodes'  # you can change this; see the docs
-    itertag = 'item'  # change it accordingly
+    iterator = 'iternodes'
+    itertag = 'item'
 
     def parse_node(self, response, node):
-        '''self.logger.info('This is a <%s> node!: %s',
-                         self.itertag, ''.join(node.extract()))'''
+        '''Parsing Function of Crawler.'''
 
         i = CrawlerItem()
 
