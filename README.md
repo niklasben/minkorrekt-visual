@@ -7,7 +7,7 @@ Methodisch inkorrekte Auswertung des Methodisch Inkorrekt Podcast.
 Soll gegen den Feed laufen: <http://minkorrekt.de/feed/m4a/>
 
 1.  &lt;title>
-    1.  Folgennummer
+    1.  Folgennummer -> \d{1} + 0 davor
     2.  Folgenname
 2.  &lt;pubDate>
     -   Datum
