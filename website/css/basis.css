@@ -1,7 +1,6 @@
 /* Global Definitions */
 
-:root
-{
+:root {
     --colourBlack: #000;
     --colourWhite: #fff;
 }
@@ -9,9 +8,46 @@
 
 /* Basis */
 
-html,
-body
-{
+html, body {
     width: 100%;
     height: 100%;
+}
+
+
+/* Navbar */
+
+.navbar-fixed-left {
+    width: 140px;
+    position: fixed;
+    border-radius: 0;
+    height: 100%;
+    background-color: #ccc;
+    /* FOR TESTING ONLY */
+    border: 1px dotted #0f0;
+}
+
+.navbar-fixed-left .navbar-nav>li {
+    float: none;
+    /* Cancel default li float: left */
+    width: 139px;
+}
+
+.navbar-fixed-left+.container {
+    padding-left: 160px;
+}
+
+
+/* On using dropdown menu (To right shift popuped) */
+
+.navbar-fixed-left .navbar-nav>li>.dropdown-menu {
+    margin-top: -50px;
+    margin-left: 140px;
+}
+
+
+/* Container */
+
+.container {
+    /* FOR TESTING ONLY */
+    border: 1px dotted #f00;
 }

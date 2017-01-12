@@ -8,25 +8,16 @@
     <title>Methodisch (in)korrekte Daten</title>
 
     <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous" />
 
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+
+    <!-- Bootstrap Table -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.11.0/bootstrap-table.min.css" integrity="sha256-eU4xmpfQx1HSi5q1q2rHNcMEzTNJov7r2Wr/6zF3ANc=" crossorigin="anonymous" />
 
     <!-- Own Styles -->
     <link rel="stylesheet" href="css/basis.css" />
-
-    <style>
-        .chart rect {
-            fill: steelblue;
-        }
-
-        .chart text {
-            fill: white;
-            font: 10px sans-serif;
-            text-anchor: end;
-        }
-    </style>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -34,20 +25,116 @@
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-
-    <!-- D3.js Script -->
-    <script src="https://d3js.org/d3.v4.min.js"></script>
 </head>
 
 <body>
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <!-- Begin Navbar Left -->
+    <nav class="navbar navbar-inverse navbar-fixed-left">
+        <a class="navbar-brand" href="#">
+            <img src="img/logo.jpg" width="50%" alt="Logo" />
+        </a>
+        <ul class="nav navbar-nav">
+            <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li><a href="#">Sub Menu1</a></li>
+                    <li><a href="#">Sub Menu2</a></li>
+                    <li><a href="#">Sub Menu3</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">Sub Menu4</a></li>
+                    <li><a href="#">Sub Menu5</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Link2</a></li>
+        </ul>
+    </nav>
+    <!-- End Navbar Left -->
 
-    <!-- Own Schripts -->
-    <script src="lib/d3test.js"></script>
+    <!-- Begin Container -->
+    <div class="container">
+        <!-- Begin Jumbotron -->
+        <div class="jumbotron">
+            <h1>Methodisch (in)korrektes Zeugs</h1>
+            <p class="text-justify">
+                Lorizzle ipsum my shizz sit amizzle, consectetuer adipiscing my shizz. Nullizzle fo shizzle my nizzle velizzle, for sure volutpat, its fo rizzle mammasay mammasa mamma oo sa, gravida hizzle, arcu. Pellentesque sizzle check out this. Sed erizzle. Break
+                it down izzle dolor dapibus turpis i saw beyonces tizzles and my pizzle went crizzle hizzle. Maurizzle shit nibh izzle turpis. Gangster izzle tortizzle. Own yo' pot rhoncus dawg. In shizzle my nizzle crocodizzle yippiyo platea break yo
+                neck, yall. Shit dapibizzle. Curabitizzle tellus gangster, pretium funky fresh, mattis ac, eleifend vitae, nunc. Boofron ghetto. Integizzle we gonna chung velit pot fizzle.
+            </p>
+        </div>
+        <!-- End Jumbotron -->
+
+        <!-- All the other stuff -->
+        <div class="page-header">
+            <h1>Bootstrap Table Examples</h1>
+            <p class="text-justify">
+                Praesent non mi shiznit mauris nizzle bibendum. Dang lacinia things lectizzle. Yo izzle yo izzle leo sodalizzle sure. Aliquam lobortizzle, funky fresh rizzle dapibus sizzle, nulla ligula bibendum doggy, break it down boofron augue fo shizzle doggy arcu.
+                Vivamizzle bizzle lacizzle id go to hizzle. Crazy arcu dang, fermentizzle cool ma nizzle, faucibus izzle, placerat break yo neck, yall, shizzlin dizzle. Sed vehicula the bizzle funky fresh. Vestibulum erat uhuh ... yih!, hendrerit away,
+                that's the shizzle izzle, malesuada a, arcu. Morbi aliquam placerizzle nulla. Fo shizzle malesuada erizzle id erizzle. Fusce metizzle you son of a bizzle, egestas my shizz, that's the shizzle quis, elementum for sure, neque. Shizzlin dizzle
+                iaculizzle nunc da bomb orci tincidunt funky fresh. Fusce dope, nulla eget sollicitudizzle bling bling, lacizzle quam luctizzle erizzle, vitae shiznit augue purus shizznit arcu. Etizzle daahng dawg ma nizzle. Nunc fo shizzle my nizzle
+                mi. Dizzle pimpin' turpizzle. Uhuh ... yih! fizzle magna. Sizzle pimpin' erizzle, consectetuer crunk, tempizzle izzle, sure in, pede. Nunc shizzle my nizzle crocodizzle. Nulla nisi erizzle, tristique fizzle amet, ultricizzle at, fo shizzle
+                my nizzle nizzle, augue.
+            </p>
+
+            <div class="table-responsive">
+                <div id="toolbar"></div>
+                <table id="table" class="table-striped table-hover table-condensed highchart" data-id-field="number" data-toolbar="#toolbar" data-search="true" data-advanced-search="true" data-id-table="advancedTable" data-show-refresh="true" data-show-toggle="true"
+                    data-show-columns="true" data-show-pagination-switch="true" data-pagination="true" data-page-list="[10, 25, 50, 100, ALL]" data-graph-container-before="1" data-graph-type="column" data-sort-name="number" data-sort-order="desc" data-mobile-responsive="true"
+                    data-check-on-init="true">
+                    <thead>
+                        <tr>
+                            <th data-field="number" data-sortable="true">number</th>
+                            <th data-field="titlemain" data-sortable="true">titlemain</th>
+                            <th data-field="specials" data-sortable="true">specials</th>
+                            <th data-field="pubday" data-sortable="true">pubday</th>
+                            <th data-field="pubdate" data-sortable="true">pubdate</th>
+                            <th data-field="pubtime" data-sortable="true">pubtime</th>
+                            <th data-field="duration" data-sortable="true">duration</th>
+                            <th data-field="url">url</th>
+                        </tr>
+                    </thead>
+                    </table>
+            </div>
+        </div>
+
+
+    </div>
+    <!-- End Container -->
+
+    <!-- Begin Footer -->
+    <!-- <footer class="footer">
+        <div class="container">
+            <p class="text-muted">Place sticky footer content here.</p>
+        </div>
+    </footer> -->
+    <!-- End Footer -->
+
+
+    <!-- Tether -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <!-- Bootstrap -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap Table -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.11.0/bootstrap-table.min.js" integrity="sha256-eXHLyyVI+v6X1wbfg9NB05IWqOqY4E9185nHZgeDIhg=" crossorigin="anonymous"></script>
+
+    <script src="lib/bootstrap-table-toolbar.js"></script>
+    <script src="lib/bootstrap-table-mobile.js"></script>
+
+    <!-- Highcharts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highcharts/5.0.6/highcharts.js" integrity="sha256-QwUrND/LJhYUBcYRAAxtMNWjZhZI+Yr8N7fpvHSFd4E=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highcharts/5.0.6/js/modules/boost.js" integrity="sha256-8CwAqFrhNgTYXfuiHM7Kjq8PJlxKKxuDh54z5jf7vMc=" crossorigin="anonymous"></script>
+
+    <!-- HighchartTable -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highchartTable/2.0.0/jquery.highchartTable.min.js" integrity="sha256-j4pXcjEAHApZeVWq1JhNVg7a8wWj1vKNNF0ZzTszRJk=" crossorigin="anonymous"></script>
+
+    <!-- Own Scripts -->
+    <script src="lib/scrolling.js"></script>
+    <!-- <script src="lib/sizing.js"></script> -->
+
+    <script src="lib/bootstraptabletest.js"></script>
+
 </body>
 
 </html>

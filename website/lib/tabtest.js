@@ -30,6 +30,12 @@
                  align: "center"
              },
              {
+                 title: "duration_original",
+                 field: "duration_original",
+                 sorter: "time",
+                 align: "center"
+             },
+             {
                  title: "pubdate",
                  field: "pubdate",
                  sorter: "date",
@@ -61,7 +67,7 @@
          var xobj = new XMLHttpRequest();
          xobj.overrideMimeType("application/json");
          // xobj.open('GET', 'data/test.json', true);
-         xobj.open('GET', 'data/scrape.json', true);
+         xobj.open('GET', 'data/complete.json', true);
          xobj.onreadystatechange = function() {
              if (xobj.readyState == 4 && xobj.status == "200") {
 
