@@ -2,6 +2,35 @@
 
 Methodisch inkorrekte Auswertung des Methodisch Inkorrekt Podcast.
 
+# TO DO
+## Website
+-   Auffälligkeiten beschreiben
+    -   Änderung Feed-URL
+    -   Fehlende Längen
+    -   Inkonsistente Titel
+-   Design
+-   Datenvisualisierung
+    -   Dynamisch
+    -   Getrennt nach Sendung
+        -   Normal
+        -   Sonderfolge
+            -   Aufgeschlüsselt
+    -   Tabelle
+    -   Balkendiagramme
+    -   Addierte Sendezeiten
+    -   Häufigkeit PubDay
+    -   Durchschnittliche PubTime
+    -   NN/NE in Cloud oder der Seite
+    -   Zuordnen zu Wissenschaftsbereichen
+        -   Passende Thesauri?
+    
+## Crawler
+### Pipeline
+-   Descriptions aufräumen
+-   PoS-Tagging
+
+---
+
 ## Crawler
 
 Soll gegen den Feed laufen: <http://minkorrekt.de/feed/m4a/>
