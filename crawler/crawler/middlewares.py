@@ -9,18 +9,22 @@ from scrapy import signals
 
 
 class CrawlerSpiderMiddleware(object):
+    """Docstring."""
+
     # Not all methods need to be defined. If a method is not defined,
     # scrapy acts as if the spider middleware does not modify the
     # passed objects.
 
     @classmethod
     def from_crawler(cls, crawler):
+        """Docstring."""
         # This method is used by Scrapy to create your spiders.
         s = cls()
         crawler.signals.connect(s.spider_opened, signal=signals.spider_opened)
         return s
 
     def process_spider_input(response, spider):
+        """Docstring."""
         # Called for each response that goes through the spider
         # middleware and into the spider.
 
@@ -28,6 +32,7 @@ class CrawlerSpiderMiddleware(object):
         return None
 
     def process_spider_output(response, result, spider):
+        """Docstring."""
         # Called with the results returned from the Spider, after
         # it has processed the response.
 
@@ -36,6 +41,7 @@ class CrawlerSpiderMiddleware(object):
             yield i
 
     def process_spider_exception(response, exception, spider):
+        """Docstring."""
         # Called when a spider or process_spider_input() method
         # (from other spider middleware) raises an exception.
 
@@ -44,6 +50,7 @@ class CrawlerSpiderMiddleware(object):
         pass
 
     def process_start_requests(start_requests, spider):
+        """Docstring."""
         # Called with the start requests of the spider, and works
         # similarly to the process_spider_output() method, except
         # that it doesn’t have a response associated.
@@ -53,4 +60,5 @@ class CrawlerSpiderMiddleware(object):
             yield r
 
     def spider_opened(self, spider):
+        """Docstring."""
         spider.logger.info('Spider opened: %s' % spider.name)

@@ -9,7 +9,8 @@ import scrapy
 
 
 class CrawlerItem(scrapy.Item):
-    '''Save scraped information in variables.'''
+    """Save scraped information in variables."""
+
     # define the fields for your item here like:
     # name = scrapy.Field()
     # pass
