@@ -1,104 +1,157 @@
 # minkorrekt-visual
 
-Methodisch inkorrekte Auswertung des Methodisch Inkorrekt Podcast.
+Methodisch (in)korrekte Auswertung des Methodisch-Inkorrekt-Podcasts.
 
 # TO DO
+
 ## Website
+
 -   Auffälligkeiten beschreiben
+
     -   Änderung Feed-URL
     -   Fehlende Längen
     -   Inkonsistente Titel
+
 -   Design
+
+    -   Navbar mit Menü auf Mobile anpassen
+
 -   Datenvisualisierung
+
     -   Dynamisch
     -   Getrennt nach Sendung
+
         -   Normal
         -   Sonderfolge
+
             -   Aufgeschlüsselt
+
     -   Tabelle
+
+        -   Sorting Function für pubdate
+        -   Sorting Function für pubtine und duration (ideal HH:MM:SS)
+        -   Sorting Function für pubday (Wochentage reihen)
+        -   Datum ändern
+
     -   Balkendiagramme
     -   Addierte Sendezeiten
     -   Häufigkeit PubDay
     -   Durchschnittliche PubTime
     -   NN/NE in Cloud oder der Seite
     -   Zuordnen zu Wissenschaftsbereichen
+
         -   Passende Thesauri?
-    
+
+-   Direkt auf den Data-Ordner in ./~/data zugreifen
+
 ## Crawler
+
 ### Pipeline
+
 -   Descriptions aufräumen
 -   PoS-Tagging
+-   JSON direkt im entsprechenden Website-Ordner speichern
 
----
+* * *
 
-## Crawler
+# Crawler
 
 Soll gegen den Feed laufen: <http://minkorrekt.de/feed/m4a/>
 
 1.  &lt;title>
-    1.  Folgennummer -> \d{1} + 0 davor
-    2.  Folgenname
-2.  &lt;pubDate>
-    -   Datum
-3.  &lt;link>
-    -   URL
-4.  &lt;itunes:duration>
-    -   Abspiellänge
-5.  &lt;itunes:subtitle>
-    1.  Folgenname
-    2.  Sonderfolgen wie:
-        -   Nobelpreis
-        -   Ig-Nobelpreis
-        -   Jahresrückblick
-6.  &lt;content:encoded> (&lt;p>)
-    1.  Beschreibungstext
-    2.  Chinagadget der Woche
 
-### Exclude
+2.  Folgennummer -> \\d{1} + 0 davor
+3.  Folgenname
+
+4.  &lt;pubDate>
+
+5.  Datum
+
+6.  &lt;link>
+
+7.  URL
+
+8.  &lt;itunes:duration>
+
+9.  Abspiellänge
+
+10. &lt;itunes:subtitle>
+
+11. Folgenname
+12. Sonderfolgen wie:
+
+    -   Nobelpreis
+    -   Ig-Nobelpreis
+    -   Jahresrückblick
+
+13. &lt;content:encoded> (&lt;p>)
+
+14. Beschreibungstext
+15. Chinagadget der Woche
+
+## Exclude
 
 1.  Musik
 2.  Experimente
 
-## Data
+* * *
+
+# Data
 
 Evtl. erst crawlen und nachfolgend mit Python oder Bash bearbeiten, um Folgennummer|Folgenname bzw. Beschreibung|Chinagadget zu separieren
 
-### Was genau?
+## Was genau?
 
 Vermutlich folgende JSON-Dateien:
-1.  Alle Folgen
-2.  Sonderfolgen (Nobelpreis, Ig-Nobelpreis und Jahresrückblick)
-3.  Chinagadgets
-4.  Word Count | NN/NE | Namen | Deskriptoren
 
-### Struktur der JSON-Dateien
+1.  Alle Folgen -> complete.json
+2.  Sonderfolgen (Nobelpreis, Ig-Nobelpreis und Jahresrückblick) -> specials.json
+3.  Chinagadgets -> chinagadgets.json
+4.  Word Count | NN/NE | Namen | Deskriptoren -> nlp.json
 
-1.  Alle Folgen und Sonderfolgen:
-    -   Folgennummer
-        -   Folgenname
-        -   Datum
-        -   Abspiellänge
-        -   URL
-        -   Sonderfolge (Nobelpreis, Ig-Nobelpreis, Jahresrückblick)
-        -   Beschreibungstext
-2.  Chinagadgets
-    -   Folgennummer
-        -   Folgenname
-        -   Datum
-        -   URL
-        -   Chinagadget der Woche
+## Inhalt der JSON-Dateien
 
-## Website
+### complete.json
 
-### css
+-   pubtime_original
+-   pubdate
+-   pubday
+-   url
+-   number
+-   duration_original
+-   specials
+-   pubtime
+-   duration
+-   titlemain
+
+### specials.json
+
+### chinagadgets.json
+
+### nlp.json
+
+* * *
+
+# Website
+
+## css
 
 Cascading Stylesheets
 
-### img
+## img
 
 Bilder
 
-### lib
+## lib
 
--   (Javascript) Bibliotheken
--   <https://github.com/d3/d3>
+(Javascript) Bibliotheken
+
+-   Von woanders:
+    -   Bootstrap Table
+    -   bootstrap-table-toolbar.js
+    -   bootstrap-table-mobile.js
+    -   Highchart
+-   Meine:
+    -   scrolling.js
+    -   sizing.js
+    -   bootstraptabletest.js
