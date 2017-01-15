@@ -9,6 +9,7 @@ from scrapy.xlib.pydispatch import dispatcher
 from scrapy import signals
 from scrapy.contrib.exporter import JsonItemExporter
 from scrapy.exceptions import DropItem
+
 import datetime
 
 
@@ -23,7 +24,7 @@ class CrawlerPipeline(object):
 
     def spider_opened(self, spider):
         """Open Spider."""
-        file = open('../data/complete.json', 'w+b')
+        file = open('../website/data/complete.json', 'w+b')
         self.files[spider] = file
         self.exporter = JsonItemExporter(file)
         self.exporter.start_exporting()
@@ -49,6 +50,9 @@ class CrawlerPipeline(object):
             raise DropItem(item['number'])
 
         # Process Field 'pubdate'
+        if item['pubdate']:
+            item['pubdate'] = datetime.datetime.strptime(
+                item['pubdate'][0], '%a, %d %b %Y %H:%M:%S')
 
         # Process Field 'pubday'
         if item['pubday']:
@@ -68,25 +72,23 @@ class CrawlerPipeline(object):
             elif any('Sun' in s for s in item['pubday']):
                 item['pubday'] = 'Sonntag'
             else:
-                item['pubtime'] = 'WRONG DAY FORMAT'
+                item['pubday'] = 'WRONG DAY FORMAT'
 
         # Process Field 'pubtime'
         if item['pubtime']:
-            tpub = datetime.datetime.strptime(
-                str(item['pubtime'][0]), '%H:%M:%S')
-            # Save original value as time
-            item['pubtime_original'] = tpub.strftime('%H:%M:%S')
-            # Save value as time
-            item['pubtime'] = tpub.strftime('%H:%M')
+            # Save pubtime as integer
+            tpub = item['pubtime'][0]
+            item['pubtime_integer'] = sum(
+                int(x) * 60 ** i for i, x in enumerate(reversed(
+                    tpub.split(":"))))
 
         # Process Field 'duration'
         if item['duration']:
-            tdur = datetime.datetime.strptime(
-                str(item['duration'][0]), '%H:%M:%S')
-            # Save original value
-            item['duration_original'] = tdur.strftime('%H:%M:%S')
-            # Save value as time
-            item['duration'] = tdur.strftime('%H:%M')
+            # Save pubtime as integer
+            tdur = item['duration'][0]
+            item['duration_integer'] = sum(
+                int(x) * 60 ** i for i, x in enumerate(reversed(
+                    tdur.split(":"))))
 
         self.exporter.export_item(item)
         return item
