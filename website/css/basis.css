@@ -45,9 +45,46 @@ html, body {
 }
 
 
-/* Container */
+/* Container and Jumbotron */
 
 .container {
     /* FOR TESTING ONLY */
     border: 1px dotted #f00;
+}
+
+.container-main {
+    display: table;
+    width: 100%;
+    padding-bottom: 40px;
+    /* FOR TESTING */
+    border: 1px solid #00f;
+}
+
+.container-tr {
+    display: table-row;
+    width: inherit;
+    /* FOR TESTING */
+    border: 1px solid #00f;
+}
+
+.jumbotron h3 {
+    font-variant: small-caps;
+    text-align: right;
+    -moz-transform: scale(-1, 1);
+    -webkit-transform: scale(-1, 1);
+    -o-transform: scale(-1, 1);
+    -ms-transform: scale(-1, 1);
+    transform: scale(-1, 1);
+}
+
+
+/* Main */
+
+.charts {
+    min-width: 100%;
+    width: 100%;
+    min-height: 400px;
+    height: 400px;
+    /* FOR TESTING ONLY */
+    border: 1px dotted #0ff;
 }
