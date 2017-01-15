@@ -29,28 +29,30 @@ Methodisch (in)korrekte Auswertung des Methodisch-Inkorrekt-Podcasts.
     -   Tabelle
 
         -   Sorting Function für pubdate
-        -   Sorting Function für pubtine und duration (ideal HH:MM:SS)
+        -   Sorting Function für pubtime und duration (ideal HH:MM:SS)
         -   Sorting Function für pubday (Wochentage reihen)
         -   Datum ändern
 
     -   Balkendiagramme
     -   Addierte Sendezeiten
-    -   Häufigkeit PubDay
-    -   Durchschnittliche PubTime
+    -   Häufigkeit PubDay (count)
+    -   Durchschnittliche PubTime (count und mean)
     -   NN/NE in Cloud oder der Seite
     -   Zuordnen zu Wissenschaftsbereichen
 
         -   Passende Thesauri?
 
--   Direkt auf den Data-Ordner in ./~/data zugreifen
-
 ## Crawler
 
 ### Pipeline
 
+-   Episoden 12a und 12b in 12.1 und 12.2 umwandeln
+-   Länge der Titel zählen
+-   Pubdate neu crawlen, es ist in GMT!!!
+-   Datum in int umwandeln
+-   datetime aus pubdate und pubtime kreieren
 -   Descriptions aufräumen
 -   PoS-Tagging
--   JSON direkt im entsprechenden Website-Ordner speichern
 
 * * *
 
