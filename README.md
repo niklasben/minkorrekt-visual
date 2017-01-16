@@ -18,6 +18,7 @@ Methodisch (in)korrekte Auswertung des Methodisch-Inkorrekt-Podcasts.
     -   Navbar-Tabs für alle Sections
         -   Javascript-Datei erstellen
         -   <https://v4-alpha.getbootstrap.com/components/navs/#using-data-attributes>
+    -   Loading Sign in den Tabs
 
 -   Datenvisualisierung
 
