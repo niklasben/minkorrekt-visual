@@ -114,42 +114,60 @@
         <!-- End Table Complete -->
 
         <!-- Begin Table Specials -->
+
         <!-- End Table Specials -->
 
         <!-- TESTCHART -->
         <div class="container-tr">
             <h3>H3</h3>
-            <section id="testchart" class="charts"></section>
+            <section id="test" class="charts"></section>
         </div>
 
-        <!-- Begin Scatter Plot duration with Error Bar -->
+        <!-- Begin duration with Error Bar -->
         <div class="container-tr">
-            <h3>H3</h3>
-            <ul class="nav nav-tabs justify-content-left">
-                <li class="active">
-                    <a class="nav-link active" data-toggle="tab" href="#" role="tab">
-                        <i class="fa fa-bar-chart" aria-hidden="true"></i> Test 1
-                    </a>
-                </li class="nav-item">
-                <li>
-                    <a class="nav-link" data-toggle="tab" href="#" role="tab">
-                        <i class="fa fa-line-chart" aria-hidden="true"></i> Test 2
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" data-toggle="tab" href="#" role="tab">
-                        <i class="fa fa-area-chart" aria-hidden="true"></i> Test 3
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" data-toggle="tab" href="#" role="tab">
-                        <i class="fa fa-pie-chart" aria-hidden="true"></i> Test 4
-                    </a>
-                </li>
-            </ul>
-            <section id="scatterdur" class="charts"></section>
+            <section id="sectionDuration" class="charts">
+                <h3>H3</h3>
+                <ul class="nav nav-tabs" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" data-toggle="tab" href="#test1" role="tab">
+                            <i class="fa fa-bar-chart" aria-hidden="true"></i> Säulendiagramm
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#test2" role="tab">
+                            <i class="fa fa-line-chart" aria-hidden="true"></i> Liniendiagramm
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#test3" role="tab">
+                            <i class="fa fa-area-chart" aria-hidden="true"></i> Flächendiagramm
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#test4" role="tab">
+                            <i class="fa fa-pie-chart" aria-hidden="true"></i> Kreisdiagramm
+                        </a>
+                    </li>
+                </ul>
+                <div class="tab-content">
+
+                    <div id="test1" class="tab-pane active" role="tabpanel">
+                        <div id="testchart1"></div>
+                    </div>
+                    <div id="test2" class="tab-pane" role="tabpanel">
+                        <div id="testchart2"></div>
+                    </div>
+                    <div id="test3" class="tab-pane" role="tabpanel">
+                        <div id="testchart3"></div>
+                    </div>
+                    <div id="test4" class="tab-pane" role="tabpanel">
+                        <div id="testchart4"></div>
+                    </div>
+
+                </div>
+            </section>
         </div>
-        <!-- End Scatter Plot duration with Error Bar -->
+        <!-- End duration with Error Bar -->
 
         <!-- Begin Box Plot duration -->
         <div class="container-tr">
@@ -165,7 +183,7 @@
         </div>
         <!-- End Pie Chart duration according to hours -->
 
-        <!-- Begin Bubble Chart pubday accortding to day -->
+        <!-- Begin Bubble Chart pubday according to day -->
         <div class="container-tr">
             <h3>H3</h3>
             <section id="bubbleday" class="charts"></section>
@@ -190,6 +208,7 @@
     <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
     <!-- Bootstrap -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <!-- <script src="lib/bootstrap-tab.js"></script> -->
 
     <!-- Bootstrap Table -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.11.0/bootstrap-table.min.js" integrity="sha256-eXHLyyVI+v6X1wbfg9NB05IWqOqY4E9185nHZgeDIhg=" crossorigin="anonymous"></script>

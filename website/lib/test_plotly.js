@@ -58,8 +58,8 @@ $(function() {
             arrayTitlemain.push(dataComplete[i].titlemain.toString());
         }
 
-        // Load data into and build chart TESTER
-        TESTER = document.getElementById('testchart');
+        // Load data into and build chart testchart1
+        TESTER = document.getElementById('testchart1');
         var data = [{
             x: arrayNumber,
             y: arrayDurationIntegerMin,
@@ -78,9 +78,7 @@ $(function() {
                 title: 'Dauer [min]',
                 showline: false
             },
-            //autosize: false,
-            width: 900,
-            height: 400,
+            autosize: true,
             margin: {
                 l: 50,
                 r: 50,
@@ -94,6 +92,103 @@ $(function() {
         // trace = data;
         // Plotly.plot(TESTER, trace);
         Plotly.plot(TESTER, data, layout);
+
+
+
+
+        // Load data into and build chart testchart2
+        TESTER2 = document.getElementById('testchart2');
+        var data = [{
+            x: arrayNumber,
+            y: arrayDurationIntegerMin,
+            type: 'scatter',
+            name: 'Dauer [min]'
+        }];
+        var layout = {
+            titel: 'Title',
+            showlegend: false,
+            xaxis: {
+                title: 'Nummer',
+                showgrid: true,
+                zeroline: true
+            },
+            yaxis: {
+                title: 'Dauer [min]',
+                showline: false
+            },
+            autosize: true,
+            margin: {
+                l: 50,
+                r: 50,
+                b: 50,
+                t: 50,
+                pad: 4
+            },
+            paper_bgcolor: '#7f7f7f',
+            plot_bgcolor: '#c7c7c7'
+        };
+        // trace = data;
+        // Plotly.plot(TESTER, trace);
+        Plotly.plot(TESTER2, data, layout);
+
+
+
+        // Load data into and build chart testchart3
+        TESTER3 = document.getElementById('testchart3');
+        var data = [{
+            x: arrayNumber,
+            y: arrayDurationIntegerMin,
+            fill: 'tozeroy',
+            type: 'scatter',
+            name: 'Dauer [min]'
+        }];
+        var layout = {
+            titel: 'Title',
+            showlegend: false,
+            xaxis: {
+                title: 'Nummer',
+                showgrid: true,
+                zeroline: true
+            },
+            yaxis: {
+                title: 'Dauer [min]',
+                showline: false
+            },
+            autosize: true,
+            margin: {
+                l: 50,
+                r: 50,
+                b: 50,
+                t: 50,
+                pad: 4
+            },
+            paper_bgcolor: '#7f7f7f',
+            plot_bgcolor: '#c7c7c7'
+        };
+        // trace = data;
+        // Plotly.plot(TESTER, trace);
+        Plotly.plot(TESTER3, data, layout);
+
+
+
+
+        // Load data into and build chart testchart4
+        TESTER4 = document.getElementById('testchart4');
+        var data = [{
+            values: arrayDurationIntegerMin,
+            labels: arrayNumber,
+            type: 'pie',
+            name: 'Dauer [min]'
+        }];
+        var layout = {
+            titel: 'Title',
+            showlegend: true,
+            autosize: true,
+        };
+        // trace = data;
+        // Plotly.plot(TESTER, trace);
+        Plotly.plot(TESTER4, data, layout);
+
 
 
         // Load data into and build chart xxx
