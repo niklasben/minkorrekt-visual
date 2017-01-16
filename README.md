@@ -15,6 +15,9 @@ Methodisch (in)korrekte Auswertung des Methodisch-Inkorrekt-Podcasts.
 -   Design
 
     -   Navbar mit Menü auf Mobile anpassen
+    -   Navbar-Tabs für alle Sections
+        -   Javascript-Datei erstellen
+        -   <https://v4-alpha.getbootstrap.com/components/navs/#using-data-attributes>
 
 -   Datenvisualisierung
 
