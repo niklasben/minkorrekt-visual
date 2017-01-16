@@ -1,6 +1,7 @@
 /* Global Definitions */
 
-:root {
+:root
+{
     --colourBlack: #000;
     --colourWhite: #fff;
 }
@@ -8,7 +9,9 @@
 
 /* Basis */
 
-html, body {
+html,
+body
+{
     width: 100%;
     height: 100%;
 }
@@ -16,30 +19,37 @@ html, body {
 
 /* Navbar */
 
-.navbar-fixed-left {
-    width: 140px;
+.navbar-fixed-left
+{
     position: fixed;
-    border-radius: 0;
+
+    width: 140px;
     height: 100%;
-    background-color: #ccc;
     /* FOR TESTING ONLY */
+
     border: 1px dotted #0f0;
+    border-radius: 0;
+    background-color: #ccc;
 }
 
-.navbar-fixed-left .navbar-nav>li {
+.navbar-fixed-left .navbar-nav > li
+{
     float: none;
     /* Cancel default li float: left */
+
     width: 139px;
 }
 
-.navbar-fixed-left+.container {
+.navbar-fixed-left + .container
+{
     padding-left: 160px;
 }
 
 
 /* On using dropdown menu (To right shift popuped) */
 
-.navbar-fixed-left .navbar-nav>li>.dropdown-menu {
+.navbar-fixed-left .navbar-nav > li > .dropdown-menu
+{
     margin-top: -50px;
     margin-left: 140px;
 }
@@ -47,44 +57,55 @@ html, body {
 
 /* Container and Jumbotron */
 
-.container {
+.container
+{
     /* FOR TESTING ONLY */
     border: 1px dotted #f00;
 }
 
-.container-main {
+.container-main
+{
     display: table;
+
     width: 100%;
     padding-bottom: 40px;
     /* FOR TESTING */
+
     border: 1px solid #00f;
 }
 
-.container-tr {
+.container-tr
+{
     display: table-row;
+
     width: inherit;
     /* FOR TESTING */
+
     border: 1px solid #00f;
 }
 
-.jumbotron h3 {
+.jumbotron h3
+{
     font-variant: small-caps;
-    text-align: right;
-    -moz-transform: scale(-1, 1);
+
     -webkit-transform: scale(-1, 1);
-    -o-transform: scale(-1, 1);
-    -ms-transform: scale(-1, 1);
-    transform: scale(-1, 1);
+       -moz-transform: scale(-1, 1);
+        -ms-transform: scale(-1, 1);
+         -o-transform: scale(-1, 1);
+            transform: scale(-1, 1);
+    text-align: right;
 }
 
 
 /* Main */
 
-.charts {
-    min-width: 100%;
+.charts
+{
     width: 100%;
-    min-height: 400px;
+    min-width: 100%;
     height: 400px;
+    min-height: 400px;
     /* FOR TESTING ONLY */
+
     border: 1px dotted #0ff;
 }
