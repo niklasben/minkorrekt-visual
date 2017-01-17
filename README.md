@@ -18,7 +18,8 @@ Methodisch (in)korrekte Auswertung des Methodisch-Inkorrekt-Podcasts.
     -   Navbar-Tabs für alle Sections
         -   Javascript-Datei erstellen
         -   <https://v4-alpha.getbootstrap.com/components/navs/#using-data-attributes>
-    -   Loading Sign in den Tabs
+    -   Loading-Sign in den Tabs
+    -   Hover Info auf Datenpunkte
 
 -   Datenvisualisierung
 
@@ -38,6 +39,7 @@ Methodisch (in)korrekte Auswertung des Methodisch-Inkorrekt-Podcasts.
         -   Datum ändern
 
     -   Balkendiagramme
+    -   Globale Variablen für wiederkehrende (Design)elemente erstellen
     -   Addierte Sendezeiten
     -   Häufigkeit PubDay (count)
     -   Durchschnittliche PubTime (count und mean)
