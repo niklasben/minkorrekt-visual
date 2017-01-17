@@ -58,8 +58,15 @@ $(function() {
             arrayTitlemain.push(dataComplete[i].titlemain.toString());
         }
 
-        // Begin charts duration and episode number
+        // Create variables with certain values
+        // Create mean of duration as integer in minutes
+        var meanDurationInteger = arrayDurationInteger.reduce(add, 0);
 
+        function add(a, b) {
+            return ((a + b) / dataCompleteLength);
+        }
+
+        // Begin charts duration and episode number ****************************
         // Load data into and build chart testchart1
         TESTER = document.getElementById('testchart1');
         var data = [{
@@ -222,12 +229,22 @@ $(function() {
             x: arrayPubdate,
             y: arrayDurationIntegerMin,
             text: arrayTitlemain,
+            mode: 'lines+markers',
+            hoverinfo: 'all',
             type: 'scatter',
-            name: 'Dauer [min]'
+            name: 'Dauer [min]',
+            line: {
+                shape: 'Dauer [min]'
+            }
         }];
         var layout = {
             title: 'Title',
-            showlegend: false,
+            font: {
+                family: 'monospace',
+                color: '#000000'
+            },
+            hovermode: 'closest',
+            showlegend: true,
             xaxis: {
                 title: 'Nummer',
                 showgrid: true,
@@ -245,7 +262,7 @@ $(function() {
                 t: 50,
                 pad: 4
             },
-            plot_bgcolor: '#c7c7c7'
+            plot_bgcolor: '#e0e0e0'
         };
         Plotly.plot(durDateLine, data, layout);
 
@@ -302,9 +319,15 @@ $(function() {
 
         // Load data into and build chart xxx
 
+
+
+
+
+
         // Console output for testing
+
         // console.log(test);
         // console.log('dataCompleteLength: ' + dataCompleteLength);
-        // console.log(arrayDurationInteger);
+        // console.log('meanDurationInteger ' + meanDurationInteger);
     });
 });
