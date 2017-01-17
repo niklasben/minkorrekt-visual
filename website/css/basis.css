@@ -13,6 +13,12 @@ html, body {
     height: 100%;
 }
 
+section {
+    margin-top: 50px;
+    /* FOR TESTING ONLY */
+    border: 1px dotted #00f;
+}
+
 
 /* Navbar */
 
@@ -83,7 +89,7 @@ html, body {
 .charts {
     width: 100%;
     min-width: 100%;
-    height: 400px;
+    height: *;
     min-height: 400px;
     /* FOR TESTING ONLY */
     border: 1px dotted #0ff;
