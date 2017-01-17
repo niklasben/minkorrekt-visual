@@ -58,6 +58,8 @@ $(function() {
             arrayTitlemain.push(dataComplete[i].titlemain.toString());
         }
 
+        // Begin charts duration and episode number
+
         // Load data into and build chart testchart1
         TESTER = document.getElementById('testchart1');
         var data = [{
@@ -67,7 +69,7 @@ $(function() {
             name: 'Dauer [min]'
         }];
         var layout = {
-            titel: 'Title',
+            title: 'Title',
             showlegend: true,
             xaxis: {
                 title: 'Nummer',
@@ -86,15 +88,9 @@ $(function() {
                 t: 50,
                 pad: 4
             },
-            paper_bgcolor: '#7f7f7f',
             plot_bgcolor: '#c7c7c7'
         };
-        // trace = data;
-        // Plotly.plot(TESTER, trace);
         Plotly.plot(TESTER, data, layout);
-
-
-
 
         // Load data into and build chart testchart2
         TESTER2 = document.getElementById('testchart2');
@@ -105,7 +101,7 @@ $(function() {
             name: 'Dauer [min]'
         }];
         var layout = {
-            titel: 'Title',
+            title: 'Title',
             showlegend: false,
             xaxis: {
                 title: 'Nummer',
@@ -124,14 +120,9 @@ $(function() {
                 t: 50,
                 pad: 4
             },
-            paper_bgcolor: '#7f7f7f',
             plot_bgcolor: '#c7c7c7'
         };
-        // trace = data;
-        // Plotly.plot(TESTER, trace);
         Plotly.plot(TESTER2, data, layout);
-
-
 
         // Load data into and build chart testchart3
         TESTER3 = document.getElementById('testchart3');
@@ -143,7 +134,7 @@ $(function() {
             name: 'Dauer [min]'
         }];
         var layout = {
-            titel: 'Title',
+            title: 'Title',
             showlegend: false,
             xaxis: {
                 title: 'Nummer',
@@ -162,15 +153,9 @@ $(function() {
                 t: 50,
                 pad: 4
             },
-            paper_bgcolor: '#7f7f7f',
             plot_bgcolor: '#c7c7c7'
         };
-        // trace = data;
-        // Plotly.plot(TESTER, trace);
         Plotly.plot(TESTER3, data, layout);
-
-
-
 
         // Load data into and build chart testchart4
         TESTER4 = document.getElementById('testchart4');
@@ -181,13 +166,137 @@ $(function() {
             name: 'Dauer [min]'
         }];
         var layout = {
-            titel: 'Title',
+            title: 'Title',
             showlegend: true,
             autosize: true,
         };
-        // trace = data;
-        // Plotly.plot(TESTER, trace);
         Plotly.plot(TESTER4, data, layout);
+
+
+        // Begin charts duration and date **************************************
+        // Load data into and build chart durationDateBar
+        durDateBar = document.getElementById('durationDateBar');
+        var data = [{
+            x: arrayPubdate,
+            y: arrayDurationIntegerMin,
+            text: arrayTitlemain,
+            type: 'bar',
+            name: 'Dauer [min]'
+        }];
+        var layout = {
+            title: 'Title',
+            font: {
+                family: 'monospace',
+                // size: 18,
+                color: '#000000'
+            },
+            hovermode: 'closest',
+            showlegend: true,
+            legend: {
+                "orientation": "h"
+            },
+            xaxis: {
+                title: 'Datum',
+                showgrid: true,
+                zeroline: false
+            },
+            yaxis: {
+                title: 'Dauer [min]',
+                showline: false
+            },
+            autosize: true,
+            margin: {
+                l: 50,
+                r: 50,
+                b: 50,
+                t: 50,
+                pad: 4
+            },
+            plot_bgcolor: '#c7c7c7'
+        };
+        Plotly.plot(durDateBar, data, layout);
+
+        // Load data into and build chart durationDateLine
+        durDateLine = document.getElementById('durationDateLine');
+        var data = [{
+            x: arrayPubdate,
+            y: arrayDurationIntegerMin,
+            text: arrayTitlemain,
+            type: 'scatter',
+            name: 'Dauer [min]'
+        }];
+        var layout = {
+            title: 'Title',
+            showlegend: false,
+            xaxis: {
+                title: 'Nummer',
+                showgrid: true,
+                zeroline: true
+            },
+            yaxis: {
+                title: 'Dauer [min]',
+                showline: false
+            },
+            autosize: true,
+            margin: {
+                l: 50,
+                r: 50,
+                b: 50,
+                t: 50,
+                pad: 4
+            },
+            plot_bgcolor: '#c7c7c7'
+        };
+        Plotly.plot(durDateLine, data, layout);
+
+        // Load data into and build chart durationDateArea
+        durDateArea = document.getElementById('durationDateArea');
+        var data = [{
+            x: arrayPubdate,
+            y: arrayDurationIntegerMin,
+            fill: 'tozeroy',
+            type: 'scatter',
+            name: 'Dauer [min]'
+        }];
+        var layout = {
+            title: 'Title',
+            showlegend: false,
+            xaxis: {
+                title: 'Nummer',
+                showgrid: true,
+                zeroline: true
+            },
+            yaxis: {
+                title: 'Dauer [min]',
+                showline: false
+            },
+            autosize: true,
+            margin: {
+                l: 50,
+                r: 50,
+                b: 50,
+                t: 50,
+                pad: 4
+            },
+            plot_bgcolor: '#c7c7c7'
+        };
+        Plotly.plot(durDateArea, data, layout);
+
+        // Load data into and build chart durationDatePie
+        durDatePie = document.getElementById('durationDatePie');
+        var data = [{
+            values: arrayDurationIntegerMin,
+            labels: arrayPubdate,
+            type: 'pie',
+            name: 'Dauer [min]'
+        }];
+        var layout = {
+            title: 'Title',
+            showlegend: true,
+            autosize: true,
+        };
+        Plotly.plot(durDatePie, data, layout);
+
 
 
 
