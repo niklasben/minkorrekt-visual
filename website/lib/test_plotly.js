@@ -197,11 +197,7 @@ $(function() {
                 // size: 18,
                 color: '#000000'
             },
-            hovermode: 'closest',
             showlegend: true,
-            legend: {
-                "orientation": "h"
-            },
             xaxis: {
                 title: 'Datum',
                 showgrid: true,
@@ -222,6 +218,7 @@ $(function() {
             plot_bgcolor: '#c7c7c7'
         };
         Plotly.plot(durDateBar, data, layout);
+
 
         // Load data into and build chart durationDateLine
         durDateLine = document.getElementById('durationDateLine');
