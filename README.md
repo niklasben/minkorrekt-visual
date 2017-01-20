@@ -48,6 +48,10 @@ Methodisch (in)korrekte Auswertung des Methodisch-Inkorrekt-Podcasts.
 
         -   Passende Thesauri?
 
+-   Javascript
+    -   Header mit Autorenangaben
+    -   minified Version?
+
 ## Crawler
 
 ### Pipeline
