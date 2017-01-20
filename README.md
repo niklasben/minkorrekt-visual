@@ -51,6 +51,7 @@ Methodisch (in)korrekte Auswertung des Methodisch-Inkorrekt-Podcasts.
 -   Javascript
     -   Header mit Autorenangaben
     -   minified Version?
+    -   Bei Datum auf Achse die Range anpassen
 
 ## Crawler
 
