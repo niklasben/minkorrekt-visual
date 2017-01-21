@@ -20,6 +20,7 @@ Methodisch (in)korrekte Auswertung des Methodisch-Inkorrekt-Podcasts.
         -   <https://v4-alpha.getbootstrap.com/components/navs/#using-data-attributes>
     -   Loading-Sign in den Tabs
     -   Hover Info auf Datenpunkte
+    -   Navbar links und fixed
 
 -   Datenvisualisierung
 
@@ -52,6 +53,9 @@ Methodisch (in)korrekte Auswertung des Methodisch-Inkorrekt-Podcasts.
     -   Header mit Autorenangaben
     -   minified Version?
     -   Bei Datum auf Achse die Range anpassen
+
+-   Infos
+    -   Wenn wa sgewünscht ist via Twitter oder Issue-Tracker
 
 ## Crawler
 
