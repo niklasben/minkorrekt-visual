@@ -182,7 +182,7 @@ $(function() {
 
         // Begin charts duration and date **************************************
         // Load data into and build chart durationDateBar
-        durDateBar = document.getElementById('durationDateBar');
+        /* durDateBar = document.getElementById('durationDateBar');
         var data = [{
             x: arrayPubdate,
             y: arrayDurationIntegerMin,
@@ -217,7 +217,7 @@ $(function() {
             },
             plot_bgcolor: '#c7c7c7'
         };
-        Plotly.plot(durDateBar, data, layout);
+        Plotly.plot(durDateBar, data, layout); */
 
 
         // Load data into and build chart durationDateLine
@@ -227,7 +227,7 @@ $(function() {
             y: arrayDurationIntegerMin,
             text: arrayTitlemain,
             mode: 'lines+markers',
-            hoverinfo: 'all',
+            // hoverinfo: 'all',
             type: 'scatter',
             name: 'Dauer [min]',
             line: {
@@ -297,7 +297,7 @@ $(function() {
         Plotly.plot(durDateArea, data, layout);
 
         // Load data into and build chart durationDatePie
-        durDatePie = document.getElementById('durationDatePie');
+        /* durDatePie = document.getElementById('durationDatePie');
         var data = [{
             values: arrayDurationIntegerMin,
             labels: arrayPubdate,
@@ -309,7 +309,7 @@ $(function() {
             showlegend: true,
             autosize: true,
         };
-        Plotly.plot(durDatePie, data, layout);
+        Plotly.plot(durDatePie, data, layout); */
 
 
 
