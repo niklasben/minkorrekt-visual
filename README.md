@@ -12,8 +12,8 @@ Methodisch (in)korrekte Auswertung des Methodisch-Inkorrekt-Podcasts.
     -   Fehlende Längen
     -   Inkonsistente Titel
 
--   Design
 
+-   Design
     -   Navbar mit Menü auf Mobile anpassen
     -   Navbar-Tabs für alle Sections
         -   Javascript-Datei erstellen
@@ -21,24 +21,20 @@ Methodisch (in)korrekte Auswertung des Methodisch-Inkorrekt-Podcasts.
     -   Loading-Sign in den Tabs
     -   Hover Info auf Datenpunkte
     -   Navbar links und fixed
+    -   Uberspace-Badge
+
 
 -   Datenvisualisierung
-
     -   Dynamisch
     -   Getrennt nach Sendung
-
         -   Normal
         -   Sonderfolge
-
             -   Aufgeschlüsselt
-
     -   Tabelle
-
         -   Sorting Function für pubdate
         -   Sorting Function für pubtime und duration (ideal HH:MM:SS)
         -   Sorting Function für pubday (Wochentage reihen)
         -   Datum ändern
-
     -   Balkendiagramme
     -   Globale Variablen für wiederkehrende (Design)elemente erstellen
     -   Addierte Sendezeiten
@@ -46,16 +42,17 @@ Methodisch (in)korrekte Auswertung des Methodisch-Inkorrekt-Podcasts.
     -   Durchschnittliche PubTime (count und mean)
     -   NN/NE in Cloud oder der Seite
     -   Zuordnen zu Wissenschaftsbereichen
-
         -   Passende Thesauri?
+
 
 -   Javascript
     -   Header mit Autorenangaben
     -   minified Version?
     -   Bei Datum auf Achse die Range anpassen
 
+
 -   Infos
-    -   Wenn wa sgewünscht ist via Twitter oder Issue-Tracker
+    -   Wenn was gewünscht ist via Twitter oder Issue-Tracker
 
 ## Crawler
 
@@ -76,33 +73,21 @@ Methodisch (in)korrekte Auswertung des Methodisch-Inkorrekt-Podcasts.
 Soll gegen den Feed laufen: <http://minkorrekt.de/feed/m4a/>
 
 1.  &lt;title>
-
 2.  Folgennummer -> \\d{1} + 0 davor
 3.  Folgenname
-
 4.  &lt;pubDate>
-
 5.  Datum
-
 6.  &lt;link>
-
 7.  URL
-
 8.  &lt;itunes:duration>
-
 9.  Abspiellänge
-
 10. &lt;itunes:subtitle>
-
 11. Folgenname
 12. Sonderfolgen wie:
-
     -   Nobelpreis
     -   Ig-Nobelpreis
     -   Jahresrückblick
-
 13. &lt;content:encoded> (&lt;p>)
-
 14. Beschreibungstext
 15. Chinagadget der Woche
 
@@ -120,11 +105,10 @@ Evtl. erst crawlen und nachfolgend mit Python oder Bash bearbeiten, um Folgennum
 ## Was genau?
 
 Vermutlich folgende JSON-Dateien:
-
-1.  Alle Folgen -> complete.json
-2.  Sonderfolgen (Nobelpreis, Ig-Nobelpreis und Jahresrückblick) -> specials.json
-3.  Chinagadgets -> chinagadgets.json
-4.  Word Count | NN/NE | Namen | Deskriptoren -> nlp.json
+1\.  Alle Folgen -> complete.json
+2\.  Sonderfolgen (Nobelpreis, Ig-Nobelpreis und Jahresrückblick) -> specials.json
+3\.  Chinagadgets -> chinagadgets.json
+4\.  Word Count | NN/NE | Namen | Deskriptoren -> nlp.json
 
 ## Inhalt der JSON-Dateien
 
