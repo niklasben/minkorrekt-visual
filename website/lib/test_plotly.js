@@ -38,6 +38,7 @@ $(function() {
         var arrayPubtimeInteger = [];
         var arrayDuration = [];
         var arrayDurationInteger = [];
+        var arrayDurationIntegerMean = [];
         var arrayDurationIntegerMin = [];
         var arrayTitlemain = [];
 
@@ -66,6 +67,10 @@ $(function() {
             return ((a + b) / dataCompleteLength);
         }
 
+        for (i = 0; i < dataCompleteLength; i++) {
+            arrayDurationIntegerMean.push(meanDurationInteger);
+        }
+
         // Begin charts duration and episode number ****************************
         // Load data into and build chart testchart1
         TESTER = document.getElementById('testchart1');
@@ -76,7 +81,6 @@ $(function() {
             name: 'Dauer [min]'
         }];
         var layout = {
-            title: 'Title',
             showlegend: true,
             xaxis: {
                 title: 'Nummer',
@@ -141,7 +145,6 @@ $(function() {
             name: 'Dauer [min]'
         }];
         var layout = {
-            title: 'Title',
             showlegend: false,
             xaxis: {
                 title: 'Nummer',
@@ -173,7 +176,6 @@ $(function() {
             name: 'Dauer [min]'
         }];
         var layout = {
-            title: 'Title',
             showlegend: true,
             autosize: true,
         };
@@ -181,48 +183,9 @@ $(function() {
 
 
         // Begin charts duration and date **************************************
-        // Load data into and build chart durationDateBar
-        /* durDateBar = document.getElementById('durationDateBar');
-        var data = [{
-            x: arrayPubdate,
-            y: arrayDurationIntegerMin,
-            text: arrayTitlemain,
-            type: 'bar',
-            name: 'Dauer [min]'
-        }];
-        var layout = {
-            title: 'Title',
-            font: {
-                family: 'monospace',
-                // size: 18,
-                color: '#000000'
-            },
-            showlegend: true,
-            xaxis: {
-                title: 'Datum',
-                showgrid: true,
-                zeroline: false
-            },
-            yaxis: {
-                title: 'Dauer [min]',
-                showline: false
-            },
-            autosize: true,
-            margin: {
-                l: 50,
-                r: 50,
-                b: 50,
-                t: 50,
-                pad: 4
-            },
-            plot_bgcolor: '#c7c7c7'
-        };
-        Plotly.plot(durDateBar, data, layout); */
-
-
         // Load data into and build chart durationDateLine
         durDateLine = document.getElementById('durationDateLine');
-        var data = [{
+        var trace1 = {
             x: arrayPubdate,
             y: arrayDurationIntegerMin,
             text: arrayTitlemain,
@@ -233,9 +196,19 @@ $(function() {
             line: {
                 shape: 'Dauer [min]'
             }
-        }];
+        };
+        var trace2 = {
+            x: arrayPubdate,
+            y: arrayDurationIntegerMean,
+            mode: 'lines',
+            name: '⌀ Folgenlänge',
+            line: {
+                dash: 'dot',
+                width: 2,
+                color: 'rgb(255, 0, 0)'
+            }
+        };
         var layout = {
-            title: 'Title',
             font: {
                 family: 'monospace',
                 color: '#000000'
@@ -243,7 +216,7 @@ $(function() {
             hovermode: 'closest',
             showlegend: true,
             xaxis: {
-                title: 'Nummer',
+                title: 'Datum',
                 showgrid: true,
                 zeroline: true
             },
@@ -253,25 +226,37 @@ $(function() {
             },
             autosize: true,
             margin: {
-                l: 50,
-                r: 50,
-                b: 50,
-                t: 50,
+                l: 60,
+                r: 10,
+                b: 60,
+                t: 10,
                 pad: 4
             },
             plot_bgcolor: '#e0e0e0'
         };
+        var data = [trace1, trace2];
         Plotly.plot(durDateLine, data, layout);
 
         // Load data into and build chart durationDateArea
         durDateArea = document.getElementById('durationDateArea');
-        var data = [{
+        var trace1 = {
             x: arrayPubdate,
             y: arrayDurationIntegerMin,
             fill: 'tozeroy',
             type: 'scatter',
             name: 'Dauer [min]'
-        }];
+        };
+        var trace2 = {
+            x: arrayPubdate,
+            y: arrayDurationIntegerMean,
+            mode: 'lines',
+            name: '⌀ Folgenlänge',
+            line: {
+                dash: 'dot',
+                width: 2,
+                color: 'rgb(255, 0, 0)'
+            }
+        };
         var layout = {
             title: 'Title',
             showlegend: false,
@@ -294,36 +279,32 @@ $(function() {
             },
             plot_bgcolor: '#c7c7c7'
         };
+        var data = [trace1, trace2];
         Plotly.plot(durDateArea, data, layout);
 
-        // Load data into and build chart durationDatePie
-        /* durDatePie = document.getElementById('durationDatePie');
-        var data = [{
-            values: arrayDurationIntegerMin,
-            labels: arrayPubdate,
-            type: 'pie',
-            name: 'Dauer [min]'
-        }];
-        var layout = {
-            title: 'Title',
-            showlegend: true,
-            autosize: true,
-        };
-        Plotly.plot(durDatePie, data, layout); */
+        // Begin charts duration and year **************************************
+        // Load data into and build chart durationYearBar
+
+        // Load data into and build chart durationYearLine
+
+        // Load data into and build chart durationYearArea
+
+        // Load data into and build chart durationYearPie
 
 
 
+        // Begin charts duration and month **************************************
+        // Load data into and build chart durationMonthBar
 
+        // Load data into and build chart durationMonthLine
 
-        // Load data into and build chart xxx
+        // Load data into and build chart durationMonthArea
 
-
-        // 3 D - T E S T
+        // Load data into and build chart durationMonthPie
 
 
 
         // Console output for testing
-
         // console.log(test);
         // console.log('dataCompleteLength: ' + dataCompleteLength);
         // console.log('meanDurationInteger ' + meanDurationInteger);
