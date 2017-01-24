@@ -1,4 +1,16 @@
 [{
+        "pubdate": "2017-01-24 08:00:46",
+        "pubday": "Dienstag",
+        "url": ["http://minkorrekt.de/minkorrekt-folge-89-kinderessen/"],
+        "number": "089",
+        "specials": [],
+        "pubtime": ["08:00:46"],
+        "pubtime_integer": 28846,
+        "duration": ["03:01:18"],
+        "titlemain": ["Kinderessen"],
+        "duration_integer": 10878
+    },
+    {
         "pubdate": "2017-01-10 08:00:35",
         "pubday": "Dienstag",
         "url": ["http://minkorrekt.de/minkorrekt-folge-88-jahresrueckblick-2016/"],
