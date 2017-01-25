@@ -51,8 +51,11 @@ class CrawlerPipeline(object):
 
         # Process Field 'pubdate'
         if item['pubdate']:
-            item['pubdate'] = datetime.datetime.strptime(
+            alterToCET = datetime.datetime.strptime(
                 item['pubdate'][0], '%a, %d %b %Y %H:%M:%S')
+            alterToCET = alterToCET + datetime.timedelta(hours=1)
+            alterToCET = alterToCET.strftime('%a, %d %b %Y %H:%M:%S')
+            item['pubdate'] = alterToCET
 
         # Process Field 'pubday'
         if item['pubday']:

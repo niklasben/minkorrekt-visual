@@ -34,8 +34,6 @@ class MinkorrektSpider(XMLFeedSpider):
         i['titlemain'] = node.xpath(
             'title/text()').re(r'Folge\s*\d*[ab]?\W+(.*)\W+')
         i['pubdate'] = node.xpath('pubDate/text()').re(r'(.*)\s{1}[0\+]{5}')
-        # i['pubdatedate'] = node.xpath(
-        #    'pubDate/text()').re(r'^\w{3}[,]\s{1}(.*)\s\d{2}[:]\d{2}[:]\d{2}')
         i['pubday'] = node.xpath('pubDate/text()').re(r'^(.*)[,]')
         i['pubtime'] = node.xpath(
             'pubDate/text()').re(r'^\w{3}[,]\s{1}\d{2}\s{1}\w{3}\s{1}\d{4}' +
