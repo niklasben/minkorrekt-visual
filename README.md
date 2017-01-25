@@ -56,13 +56,16 @@ Methodisch (in)korrekte Auswertung des Methodisch-Inkorrekt-Podcasts.
 
 ## Crawler
 
+-   Manuell die fehlenden duration in ein Python Dictionary eintragen
+    -   key: number
+    -   value: duration
+
 ### Pipeline
 
 -   Episoden 12a und 12b in 12.1 und 12.2 umwandeln
 -   Länge der Titel zählen
--   Pubdate neu crawlen, es ist in GMT!!!
 -   Datum in int umwandeln
--   datetime aus pubdate und pubtime kreieren
+-   datetime aus pubtime kreieren
 -   Descriptions aufräumen
 -   PoS-Tagging
 
