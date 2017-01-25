@@ -4,11 +4,11 @@
         "url": ["http://minkorrekt.de/minkorrekt-folge-89-kinderessen/"],
         "number": "089",
         "specials": [],
-        "pubtime": ["08:00:46"],
-        "pubtime_integer": 28846,
-        "duration": ["03:01:18"],
+        "pubtime": "09:00:46",
+        "pubtime_integer": 0,
+        "duration": "03:01:18",
         "titlemain": ["Kinderessen"],
-        "duration_integer": 10878
+        "duration_integer": 0
     },
     {
         "pubdate": "Tue, 10 Jan 2017 09:00:35",
@@ -16,11 +16,11 @@
         "url": ["http://minkorrekt.de/minkorrekt-folge-88-jahresrueckblick-2016/"],
         "number": "088",
         "specials": ["Jahresr\u00fcckblick"],
-        "pubtime": ["08:00:35"],
-        "pubtime_integer": 28835,
-        "duration": ["04:38:07"],
+        "pubtime": "09:00:35",
+        "pubtime_integer": 0,
+        "duration": "04:38:07",
         "titlemain": ["Jahresr\u00fcckblick 2016"],
-        "duration_integer": 16687
+        "duration_integer": 0
     },
     {
         "pubdate": "Tue, 13 Dec 2016 09:00:40",
@@ -28,11 +28,11 @@
         "url": ["http://minkorrekt.de/minkorrekt-folge-87-xxx/"],
         "number": "087",
         "specials": [],
-        "pubtime": ["08:00:40"],
-        "pubtime_integer": 28840,
-        "duration": ["02:51:37"],
+        "pubtime": "09:00:40",
+        "pubtime_integer": 0,
+        "duration": "02:51:37",
         "titlemain": ["Zum Harzer"],
-        "duration_integer": 10297
+        "duration_integer": 0
     },
     {
         "pubdate": "Tue, 29 Nov 2016 09:00:29",
@@ -40,11 +40,11 @@
         "url": ["http://minkorrekt.de/minkorrekt-folge-86-im-windschatten-des-physikjournals/"],
         "number": "086",
         "specials": [],
-        "pubtime": ["08:00:29"],
-        "pubtime_integer": 28829,
-        "duration": ["02:59:40"],
+        "pubtime": "09:00:29",
+        "pubtime_integer": 0,
+        "duration": "02:59:40",
         "titlemain": ["Im Windschatten des Physikjournals"],
-        "duration_integer": 10780
+        "duration_integer": 0
     },
     {
         "pubdate": "Tue, 15 Nov 2016 09:00:53",
@@ -52,11 +52,11 @@
         "url": ["http://minkorrekt.de/minkorrekt-folge-85-glasfaser-silikonklos/"],
         "number": "085",
         "specials": [],
-        "pubtime": ["08:00:53"],
-        "pubtime_integer": 28853,
-        "duration": ["03:11:54"],
+        "pubtime": "09:00:53",
+        "pubtime_integer": 0,
+        "duration": "03:11:54",
         "titlemain": ["Glasfaser & Silikonklos"],
-        "duration_integer": 11514
+        "duration_integer": 0
     },
     {
         "pubdate": "Wed, 26 Oct 2016 08:00:18",
@@ -64,11 +64,11 @@
         "url": ["http://minkorrekt.de/minkorrekt-folge-84-nobelpreissonderfolge-2016/"],
         "number": "084",
         "specials": ["Nobelpreis"],
-        "pubtime": ["07:00:18"],
-        "pubtime_integer": 25218,
-        "duration": ["03:39:01"],
+        "pubtime": "08:00:18",
+        "pubtime_integer": 0,
+        "duration": "03:39:01",
         "titlemain": ["Nobelpreissonderfolge 2016"],
-        "duration_integer": 13141
+        "duration_integer": 0
     },
     {
         "pubdate": "Tue, 11 Oct 2016 08:00:03",
@@ -76,11 +76,11 @@
         "url": ["http://minkorrekt.de/minkorrekt-folge-83-brueckentechnologie/"],
         "number": "083",
         "specials": [],
-        "pubtime": ["07:00:03"],
-        "pubtime_integer": 25203,
-        "duration": ["03:08:27"],
+        "pubtime": "08:00:03",
+        "pubtime_integer": 0,
+        "duration": "03:08:27",
         "titlemain": ["Br\u00fcckentechnologie"],
-        "duration_integer": 11307
+        "duration_integer": 0
     },
     {
         "pubdate": "Tue, 27 Sep 2016 08:00:07",
@@ -88,11 +88,11 @@
         "url": ["http://minkorrekt.de/minkorrekt-folge-82-ig-nobelpreise-2016/"],
         "number": "082",
         "specials": ["Ig-Nobelpreis"],
-        "pubtime": ["07:00:07"],
-        "pubtime_integer": 25207,
-        "duration": ["03:13:42"],
+        "pubtime": "08:00:07",
+        "pubtime_integer": 0,
+        "duration": "03:13:42",
         "titlemain": ["Ig-Nobelpreis Sonderfolge 2016"],
-        "duration_integer": 11622
+        "duration_integer": 0
     },
     {
         "pubdate": "Tue, 13 Sep 2016 08:00:29",
@@ -100,11 +100,11 @@
         "url": ["http://minkorrekt.de/minkorrekt-folge-81-wg-erfahrungen/"],
         "number": "081",
         "specials": [],
-        "pubtime": ["07:00:29"],
-        "pubtime_integer": 25229,
-        "duration": ["03:24:29"],
+        "pubtime": "08:00:29",
+        "pubtime_integer": 0,
+        "duration": "03:24:29",
         "titlemain": ["WG-Erfahrungen"],
-        "duration_integer": 12269
+        "duration_integer": 0
     },
     {
         "pubdate": "Thu, 25 Aug 2016 08:00:43",
@@ -112,11 +112,11 @@
         "url": ["http://minkorrekt.de/minkorrekt-folge-80-ich-kann-dich-sehen111/"],
         "number": "080",
         "specials": [],
-        "pubtime": ["07:00:43"],
-        "pubtime_integer": 25243,
-        "duration": ["03:27:52"],
+        "pubtime": "08:00:43",
+        "pubtime_integer": 0,
+        "duration": "03:27:52",
         "titlemain": ["Ich kann dich sehen!1!!11!"],
-        "duration_integer": 12472
+        "duration_integer": 0
     },
     {
         "pubdate": "Tue, 02 Aug 2016 08:00:01",
@@ -124,11 +124,11 @@
         "url": ["http://minkorrekt.de/minkorrekt-folge-79-oelaustausch/"],
         "number": "079",
         "specials": [],
-        "pubtime": ["07:00:01"],
-        "pubtime_integer": 25201,
-        "duration": ["03:11:14"],
+        "pubtime": "08:00:01",
+        "pubtime_integer": 0,
+        "duration": "03:11:14",
         "titlemain": ["\u00d6laustausch"],
-        "duration_integer": 11474
+        "duration_integer": 0
     },
     {
         "pubdate": "Tue, 19 Jul 2016 08:00:36",
@@ -136,11 +136,11 @@
         "url": ["http://minkorrekt.de/minkorrekt-folge-78-minkorrekt-fitness-challange/"],
         "number": "078",
         "specials": [],
-        "pubtime": ["07:00:36"],
-        "pubtime_integer": 25236,
-        "duration": ["02:54:31"],
+        "pubtime": "08:00:36",
+        "pubtime_integer": 0,
+        "duration": "02:54:31",
         "titlemain": ["Minkorrekt-Fitness-Challenge"],
-        "duration_integer": 10471
+        "duration_integer": 0
     },
     {
         "pubdate": "Tue, 28 Jun 2016 08:00:58",
@@ -148,9 +148,9 @@
         "url": ["http://minkorrekt.de/minkorrekt-folge-77-conche/"],
         "number": "077",
         "specials": [],
-        "pubtime": ["07:00:58"],
-        "pubtime_integer": 25258,
-        "duration": ["00:00:00"],
+        "pubtime": "08:00:58",
+        "pubtime_integer": 0,
+        "duration": "00:00:00",
         "titlemain": ["Conche"],
         "duration_integer": 0
     },
@@ -160,11 +160,11 @@
         "url": ["http://minkorrekt.de/minkorrekt-folge-76-stichwort-chemieeinsatz/"],
         "number": "076",
         "specials": [],
-        "pubtime": ["07:00:18"],
-        "pubtime_integer": 25218,
-        "duration": ["02:57:23"],
+        "pubtime": "08:00:18",
+        "pubtime_integer": 0,
+        "duration": "02:57:23",
         "titlemain": ["Stichwort: Chemieeinsatz"],
-        "duration_integer": 10643
+        "duration_integer": 0
     },
     {
         "pubdate": "Wed, 01 Jun 2016 08:00:30",
@@ -172,11 +172,11 @@
         "url": ["http://minkorrekt.de/minkorrekt-folge-75-ruehrholz/"],
         "number": "075",
         "specials": [],
-        "pubtime": ["07:00:30"],
-        "pubtime_integer": 25230,
-        "duration": ["02:45:50"],
+        "pubtime": "08:00:30",
+        "pubtime_integer": 0,
+        "duration": "02:45:50",
         "titlemain": ["R\u00fchrholz"],
-        "duration_integer": 9950
+        "duration_integer": 0
     },
     {
         "pubdate": "Tue, 17 May 2016 08:00:46",
@@ -184,11 +184,11 @@
         "url": ["http://minkorrekt.de/minkorrekt-folge-74-marslos/"],
         "number": "074",
         "specials": [],
-        "pubtime": ["07:00:46"],
-        "pubtime_integer": 25246,
-        "duration": ["03:06:54"],
+        "pubtime": "08:00:46",
+        "pubtime_integer": 0,
+        "duration": "03:06:54",
         "titlemain": ["Marslos\u201c"],
-        "duration_integer": 11214
+        "duration_integer": 0
     },
     {
         "pubdate": "Tue, 03 May 2016 08:00:50",
@@ -196,11 +196,11 @@
         "url": ["http://minkorrekt.de/minkorrekt-folge-73-pilzpate/"],
         "number": "073",
         "specials": [],
-        "pubtime": ["07:00:50"],
-        "pubtime_integer": 25250,
-        "duration": ["02:54:41"],
+        "pubtime": "08:00:50",
+        "pubtime_integer": 0,
+        "duration": "02:54:41",
         "titlemain": ["Pilzpate"],
-        "duration_integer": 10481
+        "duration_integer": 0
     },
     {
         "pubdate": "Tue, 19 Apr 2016 08:00:49",
@@ -208,11 +208,11 @@
         "url": ["http://minkorrekt.de/minkorrekt-folge-72-strassenlampenbuffet/"],
         "number": "072",
         "specials": [],
-        "pubtime": ["07:00:49"],
-        "pubtime_integer": 25249,
-        "duration": ["02:41:43"],
+        "pubtime": "08:00:49",
+        "pubtime_integer": 0,
+        "duration": "02:41:43",
         "titlemain": ["Stra\u00dfenlampenbuffet"],
-        "duration_integer": 9703
+        "duration_integer": 0
     },
     {
         "pubdate": "Tue, 05 Apr 2016 08:00:35",
@@ -220,11 +220,11 @@
         "url": ["http://minkorrekt.de/minkorrekt-folge-71-ventilatortod/"],
         "number": "071",
         "specials": [],
-        "pubtime": ["07:00:35"],
-        "pubtime_integer": 25235,
-        "duration": ["03:05:25"],
+        "pubtime": "08:00:35",
+        "pubtime_integer": 0,
+        "duration": "03:05:25",
         "titlemain": ["Ventilatortod"],
-        "duration_integer": 11125
+        "duration_integer": 0
     },
     {
         "pubdate": "Tue, 22 Mar 2016 09:00:56",
@@ -232,11 +232,11 @@
         "url": ["http://minkorrekt.de/minkorrekt-folge-70-bonoboporno/"],
         "number": "070",
         "specials": [],
-        "pubtime": ["08:00:56"],
-        "pubtime_integer": 28856,
-        "duration": ["03:26:35"],
+        "pubtime": "09:00:56",
+        "pubtime_integer": 0,
+        "duration": "03:26:35",
         "titlemain": ["Bonoboporno"],
-        "duration_integer": 12395
+        "duration_integer": 0
     },
     {
         "pubdate": "Tue, 08 Mar 2016 09:00:19",
@@ -244,11 +244,11 @@
         "url": ["http://minkorrekt.de/minkorrekt-folge-69-beule-in-der-strumpfhose/"],
         "number": "069",
         "specials": [],
-        "pubtime": ["08:00:19"],
-        "pubtime_integer": 28819,
-        "duration": ["03:48:51"],
+        "pubtime": "09:00:19",
+        "pubtime_integer": 0,
+        "duration": "03:48:51",
         "titlemain": ["Beule in der Strumpfhose"],
-        "duration_integer": 13731
+        "duration_integer": 0
     },
     {
         "pubdate": "Tue, 09 Feb 2016 09:00:28",
@@ -256,11 +256,11 @@
         "url": ["http://minkorrekt.de/minkorrekt-folge-68-pflege-fuer-die-seele/"],
         "number": "068",
         "specials": [],
-        "pubtime": ["08:00:28"],
-        "pubtime_integer": 28828,
-        "duration": ["03:26:59"],
+        "pubtime": "09:00:28",
+        "pubtime_integer": 0,
+        "duration": "03:26:59",
         "titlemain": ["Pflege f\u00fcr die Seele"],
-        "duration_integer": 12419
+        "duration_integer": 0
     },
     {
         "pubdate": "Tue, 26 Jan 2016 09:00:49",
@@ -268,11 +268,11 @@
         "url": ["http://minkorrekt.de/minkorrekt-folge-67-fleischgutschein/"],
         "number": "067",
         "specials": [],
-        "pubtime": ["08:00:49"],
-        "pubtime_integer": 28849,
-        "duration": ["02:59:04"],
+        "pubtime": "09:00:49",
+        "pubtime_integer": 0,
+        "duration": "02:59:04",
         "titlemain": ["Fleischgutschein"],
-        "duration_integer": 10744
+        "duration_integer": 0
     },
     {
         "pubdate": "Tue, 12 Jan 2016 09:00:49",
@@ -280,11 +280,11 @@
         "url": ["http://minkorrekt.de/minkorrekt-folge-66-jahresrueckblick-2015/"],
         "number": "066",
         "specials": ["Jahresr\u00fcckblick"],
-        "pubtime": ["08:00:49"],
-        "pubtime_integer": 28849,
-        "duration": ["03:26:58"],
+        "pubtime": "09:00:49",
+        "pubtime_integer": 0,
+        "duration": "03:26:58",
         "titlemain": ["Jahresr\u00fcckblick 2015"],
-        "duration_integer": 12418
+        "duration_integer": 0
     },
     {
         "pubdate": "Wed, 06 Jan 2016 10:35:49",
@@ -292,11 +292,11 @@
         "url": ["http://minkorrekt.de/minkorrekt-folge-65-die-wissenschaftsgala-vom-32c3/"],
         "number": "065",
         "specials": [],
-        "pubtime": ["09:35:49"],
-        "pubtime_integer": 34549,
-        "duration": ["00:11:29"],
+        "pubtime": "10:35:49",
+        "pubtime_integer": 1,
+        "duration": "00:11:29",
         "titlemain": ["Die Wissenschaftsgala vom 32C3"],
-        "duration_integer": 689
+        "duration_integer": 0
     },
     {
         "pubdate": "Tue, 08 Dec 2015 09:00:57",
@@ -304,11 +304,11 @@
         "url": ["http://minkorrekt.de/minkorrekt-folge-64-heliumfloete/"],
         "number": "064",
         "specials": [],
-        "pubtime": ["08:00:57"],
-        "pubtime_integer": 28857,
-        "duration": ["03:17:35"],
+        "pubtime": "09:00:57",
+        "pubtime_integer": 0,
+        "duration": "03:17:35",
         "titlemain": ["Heliumfl\u00f6te"],
-        "duration_integer": 11855
+        "duration_integer": 0
     },
     {
         "pubdate": "Tue, 24 Nov 2015 09:00:37",
@@ -316,11 +316,11 @@
         "url": ["http://minkorrekt.de/minkorrekt-folge-63-physics-attitude/"],
         "number": "063",
         "specials": [],
-        "pubtime": ["08:00:37"],
-        "pubtime_integer": 28837,
-        "duration": ["03:07:06"],
+        "pubtime": "09:00:37",
+        "pubtime_integer": 0,
+        "duration": "03:07:06",
         "titlemain": ["Physics attitude"],
-        "duration_integer": 11226
+        "duration_integer": 0
     },
     {
         "pubdate": "Tue, 10 Nov 2015 09:00:10",
@@ -328,11 +328,11 @@
         "url": ["http://minkorrekt.de/minkorrekt-folge-62-alles-ist-besser-mit-alkohol/"],
         "number": "062",
         "specials": [],
-        "pubtime": ["08:00:10"],
-        "pubtime_integer": 28810,
-        "duration": ["02:51:05"],
+        "pubtime": "09:00:10",
+        "pubtime_integer": 0,
+        "duration": "02:51:05",
         "titlemain": ["Alles ist besser mit Alkohol"],
-        "duration_integer": 10265
+        "duration_integer": 0
     },
     {
         "pubdate": "Tue, 27 Oct 2015 09:00:35",
@@ -340,11 +340,11 @@
         "url": ["http://minkorrekt.de/minkorrekt-folge-61-nobelpreissonderfolge-2015/"],
         "number": "061",
         "specials": ["Nobelpreis"],
-        "pubtime": ["08:00:35"],
-        "pubtime_integer": 28835,
-        "duration": ["03:28:40"],
+        "pubtime": "09:00:35",
+        "pubtime_integer": 0,
+        "duration": "03:28:40",
         "titlemain": ["Nobelpreissonderfolge 2015"],
-        "duration_integer": 12520
+        "duration_integer": 0
     },
     {
         "pubdate": "Tue, 13 Oct 2015 08:00:31",
@@ -352,11 +352,11 @@
         "url": ["http://minkorrekt.de/minkorrekt-folge-60-sent-in-the-clowns/"],
         "number": "060",
         "specials": [],
-        "pubtime": ["07:00:31"],
-        "pubtime_integer": 25231,
-        "duration": ["02:57:50"],
+        "pubtime": "08:00:31",
+        "pubtime_integer": 0,
+        "duration": "02:57:50",
         "titlemain": ["Send in the Clowns"],
-        "duration_integer": 10670
+        "duration_integer": 0
     },
     {
         "pubdate": "Tue, 29 Sep 2015 08:00:31",
@@ -364,11 +364,11 @@
         "url": ["http://minkorrekt.de/minkorrekt-folge-59-minenfeld/"],
         "number": "059",
         "specials": [],
-        "pubtime": ["07:00:31"],
-        "pubtime_integer": 25231,
-        "duration": ["03:17:42"],
+        "pubtime": "08:00:31",
+        "pubtime_integer": 0,
+        "duration": "03:17:42",
         "titlemain": ["Minenfeld"],
-        "duration_integer": 11862
+        "duration_integer": 0
     },
     {
         "pubdate": "Tue, 15 Sep 2015 08:00:26",
@@ -376,11 +376,11 @@
         "url": ["http://minkorrekt.de/minkorrekt-folge-58-kaffeepruett/"],
         "number": "058",
         "specials": [],
-        "pubtime": ["07:00:26"],
-        "pubtime_integer": 25226,
-        "duration": ["02:57:28"],
+        "pubtime": "08:00:26",
+        "pubtime_integer": 0,
+        "duration": "02:57:28",
         "titlemain": ["Kaffeepr\u00fctt"],
-        "duration_integer": 10648
+        "duration_integer": 0
     },
     {
         "pubdate": "Tue, 01 Sep 2015 08:00:06",
@@ -388,11 +388,11 @@
         "url": ["http://minkorrekt.de/minkorrekt-folge-57-personal-istkosten/"],
         "number": "057",
         "specials": [],
-        "pubtime": ["07:00:06"],
-        "pubtime_integer": 25206,
-        "duration": ["04:15:24"],
+        "pubtime": "08:00:06",
+        "pubtime_integer": 0,
+        "duration": "04:15:24",
         "titlemain": ["Personal-Istkosten"],
-        "duration_integer": 15324
+        "duration_integer": 0
     },
     {
         "pubdate": "Tue, 04 Aug 2015 08:00:37",
@@ -400,11 +400,11 @@
         "url": ["http://minkorrekt.de/minkorrekt-folge-56-verfassungsfeindlich/"],
         "number": "056",
         "specials": [],
-        "pubtime": ["07:00:37"],
-        "pubtime_integer": 25237,
-        "duration": ["03:02:38"],
+        "pubtime": "08:00:37",
+        "pubtime_integer": 0,
+        "duration": "03:02:38",
         "titlemain": ["Verfassungsfeindlich"],
-        "duration_integer": 10958
+        "duration_integer": 0
     },
     {
         "pubdate": "Tue, 21 Jul 2015 08:00:53",
@@ -412,11 +412,11 @@
         "url": ["http://minkorrekt.de/minkorrekt-folge-55-bestattungszwang/"],
         "number": "055",
         "specials": [],
-        "pubtime": ["07:00:53"],
-        "pubtime_integer": 25253,
-        "duration": ["03:12:52"],
+        "pubtime": "08:00:53",
+        "pubtime_integer": 0,
+        "duration": "03:12:52",
         "titlemain": ["Bestattungszwang"],
-        "duration_integer": 11572
+        "duration_integer": 0
     },
     {
         "pubdate": "Tue, 07 Jul 2015 08:00:20",
@@ -424,11 +424,11 @@
         "url": ["http://minkorrekt.de/methodisch-inkorrekt-folge-54-mettschale/"],
         "number": "054",
         "specials": [],
-        "pubtime": ["07:00:20"],
-        "pubtime_integer": 25220,
-        "duration": ["03:31:01"],
+        "pubtime": "08:00:20",
+        "pubtime_integer": 0,
+        "duration": "03:31:01",
         "titlemain": ["Mettschale"],
-        "duration_integer": 12661
+        "duration_integer": 0
     },
     {
         "pubdate": "Tue, 23 Jun 2015 08:00:07",
@@ -436,11 +436,11 @@
         "url": ["http://minkorrekt.de/minkorrekt-folge-53-68859229/"],
         "number": "053",
         "specials": [],
-        "pubtime": ["07:00:07"],
-        "pubtime_integer": 25207,
-        "duration": ["03:17:17"],
+        "pubtime": "08:00:07",
+        "pubtime_integer": 0,
+        "duration": "03:17:17",
         "titlemain": ["68859229"],
-        "duration_integer": 11837
+        "duration_integer": 0
     },
     {
         "pubdate": "Tue, 09 Jun 2015 08:00:23",
@@ -448,11 +448,11 @@
         "url": ["http://minkorrekt.de/minkorrekt-folge-52-gangsta-style/"],
         "number": "052",
         "specials": [],
-        "pubtime": ["07:00:23"],
-        "pubtime_integer": 25223,
-        "duration": ["03:14:06"],
+        "pubtime": "08:00:23",
+        "pubtime_integer": 0,
+        "duration": "03:14:06",
         "titlemain": ["Gangsta Style"],
-        "duration_integer": 11646
+        "duration_integer": 0
     },
     {
         "pubdate": "Tue, 26 May 2015 07:42:10",
@@ -460,11 +460,11 @@
         "url": ["http://minkorrekt.de/methodisch-inkorrekt-folge-51-panfloetenland/"],
         "number": "051",
         "specials": [],
-        "pubtime": ["06:42:10"],
-        "pubtime_integer": 24130,
-        "duration": ["03:01:54"],
+        "pubtime": "07:42:10",
+        "pubtime_integer": 0,
+        "duration": "03:01:54",
         "titlemain": ["Panfl\u00f6tenland"],
-        "duration_integer": 10914
+        "duration_integer": 0
     },
     {
         "pubdate": "Tue, 12 May 2015 07:39:28",
@@ -472,11 +472,11 @@
         "url": ["http://minkorrekt.de/methodisch-inkorrekt-folge-50-los-wochos/"],
         "number": "050",
         "specials": [],
-        "pubtime": ["06:39:28"],
-        "pubtime_integer": 23968,
-        "duration": ["02:46:28"],
+        "pubtime": "07:39:28",
+        "pubtime_integer": 0,
+        "duration": "02:46:28",
         "titlemain": ["Los Wochos"],
-        "duration_integer": 9988
+        "duration_integer": 0
     },
     {
         "pubdate": "Tue, 28 Apr 2015 07:42:45",
@@ -484,9 +484,9 @@
         "url": ["http://minkorrekt.de/methodisch-inkorrekt-folge-49-spontane-bierbatterie/"],
         "number": "049",
         "specials": [],
-        "pubtime": ["06:42:45"],
-        "pubtime_integer": 24165,
-        "duration": ["00:00:00"],
+        "pubtime": "07:42:45",
+        "pubtime_integer": 0,
+        "duration": "00:00:00",
         "titlemain": ["spontane Bierbatterie"],
         "duration_integer": 0
     },
@@ -496,9 +496,9 @@
         "url": ["http://minkorrekt.de/methodisch-inkorrekt-folge-48-angeborene-dilletation/"],
         "number": "048",
         "specials": [],
-        "pubtime": ["09:46:37"],
-        "pubtime_integer": 35197,
-        "duration": ["00:00:00"],
+        "pubtime": "10:46:37",
+        "pubtime_integer": 1,
+        "duration": "00:00:00",
         "titlemain": ["angeborene Dilletation"],
         "duration_integer": 0
     },
@@ -508,9 +508,9 @@
         "url": ["http://minkorrekt.de/methodisch-inkorrekt-folge-47-dr-o-punkt/"],
         "number": "047",
         "specials": [],
-        "pubtime": ["09:27:01"],
-        "pubtime_integer": 34021,
-        "duration": ["00:00:00"],
+        "pubtime": "10:27:01",
+        "pubtime_integer": 1,
+        "duration": "00:00:00",
         "titlemain": ["Dr. O-Punkt"],
         "duration_integer": 0
     },
@@ -520,9 +520,9 @@
         "url": ["http://minkorrekt.de/methodisch-inkorrekt-folge-46-donauwellen-dualismus/"],
         "number": "046",
         "specials": [],
-        "pubtime": ["11:22:02"],
-        "pubtime_integer": 40922,
-        "duration": ["00:00:00"],
+        "pubtime": "12:22:02",
+        "pubtime_integer": 1,
+        "duration": "00:00:00",
         "titlemain": ["Donauwellen-Dualismus"],
         "duration_integer": 0
     },
@@ -532,9 +532,9 @@
         "url": ["http://minkorrekt.de/methodisch-inkorrekt-folge-45-funniest-corn-to-cook/"],
         "number": "045",
         "specials": [],
-        "pubtime": ["07:00:41"],
-        "pubtime_integer": 25241,
-        "duration": ["00:00:00"],
+        "pubtime": "08:00:41",
+        "pubtime_integer": 0,
+        "duration": "00:00:00",
         "titlemain": ["Funniest corn to cook"],
         "duration_integer": 0
     },
@@ -544,9 +544,9 @@
         "url": ["http://minkorrekt.de/methodisch-inkorrekt-folge-44-moralisch-verkuemmert/"],
         "number": "044",
         "specials": [],
-        "pubtime": ["22:09:49"],
-        "pubtime_integer": 79789,
-        "duration": ["00:00:00"],
+        "pubtime": "23:09:49",
+        "pubtime_integer": 2,
+        "duration": "00:00:00",
         "titlemain": ["moralisch verk\u00fcmmert"],
         "duration_integer": 0
     },
@@ -556,9 +556,9 @@
         "url": ["http://minkorrekt.de/methodisch-inkorrekt-folge-43-i-sense-coldness/"],
         "number": "043",
         "specials": [],
-        "pubtime": ["23:22:54"],
-        "pubtime_integer": 84174,
-        "duration": ["00:00:00"],
+        "pubtime": "00:22:54",
+        "pubtime_integer": 0,
+        "duration": "00:00:00",
         "titlemain": ["I sense coldness"],
         "duration_integer": 0
     },
@@ -568,9 +568,9 @@
         "url": ["http://minkorrekt.de/methodisch-inkorrekt-folge-42-b-steht-fuer-best/"],
         "number": "042",
         "specials": [],
-        "pubtime": ["08:58:21"],
-        "pubtime_integer": 32301,
-        "duration": ["00:00:00"],
+        "pubtime": "09:58:21",
+        "pubtime_integer": 0,
+        "duration": "00:00:00",
         "titlemain": ["B steht f\u00fcr BEST"],
         "duration_integer": 0
     },
@@ -580,9 +580,9 @@
         "url": ["http://minkorrekt.de/methodisch-inkorrekt-folge-41-die-falsche-42/"],
         "number": "041",
         "specials": [],
-        "pubtime": ["08:06:55"],
-        "pubtime_integer": 29215,
-        "duration": ["00:00:00"],
+        "pubtime": "09:06:55",
+        "pubtime_integer": 0,
+        "duration": "00:00:00",
         "titlemain": ["Die falsche 42"],
         "duration_integer": 0
     },
@@ -592,9 +592,9 @@
         "url": ["http://minkorrekt.de/methodisch-inkorrekt-folge-40-jahresrueckblick-2014/"],
         "number": "040",
         "specials": ["Jahresr\u00fcckblick"],
-        "pubtime": ["09:15:22"],
-        "pubtime_integer": 33322,
-        "duration": ["00:00:00"],
+        "pubtime": "10:15:22",
+        "pubtime_integer": 1,
+        "duration": "00:00:00",
         "titlemain": ["Jahresr\u00fcckblick 2014"],
         "duration_integer": 0
     },
@@ -604,9 +604,9 @@
         "url": ["http://minkorrekt.de/methodisch-inkorrekt-folge-39-es-hat-keinen-sinn/"],
         "number": "039",
         "specials": [],
-        "pubtime": ["11:02:47"],
-        "pubtime_integer": 39767,
-        "duration": ["00:00:00"],
+        "pubtime": "12:02:47",
+        "pubtime_integer": 1,
+        "duration": "00:00:00",
         "titlemain": ["Es hat keinen Sinn"],
         "duration_integer": 0
     },
@@ -616,9 +616,9 @@
         "url": ["http://minkorrekt.de/methodisch-inkorrekt-folge-38-fazit-fart/"],
         "number": "038",
         "specials": [],
-        "pubtime": ["09:34:25"],
-        "pubtime_integer": 34465,
-        "duration": ["00:00:00"],
+        "pubtime": "10:34:25",
+        "pubtime_integer": 1,
+        "duration": "00:00:00",
         "titlemain": ["Fazit: Fart!"],
         "duration_integer": 0
     },
@@ -628,9 +628,9 @@
         "url": ["http://minkorrekt.de/methodisch-inkorrekt-folge-37palminkloetze/"],
         "number": "037",
         "specials": [],
-        "pubtime": ["08:11:25"],
-        "pubtime_integer": 29485,
-        "duration": ["00:00:00"],
+        "pubtime": "09:11:25",
+        "pubtime_integer": 0,
+        "duration": "00:00:00",
         "titlemain": ["Palminkl\u00f6tze"],
         "duration_integer": 0
     },
@@ -640,9 +640,9 @@
         "url": ["http://minkorrekt.de/methodisch-inkorrekt-folge-36-nobelpreissonderfolge/"],
         "number": "036",
         "specials": ["Nobelpreis"],
-        "pubtime": ["06:26:17"],
-        "pubtime_integer": 23177,
-        "duration": ["00:00:00"],
+        "pubtime": "07:26:17",
+        "pubtime_integer": 0,
+        "duration": "00:00:00",
         "titlemain": ["Nobelpreissonderfolge"],
         "duration_integer": 0
     },
@@ -652,9 +652,9 @@
         "url": ["http://minkorrekt.de/methodisch-inkorrekt-folge-35-fake-as-fk/"],
         "number": "035",
         "specials": [],
-        "pubtime": ["10:08:19"],
-        "pubtime_integer": 36499,
-        "duration": ["00:00:00"],
+        "pubtime": "11:08:19",
+        "pubtime_integer": 1,
+        "duration": "00:00:00",
         "titlemain": ["Fake as f**k!"],
         "duration_integer": 0
     },
@@ -664,9 +664,9 @@
         "url": ["http://minkorrekt.de/methodisch-inkorrekt-folge-34-vulkanische-ballerburg/"],
         "number": "034",
         "specials": [],
-        "pubtime": ["07:30:52"],
-        "pubtime_integer": 27052,
-        "duration": ["00:00:00"],
+        "pubtime": "08:30:52",
+        "pubtime_integer": 0,
+        "duration": "00:00:00",
         "titlemain": ["Vulkanische Ballerburg"],
         "duration_integer": 0
     },
@@ -676,9 +676,9 @@
         "url": ["http://minkorrekt.de/methodisch-inkorrekt-folge-33-kontrollgruppe-deluxe/"],
         "number": "033",
         "specials": [],
-        "pubtime": ["16:29:22"],
-        "pubtime_integer": 59362,
-        "duration": ["00:00:00"],
+        "pubtime": "17:29:22",
+        "pubtime_integer": 1,
+        "duration": "00:00:00",
         "titlemain": ["Kontrollgruppe-Deluxe"],
         "duration_integer": 0
     },
@@ -688,9 +688,9 @@
         "url": ["http://minkorrekt.de/methodisch-inkorrekt-folge-32-darmzombies/"],
         "number": "032",
         "specials": [],
-        "pubtime": ["04:23:50"],
-        "pubtime_integer": 15830,
-        "duration": ["00:00:00"],
+        "pubtime": "05:23:50",
+        "pubtime_integer": 0,
+        "duration": "00:00:00",
         "titlemain": ["Darmzombies"],
         "duration_integer": 0
     },
@@ -700,9 +700,9 @@
         "url": ["http://minkorrekt.de/methodisch-inkorrekt-folge-31-spulzimmer/"],
         "number": "031",
         "specials": [],
-        "pubtime": ["08:00:51"],
-        "pubtime_integer": 28851,
-        "duration": ["00:00:00"],
+        "pubtime": "09:00:51",
+        "pubtime_integer": 0,
+        "duration": "00:00:00",
         "titlemain": ["Sp\u00fclzimmer"],
         "duration_integer": 0
     },
@@ -712,9 +712,9 @@
         "url": ["http://minkorrekt.de/methodisch-inkorrekt-folge-30-cannibalus-nimmersattus/"],
         "number": "030",
         "specials": [],
-        "pubtime": ["05:53:18"],
-        "pubtime_integer": 21198,
-        "duration": ["00:00:00"],
+        "pubtime": "06:53:18",
+        "pubtime_integer": 0,
+        "duration": "00:00:00",
         "titlemain": ["Cannibalus Nimmersattus"],
         "duration_integer": 0
     },
@@ -724,9 +724,9 @@
         "url": ["http://minkorrekt.de/methodisch-inkorrekt-folge-29-torten-trocknungsflache/"],
         "number": "029",
         "specials": [],
-        "pubtime": ["20:56:59"],
-        "pubtime_integer": 75419,
-        "duration": ["00:00:00"],
+        "pubtime": "21:56:59",
+        "pubtime_integer": 2,
+        "duration": "00:00:00",
         "titlemain": ["Torten-Trocknungsfl\u00e4che"],
         "duration_integer": 0
     },
@@ -736,9 +736,9 @@
         "url": ["http://minkorrekt.de/methodisch-inkorrekt-folge-28-brauca/"],
         "number": "028",
         "specials": [],
-        "pubtime": ["20:48:27"],
-        "pubtime_integer": 74907,
-        "duration": ["00:00:00"],
+        "pubtime": "21:48:27",
+        "pubtime_integer": 2,
+        "duration": "00:00:00",
         "titlemain": ["Bra$uca"],
         "duration_integer": 0
     },
@@ -748,9 +748,9 @@
         "url": ["http://minkorrekt.de/methodisch-inkorrekt-folge-27-laborraketen/"],
         "number": "027",
         "specials": [],
-        "pubtime": ["09:22:09"],
-        "pubtime_integer": 33729,
-        "duration": ["00:00:00"],
+        "pubtime": "10:22:09",
+        "pubtime_integer": 1,
+        "duration": "00:00:00",
         "titlemain": ["Laborraketen"],
         "duration_integer": 0
     },
@@ -760,9 +760,9 @@
         "url": ["http://minkorrekt.de/methodisch-inkorrekt-folge-26-in-ear-loffelglocke/"],
         "number": "026",
         "specials": [],
-        "pubtime": ["07:41:30"],
-        "pubtime_integer": 27690,
-        "duration": ["00:00:00"],
+        "pubtime": "08:41:30",
+        "pubtime_integer": 0,
+        "duration": "00:00:00",
         "titlemain": ["In Ear L\u00f6ffelglocke"],
         "duration_integer": 0
     },
@@ -772,9 +772,9 @@
         "url": ["http://minkorrekt.de/methodisch-inkorrekt-folge-25-resurrection-14/"],
         "number": "025",
         "specials": [],
-        "pubtime": ["20:27:52"],
-        "pubtime_integer": 73672,
-        "duration": ["00:00:00"],
+        "pubtime": "21:27:52",
+        "pubtime_integer": 2,
+        "duration": "00:00:00",
         "titlemain": ["re:surrection 14"],
         "duration_integer": 0
     },
@@ -784,9 +784,9 @@
         "url": ["http://minkorrekt.de/methodisch-inkorrekt-folge-24-mathematisch-physikalischer-salon/"],
         "number": "024",
         "specials": [],
-        "pubtime": ["12:12:23"],
-        "pubtime_integer": 43943,
-        "duration": ["00:00:00"],
+        "pubtime": "13:12:23",
+        "pubtime_integer": 1,
+        "duration": "00:00:00",
         "titlemain": ["Mathematisch Physikalischer Salon"],
         "duration_integer": 0
     },
@@ -796,9 +796,9 @@
         "url": ["http://minkorrekt.de/methodisch-inkorrekt-folge-23-hier-sollte-ein-sendungstitel-stehen/"],
         "number": "023",
         "specials": [],
-        "pubtime": ["12:25:04"],
-        "pubtime_integer": 44704,
-        "duration": ["00:00:00"],
+        "pubtime": "13:25:04",
+        "pubtime_integer": 1,
+        "duration": "00:00:00",
         "titlemain": ["Hier sollte ein Sendungstitel stehen"],
         "duration_integer": 0
     },
@@ -808,9 +808,9 @@
         "url": ["http://minkorrekt.de/methodisch-inkorrekt-folge-22-bierkanneneffekt/"],
         "number": "022",
         "specials": [],
-        "pubtime": ["08:34:00"],
-        "pubtime_integer": 30840,
-        "duration": ["00:00:00"],
+        "pubtime": "09:34:00",
+        "pubtime_integer": 0,
+        "duration": "00:00:00",
         "titlemain": ["Bierkanneneffekt"],
         "duration_integer": 0
     },
@@ -820,9 +820,9 @@
         "url": ["http://minkorrekt.de/methodisch-inkorrekt-folge-20-danziger-goldwasser/"],
         "number": "021",
         "specials": [],
-        "pubtime": ["10:06:53"],
-        "pubtime_integer": 36413,
-        "duration": ["00:00:00"],
+        "pubtime": "11:06:53",
+        "pubtime_integer": 1,
+        "duration": "00:00:00",
         "titlemain": ["Danziger Goldwasser"],
         "duration_integer": 0
     },
@@ -832,9 +832,9 @@
         "url": ["http://minkorrekt.de/methodisch-inkorrekt-folge-20-physics-viel-zu-ubertrieben/"],
         "number": "020",
         "specials": [],
-        "pubtime": ["12:40:46"],
-        "pubtime_integer": 45646,
-        "duration": ["00:00:00"],
+        "pubtime": "13:40:46",
+        "pubtime_integer": 1,
+        "duration": "00:00:00",
         "titlemain": ["Physics viel zu \u00fcbertrieben"],
         "duration_integer": 0
     },
@@ -844,9 +844,9 @@
         "url": ["http://minkorrekt.de/methodisch-inkorrekt-folge-19-kernspeisetemperatur/"],
         "number": "019",
         "specials": [],
-        "pubtime": ["09:36:29"],
-        "pubtime_integer": 34589,
-        "duration": ["00:00:00"],
+        "pubtime": "10:36:29",
+        "pubtime_integer": 1,
+        "duration": "00:00:00",
         "titlemain": ["Kernspeisetemperatur"],
         "duration_integer": 0
     },
@@ -856,9 +856,9 @@
         "url": ["http://minkorrekt.de/methodisch-inkorrekt-folge-18-ersatzlasagne/"],
         "number": "018",
         "specials": [],
-        "pubtime": ["16:41:08"],
-        "pubtime_integer": 60068,
-        "duration": ["00:00:00"],
+        "pubtime": "17:41:08",
+        "pubtime_integer": 1,
+        "duration": "00:00:00",
         "titlemain": ["Ersatzlasagne"],
         "duration_integer": 0
     },
@@ -868,9 +868,9 @@
         "url": ["http://minkorrekt.de/methodisch-inkorrekt-folge-17-silvester-gala-der-wissenschaft/"],
         "number": "017",
         "specials": [],
-        "pubtime": ["14:06:18"],
-        "pubtime_integer": 50778,
-        "duration": ["00:00:00"],
+        "pubtime": "15:06:18",
+        "pubtime_integer": 1,
+        "duration": "00:00:00",
         "titlemain": ["Silvester-Gala der Wissenschaft"],
         "duration_integer": 0
     },
@@ -880,9 +880,9 @@
         "url": ["http://minkorrekt.de/methodisch-inkorrekt-folge-16-sturm-des-wissens/"],
         "number": "016",
         "specials": [],
-        "pubtime": ["11:49:18"],
-        "pubtime_integer": 42558,
-        "duration": ["00:00:00"],
+        "pubtime": "12:49:18",
+        "pubtime_integer": 1,
+        "duration": "00:00:00",
         "titlemain": ["Sturm des Wissens"],
         "duration_integer": 0
     },
@@ -892,9 +892,9 @@
         "url": ["http://minkorrekt.de/methodisch-inkorrekt-folge-15-prinz-planetoid/"],
         "number": "015",
         "specials": [],
-        "pubtime": ["11:05:17"],
-        "pubtime_integer": 39917,
-        "duration": ["00:00:00"],
+        "pubtime": "12:05:17",
+        "pubtime_integer": 1,
+        "duration": "00:00:00",
         "titlemain": ["Prinz-Planetoid"],
         "duration_integer": 0
     },
@@ -904,9 +904,9 @@
         "url": ["http://minkorrekt.de/methodisch-inkorrekt-folge-14-gotisches-bouquet/"],
         "number": "014",
         "specials": [],
-        "pubtime": ["14:20:02"],
-        "pubtime_integer": 51602,
-        "duration": ["00:00:00"],
+        "pubtime": "15:20:02",
+        "pubtime_integer": 1,
+        "duration": "00:00:00",
         "titlemain": ["Gotisches Bouquet"],
         "duration_integer": 0
     },
@@ -916,9 +916,9 @@
         "url": ["http://minkorrekt.de/methodisch-inkorrekt-folge-13-nobelpreis-sonderfolge/"],
         "number": "013",
         "specials": ["Nobelpreis"],
-        "pubtime": ["22:32:57"],
-        "pubtime_integer": 81177,
-        "duration": ["00:00:00"],
+        "pubtime": "23:32:57",
+        "pubtime_integer": 2,
+        "duration": "00:00:00",
         "titlemain": ["Nobelpreis-Sonderfolge"],
         "duration_integer": 0
     },
@@ -928,9 +928,9 @@
         "url": ["http://minkorrekt.de/methodisch-inkorrekt-folge-12b-previously-on-lost/"],
         "number": "012b",
         "specials": [],
-        "pubtime": ["22:14:31"],
-        "pubtime_integer": 80071,
-        "duration": ["00:00:00"],
+        "pubtime": "23:14:31",
+        "pubtime_integer": 2,
+        "duration": "00:00:00",
         "titlemain": ["Previously (on) Lost"],
         "duration_integer": 0
     },
@@ -940,9 +940,9 @@
         "url": ["http://minkorrekt.de/methodisch-inkorrekt-folge-12a-du-wirst-wieder-angerufen/"],
         "number": "012a",
         "specials": [],
-        "pubtime": ["19:10:44"],
-        "pubtime_integer": 69044,
-        "duration": ["00:00:00"],
+        "pubtime": "20:10:44",
+        "pubtime_integer": 2,
+        "duration": "00:00:00",
         "titlemain": ["Du wirst wieder angerufen!"],
         "duration_integer": 0
     },
@@ -952,9 +952,9 @@
         "url": ["http://minkorrekt.de/methodisch-inkorrekt-folge-11-knallharte-erleuchtung/"],
         "number": "011",
         "specials": [],
-        "pubtime": ["20:57:27"],
-        "pubtime_integer": 75447,
-        "duration": ["00:00:00"],
+        "pubtime": "21:57:27",
+        "pubtime_integer": 2,
+        "duration": "00:00:00",
         "titlemain": ["Knallharte Erleuchtung!"],
         "duration_integer": 0
     },
@@ -964,9 +964,9 @@
         "url": ["http://minkorrekt.de/methodisch-inkorrekt-folge-10-privatbrauerei/"],
         "number": "010",
         "specials": [],
-        "pubtime": ["20:33:21"],
-        "pubtime_integer": 74001,
-        "duration": ["00:00:00"],
+        "pubtime": "21:33:21",
+        "pubtime_integer": 2,
+        "duration": "00:00:00",
         "titlemain": ["Privatbrauerei"],
         "duration_integer": 0
     },
@@ -976,9 +976,9 @@
         "url": ["http://minkorrekt.de/methodisch-inkorrekt-folge-9-pluripotente-organoide/"],
         "number": "009",
         "specials": [],
-        "pubtime": ["21:51:23"],
-        "pubtime_integer": 78683,
-        "duration": ["00:00:00"],
+        "pubtime": "22:51:23",
+        "pubtime_integer": 2,
+        "duration": "00:00:00",
         "titlemain": ["pluripotente Organoide"],
         "duration_integer": 0
     },
@@ -988,9 +988,9 @@
         "url": ["http://minkorrekt.de/methodisch-inkorrekt-folge-8-todlicher-quantenkaffee/"],
         "number": "008",
         "specials": [],
-        "pubtime": ["20:57:51"],
-        "pubtime_integer": 75471,
-        "duration": ["00:00:00"],
+        "pubtime": "21:57:51",
+        "pubtime_integer": 2,
+        "duration": "00:00:00",
         "titlemain": ["t\u00f6dlicher Quantenkaffee"],
         "duration_integer": 0
     },
@@ -1000,9 +1000,9 @@
         "url": ["http://minkorrekt.de/methodisch-inkorrekt-folge-7-kotzfrucht/"],
         "number": "007",
         "specials": [],
-        "pubtime": ["20:05:31"],
-        "pubtime_integer": 72331,
-        "duration": ["00:00:00"],
+        "pubtime": "21:05:31",
+        "pubtime_integer": 2,
+        "duration": "00:00:00",
         "titlemain": ["Kotzfrucht"],
         "duration_integer": 0
     },
@@ -1012,9 +1012,9 @@
         "url": ["http://minkorrekt.de/methodisch-inkorrekt-folge-6-anti-brumm/"],
         "number": "006",
         "specials": [],
-        "pubtime": ["21:56:34"],
-        "pubtime_integer": 78994,
-        "duration": ["00:00:00"],
+        "pubtime": "22:56:34",
+        "pubtime_integer": 2,
+        "duration": "00:00:00",
         "titlemain": ["ANTI-Brumm"],
         "duration_integer": 0
     },
@@ -1024,9 +1024,9 @@
         "url": ["http://minkorrekt.de/methodisch-inkorrekt-folge-5-fluffernutter/"],
         "number": "005",
         "specials": [],
-        "pubtime": ["19:45:06"],
-        "pubtime_integer": 71106,
-        "duration": ["00:00:00"],
+        "pubtime": "20:45:06",
+        "pubtime_integer": 2,
+        "duration": "00:00:00",
         "titlemain": ["Fluffernutter"],
         "duration_integer": 0
     },
@@ -1036,9 +1036,9 @@
         "url": ["http://minkorrekt.de/methodisch-inkorrekt-folge-4-es-druckt/"],
         "number": "004",
         "specials": [],
-        "pubtime": ["21:49:03"],
-        "pubtime_integer": 78543,
-        "duration": ["00:00:00"],
+        "pubtime": "22:49:03",
+        "pubtime_integer": 2,
+        "duration": "00:00:00",
         "titlemain": ["Es druckt!"],
         "duration_integer": 0
     },
@@ -1048,9 +1048,9 @@
         "url": ["http://minkorrekt.de/methodisch-inkorrekt-folge-3-musikalisch-fragwurdig/"],
         "number": "003",
         "specials": [],
-        "pubtime": ["21:23:40"],
-        "pubtime_integer": 77020,
-        "duration": ["00:00:00"],
+        "pubtime": "22:23:40",
+        "pubtime_integer": 2,
+        "duration": "00:00:00",
         "titlemain": ["Musikalisch fragw\u00fcrdig"],
         "duration_integer": 0
     },
@@ -1060,9 +1060,9 @@
         "url": ["http://minkorrekt.de/methodisch-inkorrekt-folge-2-planetarium-des-schreckens/"],
         "number": "002",
         "specials": [],
-        "pubtime": ["20:46:54"],
-        "pubtime_integer": 74814,
-        "duration": ["00:00:00"],
+        "pubtime": "21:46:54",
+        "pubtime_integer": 2,
+        "duration": "00:00:00",
         "titlemain": ["Planetarium des Schreckens"],
         "duration_integer": 0
     },
@@ -1072,9 +1072,9 @@
         "url": ["http://minkorrekt.de/methodisch-inkorrekt-folge-1-backofenbier/"],
         "number": "001",
         "specials": [],
-        "pubtime": ["20:44:04"],
-        "pubtime_integer": 74644,
-        "duration": ["00:00:00"],
+        "pubtime": "21:44:04",
+        "pubtime_integer": 2,
+        "duration": "00:00:00",
         "titlemain": ["Backofenbier"],
         "duration_integer": 0
     },
@@ -1084,9 +1084,9 @@
         "url": ["http://minkorrekt.de/methodisch-inkorrekt-folge-01-ei-explosion/"],
         "number": "000",
         "specials": [],
-        "pubtime": ["07:53:48"],
-        "pubtime_integer": 28428,
-        "duration": ["00:00:00"],
+        "pubtime": "08:53:48",
+        "pubtime_integer": 0,
+        "duration": "00:00:00",
         "titlemain": ["Ei-Explosion"],
         "duration_integer": 0
     }

@@ -79,6 +79,12 @@ class CrawlerPipeline(object):
 
         # Process Field 'pubtime'
         if item['pubtime']:
+            # Change from GMT to CET
+            alterTimeToCET = datetime.datetime.strptime(
+                item['pubtime'][0], '%H:%M:%S')
+            alterTimeToCET = alterTimeToCET + datetime.timedelta(hours=1)
+            alterTimeToCET = alterTimeToCET.strftime('%H:%M:%S')
+            item['pubtime'] = alterTimeToCET
             # Save pubtime as integer
             tpub = item['pubtime'][0]
             item['pubtime_integer'] = sum(
@@ -87,11 +93,17 @@ class CrawlerPipeline(object):
 
         # Process Field 'duration'
         if item['duration']:
+            # Specify duration as time format
+            alterDuration = datetime.datetime.strptime(
+                item['duration'][0], '%H:%M:%S')
+            alterDuration = alterDuration.strftime('%H:%M:%S')
+            item['duration'] = alterDuration
             # Save pubtime as integer
             tdur = item['duration'][0]
             item['duration_integer'] = sum(
                 int(x) * 60 ** i for i, x in enumerate(reversed(
                     tdur.split(":"))))
 
+        # Return all crawled items
         self.exporter.export_item(item)
         return item
