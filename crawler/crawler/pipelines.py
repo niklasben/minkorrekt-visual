@@ -54,7 +54,8 @@ class CrawlerPipeline(object):
             alterToCET = datetime.datetime.strptime(
                 item['pubdate'][0], '%a, %d %b %Y %H:%M:%S')
             alterToCET = alterToCET + datetime.timedelta(hours=1)
-            alterToCET = alterToCET.strftime('%a, %d %b %Y %H:%M:%S')
+            # alterToCET = alterToCET.strftime('%a, %d %b %Y %H:%M:%S')
+            alterToCET = alterToCET.strftime('%Y-%m-%d %H:%M:%S.000000')
             item['pubdate'] = alterToCET
 
         # Process Field 'pubday'
@@ -93,16 +94,16 @@ class CrawlerPipeline(object):
 
         # Process Field 'duration'
         if item['duration']:
-            # Specify duration as time format
-            alterDuration = datetime.datetime.strptime(
-                item['duration'][0], '%H:%M:%S')
-            alterDuration = alterDuration.strftime('%H:%M:%S')
-            item['duration'] = alterDuration
             # Save pubtime as integer
             tdur = item['duration'][0]
             item['duration_integer'] = sum(
                 int(x) * 60 ** i for i, x in enumerate(reversed(
                     tdur.split(":"))))
+            # Specify duration as time format
+            alterDuration = datetime.datetime.strptime(
+                item['duration'][0], '%H:%M:%S')
+            alterDuration = alterDuration.strftime('%H:%M:%S')
+            item['duration'] = alterDuration
 
         # Return all crawled items
         self.exporter.export_item(item)
