@@ -43,12 +43,12 @@ Methodisch (in)korrekte Auswertung des Methodisch-Inkorrekt-Podcasts.
     -   NN/NE in Cloud oder der Seite
     -   Zuordnen zu Wissenschaftsbereichen
         -   Passende Thesauri?
+    -   Länge der Titel zählen
 
 
 -   Javascript
     -   Header mit Autorenangaben
     -   minified Version?
-    -   Bei Datum auf Achse die Range anpassen
 
 
 -   Infos
@@ -56,15 +56,8 @@ Methodisch (in)korrekte Auswertung des Methodisch-Inkorrekt-Podcasts.
 
 ## Crawler
 
--   Manuell die fehlenden duration in ein Python Dictionary eintragen
-    -   key: number
-    -   value: duration
-
 ### Pipeline
 
--   Episoden 12a und 12b in 12.1 und 12.2 umwandeln
--   Länge der Titel zählen
--   Datum in int umwandeln
 -   datetime aus pubtime kreieren
 -   Descriptions aufräumen
 -   PoS-Tagging
@@ -108,10 +101,10 @@ Evtl. erst crawlen und nachfolgend mit Python oder Bash bearbeiten, um Folgennum
 ## Was genau?
 
 Vermutlich folgende JSON-Dateien:
-1\.  Alle Folgen -> complete.json
-2\.  Sonderfolgen (Nobelpreis, Ig-Nobelpreis und Jahresrückblick) -> specials.json
-3\.  Chinagadgets -> chinagadgets.json
-4\.  Word Count | NN/NE | Namen | Deskriptoren -> nlp.json
+1.  Alle Folgen -> complete.json
+2.  Sonderfolgen (Nobelpreis, Ig-Nobelpreis und Jahresrückblick) -> specials.json
+3.  Chinagadgets -> chinagadgets.json
+4.  Word Count | NN/NE | Namen | Deskriptoren -> nlp.json
 
 ## Inhalt der JSON-Dateien
 
