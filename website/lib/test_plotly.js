@@ -29,23 +29,25 @@ $(function() {
         // Store array length from complete.json in variable
         var dataCompleteLength = dataComplete.length;
 
-        // Create arrays for all complete.json elements and some more
+        // Create arrays
+        // Create arrays for all complete.json elements
         var arrayPubdate = [];
         var arrayPubday = [];
         var arrayUrl = [];
         var arrayNumber = [];
-        var arrayNumberEmptyDuration = [];
         var arraySpecials = [];
         var arrayPubtime = [];
         var arrayPubtimeInteger = [];
         var arrayDuration = [];
         var arrayDurationInteger = [];
+        var arrayTitlemain = [];
+        // Create arrays new elements
         var arrayDurationIntegerMean = [];
         var arrayDurationIntegerMin = [];
-        var arrayTitlemain = [];
 
         // Add elements to arrays
         for (i = 0; i < dataCompleteLength; i++) {
+            // Add crawled elements to arrays
             arrayPubdate.push(dataComplete[i].pubdate);
             arrayPubday.push(dataComplete[i].pubday);
             arrayUrl.push(dataComplete[i].url.toString());
@@ -55,46 +57,52 @@ $(function() {
             arrayPubtimeInteger.push(dataComplete[i].pubtime_integer);
             arrayDuration.push(dataComplete[i].duration);
             arrayDurationInteger.push(dataComplete[i].duration_integer);
+            arrayTitlemain.push(dataComplete[i].titlemain.toString());
+            // Add new elements to arrays
             var durMin = dataComplete[i].duration_integer;
             durMin = durMin / 60;
             arrayDurationIntegerMin.push(durMin)
-            arrayTitlemain.push(dataComplete[i].titlemain.toString());
-        }
-
-        // Add elements according to if-clauses
-        // Add numbers of empty episodes
-        for (i = 0; i < dataCompleteLength; i++) {
-            if (dataComplete[i].duration == "00:00:00") {
-                arrayNumberEmptyDuration.push(dataComplete[i].number);
-            }
         }
 
         // Create variables with certain values
         // Create mean of duration as integer in minutes
         var meanDurationInteger = arrayDurationInteger.reduce(add, 0);
-
         function add(a, b) {
             return ((a + b) / dataCompleteLength);
         }
-
         for (i = 0; i < dataCompleteLength; i++) {
             arrayDurationIntegerMean.push(meanDurationInteger);
         }
 
-
-
-
         // Begin charts duration and episode number ****************************
         // Load data into and build chart testchart1
         TESTER = document.getElementById('testchart1');
-        var data = [{
+        var trace1 = {
             x: arrayNumber,
             y: arrayDurationIntegerMin,
             type: 'bar',
             name: 'Dauer [min]'
-        }];
+        };
+
+        var trace2 = {
+            x: ['12'],
+            y: [59.1],
+            type: 'bar',
+            name: 'Folge 12a'
+        };
+
+        var trace3 = {
+            x: ['12'],
+            y: [41.55],
+            type: 'bar',
+            name: 'Folge 12b'
+        };
+
+        var data = [trace1, trace2, trace3];
+
         var layout = {
-            showlegend: true,
+            barmode: 'stack',
+            showlegend: false,
             xaxis: {
                 title: 'Nummer',
                 showgrid: true,
