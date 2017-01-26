@@ -8,7 +8,8 @@ $(function() {
         xobj.open('GET', 'data/complete.json', true);
         xobj.onreadystatechange = function() {
             if (xobj.readyState == 4 && xobj.status == "200") {
-                // .open will NOT return a value but simply returns undefined in async mode so use a callback
+                // .open will NOT return a value but simply returns undefined
+                // in async mode so use a callback
                 callback(xobj.responseText);
             }
         }
@@ -33,6 +34,7 @@ $(function() {
         var arrayPubday = [];
         var arrayUrl = [];
         var arrayNumber = [];
+        var arrayNumberEmptyDuration = [];
         var arraySpecials = [];
         var arrayPubtime = [];
         var arrayPubtimeInteger = [];
@@ -59,6 +61,14 @@ $(function() {
             arrayTitlemain.push(dataComplete[i].titlemain.toString());
         }
 
+        // Add elements according to if-clauses
+        // Add numbers of empty episodes
+        for (i = 0; i < dataCompleteLength; i++) {
+            if (dataComplete[i].duration == "00:00:00") {
+                arrayNumberEmptyDuration.push(dataComplete[i].number);
+            }
+        }
+
         // Create variables with certain values
         // Create mean of duration as integer in minutes
         var meanDurationInteger = arrayDurationInteger.reduce(add, 0);
@@ -70,6 +80,9 @@ $(function() {
         for (i = 0; i < dataCompleteLength; i++) {
             arrayDurationIntegerMean.push(meanDurationInteger);
         }
+
+
+
 
         // Begin charts duration and episode number ****************************
         // Load data into and build chart testchart1
@@ -217,6 +230,7 @@ $(function() {
             showlegend: true,
             xaxis: {
                 title: 'Datum',
+                tickformat: '%b %Y',
                 showgrid: true,
                 zeroline: true
             },
@@ -306,7 +320,7 @@ $(function() {
 
         // Console output for testing
         // console.log(test);
-        // console.log('dataCompleteLength: ' + dataCompleteLength);
-        // console.log('meanDurationInteger ' + meanDurationInteger);
+        // console.log('arrayDurationIntegerMin: ' + arrayDurationIntegerMin);
+        // console.log('arrayNumberEmptyDuration ' + arrayNumberEmptyDuration);
     });
 });
