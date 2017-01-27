@@ -44,6 +44,9 @@ Methodisch (in)korrekte Auswertung des Methodisch-Inkorrekt-Podcasts.
     -   Zuordnen zu Wissenschaftsbereichen
         -   Passende Thesauri?
     -   Länge der Titel zählen
+    -   Bar-Chart mit jedem Monat sumiert
+        -   Jahre in der selben Spalte
+    -   Bar-Chart für Jahre summiert
 
 
 -   Javascript
