@@ -19,13 +19,10 @@ $(function() {
     // Call to function with anonymous callback
     loadJSON(function(response) {
         // Do something with the response ...
-
         // Parse file complete.json
         dataComplete = JSON.parse(response);
-
         // Reverse array order to have episode 0 as first element
         dataComplete = dataComplete.reverse();
-
         // Store array length from complete.json in variable
         var dataCompleteLength = dataComplete.length;
 
@@ -41,9 +38,88 @@ $(function() {
         var arrayDuration = [];
         var arrayDurationInteger = [];
         var arrayTitlemain = [];
-        // Create arrays new elements
+
+        // Create arrays for new elements
+        var arrayMonths = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
         var arrayDurationIntegerMean = [];
         var arrayDurationIntegerMin = [];
+        var arrayDuration2013 = [];
+        var arrayDuration2014 = [];
+        var arrayDuration2015 = [];
+        var arrayDuration2016 = [];
+        var arrayDuration2017 = [];
+
+        // Create variables for years and months
+        // Year 2013
+        var varDurationSum2013 = 0;
+        var varDurationSum201301 = 0;
+        var varDurationSum201302 = 0;
+        var varDurationSum201303 = 0;
+        var varDurationSum201304 = 0;
+        var varDurationSum201305 = 0;
+        var varDurationSum201306 = 0;
+        var varDurationSum201307 = 0;
+        var varDurationSum201308 = 0;
+        var varDurationSum201309 = 0;
+        var varDurationSum201310 = 0;
+        var varDurationSum201311 = 0;
+        var varDurationSum201312 = 0;
+        // Year 2014
+        var varDurationSum2014 = 0;
+        var varDurationSum201401 = 0;
+        var varDurationSum201402 = 0;
+        var varDurationSum201403 = 0;
+        var varDurationSum201404 = 0;
+        var varDurationSum201405 = 0;
+        var varDurationSum201406 = 0;
+        var varDurationSum201407 = 0;
+        var varDurationSum201408 = 0;
+        var varDurationSum201409 = 0;
+        var varDurationSum201410 = 0;
+        var varDurationSum201411 = 0;
+        var varDurationSum201412 = 0;
+        // Year 2015
+        var varDurationSum2015 = 0;
+        var varDurationSum201501 = 0;
+        var varDurationSum201502 = 0;
+        var varDurationSum201503 = 0;
+        var varDurationSum201504 = 0;
+        var varDurationSum201505 = 0;
+        var varDurationSum201506 = 0;
+        var varDurationSum201507 = 0;
+        var varDurationSum201508 = 0;
+        var varDurationSum201509 = 0;
+        var varDurationSum201510 = 0;
+        var varDurationSum201511 = 0;
+        var varDurationSum201512 = 0;
+        // Year 2016
+        var varDurationSum2016 = 0;
+        var varDurationSum201601 = 0;
+        var varDurationSum201602 = 0;
+        var varDurationSum201603 = 0;
+        var varDurationSum201604 = 0;
+        var varDurationSum201605 = 0;
+        var varDurationSum201606 = 0;
+        var varDurationSum201607 = 0;
+        var varDurationSum201608 = 0;
+        var varDurationSum201609 = 0;
+        var varDurationSum201610 = 0;
+        var varDurationSum201611 = 0;
+        var varDurationSum201612 = 0;
+        // Year 2017
+        var varDurationSum2017 = 0;
+        var varDurationSum201701 = 0;
+        var varDurationSum201702 = 0;
+        var varDurationSum201703 = 0;
+        var varDurationSum201704 = 0;
+        var varDurationSum201705 = 0;
+        var varDurationSum201706 = 0;
+        var varDurationSum201707 = 0;
+        var varDurationSum201708 = 0;
+        var varDurationSum201709 = 0;
+        var varDurationSum201710 = 0;
+        var varDurationSum201711 = 0;
+        var varDurationSum201712 = 0;
 
         // Add elements to arrays
         for (i = 0; i < dataCompleteLength; i++) {
@@ -62,11 +138,211 @@ $(function() {
             var durMin = dataComplete[i].duration_integer;
             durMin = durMin / 60;
             arrayDurationIntegerMin.push(durMin)
+            // Add values to year arrays
+            var date = new Date(dataComplete[i].pubdate);
+            var year = date.getFullYear();
+            if (year == '2013') {
+                varDurationSum2013 += (dataComplete[i].duration_integer / 60);
+                var month2013 = date.getMonth();
+                if (month2013 == '7') {
+                    varDurationSum201308 += (dataComplete[i].duration_integer / 60);
+                } else if (month2013 == '8') {
+                    varDurationSum201309 += (dataComplete[i].duration_integer / 60);
+                } else if (month2013 == '9') {
+                    varDurationSum201310 += (dataComplete[i].duration_integer / 60);
+                } else if (month2013 == '10') {
+                    varDurationSum201311 += (dataComplete[i].duration_integer / 60);
+                } else if (month2013 == '11') {
+                    varDurationSum201312 += (dataComplete[i].duration_integer / 60);
+                }
+                // 2014
+            } else if (year == '2014') {
+                varDurationSum2014 += (dataComplete[i].duration_integer / 60);
+                var month2014 = date.getMonth();
+                if (month2014 == '0') {
+                    varDurationSum201401 += (dataComplete[i].duration_integer / 60);
+                } else if (month2014 == '1') {
+                    varDurationSum201402 += (dataComplete[i].duration_integer / 60);
+                } else if (month2014 == '2') {
+                    varDurationSum201403 += (dataComplete[i].duration_integer / 60);
+                } else if (month2014 == '3') {
+                    varDurationSum201404 += (dataComplete[i].duration_integer / 60);
+                } else if (month2014 == '4') {
+                    varDurationSum201405 += (dataComplete[i].duration_integer / 60);
+                } else if (month2014 == '5') {
+                    varDurationSum201406 += (dataComplete[i].duration_integer / 60);
+                } else if (month2014 == '6') {
+                    varDurationSum201407 += (dataComplete[i].duration_integer / 60);
+                } else if (month2014 == '7') {
+                    varDurationSum201408 += (dataComplete[i].duration_integer / 60);
+                } else if (month2014 == '8') {
+                    varDurationSum201409 += (dataComplete[i].duration_integer / 60);
+                } else if (month2014 == '9') {
+                    varDurationSum201410 += (dataComplete[i].duration_integer / 60);
+                } else if (month2014 == '10') {
+                    varDurationSum201411 += (dataComplete[i].duration_integer / 60);
+                } else if (month2014 == '11') {
+                    varDurationSum201412 += (dataComplete[i].duration_integer / 60);
+                }
+                // 2015
+            } else if (year == '2015') {
+                varDurationSum2015 += (dataComplete[i].duration_integer / 60);
+                var month2015 = date.getMonth();
+                if (month2015 == '0') {
+                    varDurationSum201501 += (dataComplete[i].duration_integer / 60);
+                } else if (month2015 == '1') {
+                    varDurationSum201502 += (dataComplete[i].duration_integer / 60);
+                } else if (month2015 == '2') {
+                    varDurationSum201503 += (dataComplete[i].duration_integer / 60);
+                } else if (month2015 == '3') {
+                    varDurationSum201504 += (dataComplete[i].duration_integer / 60);
+                } else if (month2015 == '4') {
+                    varDurationSum201505 += (dataComplete[i].duration_integer / 60);
+                } else if (month2015 == '5') {
+                    varDurationSum201506 += (dataComplete[i].duration_integer / 60);
+                } else if (month2015 == '6') {
+                    varDurationSum201507 += (dataComplete[i].duration_integer / 60);
+                } else if (month2015 == '7') {
+                    varDurationSum201508 += (dataComplete[i].duration_integer / 60);
+                } else if (month2015 == '8') {
+                    varDurationSum201509 += (dataComplete[i].duration_integer / 60);
+                } else if (month2015 == '9') {
+                    varDurationSum201510 += (dataComplete[i].duration_integer / 60);
+                } else if (month2015 == '10') {
+                    varDurationSum201511 += (dataComplete[i].duration_integer / 60);
+                } else if (month2015 == '11') {
+                    varDurationSum201512 += (dataComplete[i].duration_integer / 60);
+                }
+                // 2016
+            } else if (year == '2016') {
+                varDurationSum2016 += (dataComplete[i].duration_integer / 60);
+                var month2016 = date.getMonth();
+                if (month2016 == '0') {
+                    varDurationSum201601 += (dataComplete[i].duration_integer / 60);
+                } else if (month2016 == '1') {
+                    varDurationSum201602 += (dataComplete[i].duration_integer / 60);
+                } else if (month2016 == '2') {
+                    varDurationSum201603 += (dataComplete[i].duration_integer / 60);
+                } else if (month2016 == '3') {
+                    varDurationSum201604 += (dataComplete[i].duration_integer / 60);
+                } else if (month2016 == '4') {
+                    varDurationSum201605 += (dataComplete[i].duration_integer / 60);
+                } else if (month2016 == '5') {
+                    varDurationSum201606 += (dataComplete[i].duration_integer / 60);
+                } else if (month2016 == '6') {
+                    varDurationSum201607 += (dataComplete[i].duration_integer / 60);
+                } else if (month2016 == '7') {
+                    varDurationSum201608 += (dataComplete[i].duration_integer / 60);
+                } else if (month2016 == '8') {
+                    varDurationSum201609 += (dataComplete[i].duration_integer / 60);
+                } else if (month2016 == '9') {
+                    varDurationSum201610 += (dataComplete[i].duration_integer / 60);
+                } else if (month2016 == '10') {
+                    varDurationSum201611 += (dataComplete[i].duration_integer / 60);
+                } else if (month2016 == '11') {
+                    varDurationSum201612 += (dataComplete[i].duration_integer / 60);
+                }
+                // 2017
+            } else if (year == '2017') {
+                varDurationSum2017 += (dataComplete[i].duration_integer / 60);
+                var month2017 = date.getMonth();
+                if (month2017 == '0') {
+                    varDurationSum201701 += (dataComplete[i].duration_integer / 60);
+                } else if (month2017 == '1') {
+                    varDurationSum201702 += (dataComplete[i].duration_integer / 60);
+                } else if (month2017 == '2') {
+                    varDurationSum201703 += (dataComplete[i].duration_integer / 60);
+                } else if (month2017 == '3') {
+                    varDurationSum201704 += (dataComplete[i].duration_integer / 60);
+                } else if (month2017 == '4') {
+                    varDurationSum201705 += (dataComplete[i].duration_integer / 60);
+                } else if (month2017 == '5') {
+                    varDurationSum201706 += (dataComplete[i].duration_integer / 60);
+                } else if (month2017 == '6') {
+                    varDurationSum201707 += (dataComplete[i].duration_integer / 60);
+                } else if (month2017 == '7') {
+                    varDurationSum201708 += (dataComplete[i].duration_integer / 60);
+                } else if (month2017 == '8') {
+                    varDurationSum201709 += (dataComplete[i].duration_integer / 60);
+                } else if (month2017 == '9') {
+                    varDurationSum201710 += (dataComplete[i].duration_integer / 60);
+                } else if (month2017 == '10') {
+                    varDurationSum201711 += (dataComplete[i].duration_integer / 60);
+                } else if (month2017 == '11') {
+                    varDurationSum201712 += (dataComplete[i].duration_integer / 60);
+                }
+            }
         }
+        // Adding elements to array 2013
+        arrayDuration2013.push(varDurationSum201301);
+        arrayDuration2013.push(varDurationSum201302);
+        arrayDuration2013.push(varDurationSum201303);
+        arrayDuration2013.push(varDurationSum201304);
+        arrayDuration2013.push(varDurationSum201305);
+        arrayDuration2013.push(varDurationSum201306);
+        arrayDuration2013.push(varDurationSum201307);
+        arrayDuration2013.push(varDurationSum201308);
+        arrayDuration2013.push(varDurationSum201309);
+        arrayDuration2013.push(varDurationSum201310);
+        arrayDuration2013.push(varDurationSum201311);
+        arrayDuration2013.push(varDurationSum201312);
+        // Adding elements to array 2014
+        arrayDuration2014.push(varDurationSum201401);
+        arrayDuration2014.push(varDurationSum201402);
+        arrayDuration2014.push(varDurationSum201403);
+        arrayDuration2014.push(varDurationSum201404);
+        arrayDuration2014.push(varDurationSum201405);
+        arrayDuration2014.push(varDurationSum201406);
+        arrayDuration2014.push(varDurationSum201407);
+        arrayDuration2014.push(varDurationSum201408);
+        arrayDuration2014.push(varDurationSum201409);
+        arrayDuration2014.push(varDurationSum201410);
+        arrayDuration2014.push(varDurationSum201411);
+        arrayDuration2014.push(varDurationSum201412);
+        // Adding elements to array 2015
+        arrayDuration2015.push(varDurationSum201501);
+        arrayDuration2015.push(varDurationSum201502);
+        arrayDuration2015.push(varDurationSum201503);
+        arrayDuration2015.push(varDurationSum201504);
+        arrayDuration2015.push(varDurationSum201505);
+        arrayDuration2015.push(varDurationSum201506);
+        arrayDuration2015.push(varDurationSum201507);
+        arrayDuration2015.push(varDurationSum201508);
+        arrayDuration2015.push(varDurationSum201509);
+        arrayDuration2015.push(varDurationSum201510);
+        arrayDuration2015.push(varDurationSum201511);
+        arrayDuration2015.push(varDurationSum201512);
+        // Adding elements to array 2016
+        arrayDuration2016.push(varDurationSum201601);
+        arrayDuration2016.push(varDurationSum201602);
+        arrayDuration2016.push(varDurationSum201603);
+        arrayDuration2016.push(varDurationSum201604);
+        arrayDuration2016.push(varDurationSum201605);
+        arrayDuration2016.push(varDurationSum201606);
+        arrayDuration2016.push(varDurationSum201607);
+        arrayDuration2016.push(varDurationSum201608);
+        arrayDuration2016.push(varDurationSum201609);
+        arrayDuration2016.push(varDurationSum201610);
+        arrayDuration2016.push(varDurationSum201611);
+        arrayDuration2016.push(varDurationSum201612);
+        // Adding elements to array 2017
+        arrayDuration2017.push(varDurationSum201701);
+        arrayDuration2017.push(varDurationSum201702);
+        arrayDuration2017.push(varDurationSum201703);
+        arrayDuration2017.push(varDurationSum201704);
+        arrayDuration2017.push(varDurationSum201705);
+        arrayDuration2017.push(varDurationSum201706);
+        arrayDuration2017.push(varDurationSum201707);
+        arrayDuration2017.push(varDurationSum201708);
+        arrayDuration2017.push(varDurationSum201709);
+        arrayDuration2017.push(varDurationSum201710);
+        arrayDuration2017.push(varDurationSum201711);
+        arrayDuration2017.push(varDurationSum201712);
 
         // Create variables with certain values
         // Create mean of duration as integer in minutes
         var meanDurationInteger = arrayDurationInteger.reduce(add, 0);
+
         function add(a, b) {
             return ((a + b) / dataCompleteLength);
         }
@@ -306,6 +582,14 @@ $(function() {
 
         // Begin charts duration and year **************************************
         // Load data into and build chart durationYearBar
+        durYearBar = document.getElementById('durationYearBar');
+
+        var data = [{
+            x: ['2013', '2014', '2015', '2016', '2017'],
+            y: [varDurationSum2013, varDurationSum2014, varDurationSum2015, varDurationSum2016, varDurationSum2017],
+            type: 'bar'
+        }];
+        Plotly.plot(durYearBar, data);
 
         // Load data into and build chart durationYearLine
 
@@ -317,6 +601,62 @@ $(function() {
 
         // Begin charts duration and month **************************************
         // Load data into and build chart durationMonthBar
+        durMonthsBar = document.getElementById('durationMonthBar');
+        var trace1 = {
+            x: arrayMonths,
+            y: arrayDuration2013,
+            type: 'bar',
+            name: '2013'
+        };
+        var trace2 = {
+            x: arrayMonths,
+            y: arrayDuration2014,
+            type: 'bar',
+            name: '2014'
+        };
+        var trace3 = {
+            x: arrayMonths,
+            y: arrayDuration2015,
+            type: 'bar',
+            name: '2015'
+        };
+        var trace4 = {
+            x: arrayMonths,
+            y: arrayDuration2016,
+            type: 'bar',
+            name: '2016'
+        };
+        var trace5 = {
+            x: arrayMonths,
+            y: arrayDuration2017,
+            type: 'bar',
+            name: '2017'
+        };
+        var data = [trace1, trace2, trace3, trace4, trace5];
+        var layout = {
+            barmode: 'group',
+            showlegend: true,
+            xaxis: {
+                title: 'Monat',
+                tickangle: -45,
+                showgrid: true,
+                zeroline: false
+            },
+            yaxis: {
+                title: 'Dauer [min]',
+                showline: false
+            },
+            autosize: true,
+            margin: {
+                l: 50,
+                r: 50,
+                b: 50,
+                t: 50,
+                pad: 4
+            },
+            plot_bgcolor: '#c7c7c7'
+        };
+        Plotly.plot(durMonthsBar, data, layout);
 
         // Load data into and build chart durationMonthLine
 
@@ -329,6 +669,11 @@ $(function() {
         // Console output for testing
         // console.log(test);
         // console.log('arrayDurationIntegerMin: ' + arrayDurationIntegerMin);
-        // console.log('arrayNumberEmptyDuration ' + arrayNumberEmptyDuration);
+        // console.log('varDurationSum2013: ' + varDurationSum2013);
+        // console.log('varDurationSum2014: ' + varDurationSum2014);
+        // console.log('varDurationSum2015: ' + varDurationSum2015);
+        // console.log('varDurationSum2016: ' + varDurationSum2016);
+        // console.log('varDurationSum2017: ' + varDurationSum2017);
+        // console.log('varDurationSum201306: ' + varDurationSum201306);
     });
 });
