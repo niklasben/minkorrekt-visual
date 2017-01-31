@@ -587,7 +587,10 @@ $(function() {
         var data = [{
             x: ['2013', '2014', '2015', '2016', '2017'],
             y: [varDurationSum2013, varDurationSum2014, varDurationSum2015, varDurationSum2016, varDurationSum2017],
-            type: 'bar'
+            type: 'bar',
+            marker: {
+                color: ['rgb(65,105,225)', 'rgb(0,139,69)', 'rgb(205,0,0)', 'rgb(238,154,0)', 'rgb(125,38,205)']
+            }
         }];
         Plotly.plot(durYearBar, data);
 
@@ -606,31 +609,51 @@ $(function() {
             x: arrayMonths,
             y: arrayDuration2013,
             type: 'bar',
-            name: '2013'
+            name: '2013',
+            marker: {
+                color: 'rgb(65,105,225)',
+                opacity: 0.5
+            }
         };
         var trace2 = {
             x: arrayMonths,
             y: arrayDuration2014,
             type: 'bar',
-            name: '2014'
+            name: '2014',
+            marker: {
+                color: 'rgb(0,139,69)',
+                opacity: 0.5
+            }
         };
         var trace3 = {
             x: arrayMonths,
             y: arrayDuration2015,
             type: 'bar',
-            name: '2015'
+            name: '2015',
+            marker: {
+                color: 'rgb(205,0,0)',
+                opacity: 0.5
+            }
         };
         var trace4 = {
             x: arrayMonths,
             y: arrayDuration2016,
             type: 'bar',
-            name: '2016'
+            name: '2016',
+            marker: {
+                color: 'rgb(238,154,0)',
+                opacity: 0.5
+            }
         };
         var trace5 = {
             x: arrayMonths,
             y: arrayDuration2017,
             type: 'bar',
-            name: '2017'
+            name: '2017',
+            marker: {
+                color: 'rgb(125,38,205)',
+                opacity: 0.5
+            }
         };
         var data = [trace1, trace2, trace3, trace4, trace5];
         var layout = {

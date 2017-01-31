@@ -44,7 +44,7 @@ Methodisch (in)korrekte Auswertung des Methodisch-Inkorrekt-Podcasts.
     -   Zuordnen zu Wissenschaftsbereichen
         -   Passende Thesauri?
     -   Länge der Titel zählen
-    -   Bar-Chart - Farben für Jahre überall fix definieren.
+    -   Hover Texte für Monat/Jahr
 
 
 -   Javascript
