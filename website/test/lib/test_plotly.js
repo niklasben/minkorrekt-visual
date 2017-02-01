@@ -44,10 +44,15 @@ $(function() {
         var arrayDurationIntegerMean = [];
         var arrayDurationIntegerMin = [];
         var arrayDuration2013 = [];
+        var arrayDurationMonth2013 = [];
         var arrayDuration2014 = [];
+        var arrayDurationMonth2014 = [];
         var arrayDuration2015 = [];
+        var arrayDurationMonth2015 = [];
         var arrayDuration2016 = [];
+        var arrayDurationMonth2016 = [];
         var arrayDuration2017 = [];
+        var arrayDurationMonth2017 = [];
 
         // Create variables for years and months
         // Year 2013
@@ -143,6 +148,7 @@ $(function() {
             var year = date.getFullYear();
             if (year == '2013') {
                 varDurationSum2013 += (dataComplete[i].duration_integer / 60);
+                arrayDuration2013.push((dataComplete[i].duration_integer / 60));
                 var month2013 = date.getMonth();
                 if (month2013 == '7') {
                     varDurationSum201308 += (dataComplete[i].duration_integer / 60);
@@ -158,6 +164,7 @@ $(function() {
                 // 2014
             } else if (year == '2014') {
                 varDurationSum2014 += (dataComplete[i].duration_integer / 60);
+                arrayDuration2014.push((dataComplete[i].duration_integer / 60));
                 var month2014 = date.getMonth();
                 if (month2014 == '0') {
                     varDurationSum201401 += (dataComplete[i].duration_integer / 60);
@@ -187,6 +194,7 @@ $(function() {
                 // 2015
             } else if (year == '2015') {
                 varDurationSum2015 += (dataComplete[i].duration_integer / 60);
+                arrayDuration2015.push((dataComplete[i].duration_integer / 60));
                 var month2015 = date.getMonth();
                 if (month2015 == '0') {
                     varDurationSum201501 += (dataComplete[i].duration_integer / 60);
@@ -216,6 +224,7 @@ $(function() {
                 // 2016
             } else if (year == '2016') {
                 varDurationSum2016 += (dataComplete[i].duration_integer / 60);
+                arrayDuration2016.push((dataComplete[i].duration_integer / 60));
                 var month2016 = date.getMonth();
                 if (month2016 == '0') {
                     varDurationSum201601 += (dataComplete[i].duration_integer / 60);
@@ -245,6 +254,7 @@ $(function() {
                 // 2017
             } else if (year == '2017') {
                 varDurationSum2017 += (dataComplete[i].duration_integer / 60);
+                arrayDuration2017.push((dataComplete[i].duration_integer / 60));
                 var month2017 = date.getMonth();
                 if (month2017 == '0') {
                     varDurationSum201701 += (dataComplete[i].duration_integer / 60);
@@ -274,70 +284,70 @@ $(function() {
             }
         }
         // Adding elements to array 2013
-        arrayDuration2013.push(varDurationSum201301);
-        arrayDuration2013.push(varDurationSum201302);
-        arrayDuration2013.push(varDurationSum201303);
-        arrayDuration2013.push(varDurationSum201304);
-        arrayDuration2013.push(varDurationSum201305);
-        arrayDuration2013.push(varDurationSum201306);
-        arrayDuration2013.push(varDurationSum201307);
-        arrayDuration2013.push(varDurationSum201308);
-        arrayDuration2013.push(varDurationSum201309);
-        arrayDuration2013.push(varDurationSum201310);
-        arrayDuration2013.push(varDurationSum201311);
-        arrayDuration2013.push(varDurationSum201312);
+        /* arrayDurationMonth2013.push(varDurationSum201301);
+        arrayDurationMonth2013.push(varDurationSum201302);
+        arrayDurationMonth2013.push(varDurationSum201303);
+        arrayDurationMonth2013.push(varDurationSum201304);
+        arrayDurationMonth2013.push(varDurationSum201305);
+        arrayDurationMonth2013.push(varDurationSum201306);
+        arrayDurationMonth2013.push(varDurationSum201307); */
+        arrayDurationMonth2013.push(varDurationSum201308);
+        arrayDurationMonth2013.push(varDurationSum201309);
+        arrayDurationMonth2013.push(varDurationSum201310);
+        arrayDurationMonth2013.push(varDurationSum201311);
+        arrayDurationMonth2013.push(varDurationSum201312);
         // Adding elements to array 2014
-        arrayDuration2014.push(varDurationSum201401);
-        arrayDuration2014.push(varDurationSum201402);
-        arrayDuration2014.push(varDurationSum201403);
-        arrayDuration2014.push(varDurationSum201404);
-        arrayDuration2014.push(varDurationSum201405);
-        arrayDuration2014.push(varDurationSum201406);
-        arrayDuration2014.push(varDurationSum201407);
-        arrayDuration2014.push(varDurationSum201408);
-        arrayDuration2014.push(varDurationSum201409);
-        arrayDuration2014.push(varDurationSum201410);
-        arrayDuration2014.push(varDurationSum201411);
-        arrayDuration2014.push(varDurationSum201412);
+        arrayDurationMonth2014.push(varDurationSum201401);
+        arrayDurationMonth2014.push(varDurationSum201402);
+        arrayDurationMonth2014.push(varDurationSum201403);
+        arrayDurationMonth2014.push(varDurationSum201404);
+        arrayDurationMonth2014.push(varDurationSum201405);
+        arrayDurationMonth2014.push(varDurationSum201406);
+        arrayDurationMonth2014.push(varDurationSum201407);
+        arrayDurationMonth2014.push(varDurationSum201408);
+        arrayDurationMonth2014.push(varDurationSum201409);
+        arrayDurationMonth2014.push(varDurationSum201410);
+        arrayDurationMonth2014.push(varDurationSum201411);
+        arrayDurationMonth2014.push(varDurationSum201412);
         // Adding elements to array 2015
-        arrayDuration2015.push(varDurationSum201501);
-        arrayDuration2015.push(varDurationSum201502);
-        arrayDuration2015.push(varDurationSum201503);
-        arrayDuration2015.push(varDurationSum201504);
-        arrayDuration2015.push(varDurationSum201505);
-        arrayDuration2015.push(varDurationSum201506);
-        arrayDuration2015.push(varDurationSum201507);
-        arrayDuration2015.push(varDurationSum201508);
-        arrayDuration2015.push(varDurationSum201509);
-        arrayDuration2015.push(varDurationSum201510);
-        arrayDuration2015.push(varDurationSum201511);
-        arrayDuration2015.push(varDurationSum201512);
+        arrayDurationMonth2015.push(varDurationSum201501);
+        arrayDurationMonth2015.push(varDurationSum201502);
+        arrayDurationMonth2015.push(varDurationSum201503);
+        arrayDurationMonth2015.push(varDurationSum201504);
+        arrayDurationMonth2015.push(varDurationSum201505);
+        arrayDurationMonth2015.push(varDurationSum201506);
+        arrayDurationMonth2015.push(varDurationSum201507);
+        arrayDurationMonth2015.push(varDurationSum201508);
+        arrayDurationMonth2015.push(varDurationSum201509);
+        arrayDurationMonth2015.push(varDurationSum201510);
+        arrayDurationMonth2015.push(varDurationSum201511);
+        arrayDurationMonth2015.push(varDurationSum201512);
         // Adding elements to array 2016
-        arrayDuration2016.push(varDurationSum201601);
-        arrayDuration2016.push(varDurationSum201602);
-        arrayDuration2016.push(varDurationSum201603);
-        arrayDuration2016.push(varDurationSum201604);
-        arrayDuration2016.push(varDurationSum201605);
-        arrayDuration2016.push(varDurationSum201606);
-        arrayDuration2016.push(varDurationSum201607);
-        arrayDuration2016.push(varDurationSum201608);
-        arrayDuration2016.push(varDurationSum201609);
-        arrayDuration2016.push(varDurationSum201610);
-        arrayDuration2016.push(varDurationSum201611);
-        arrayDuration2016.push(varDurationSum201612);
+        arrayDurationMonth2016.push(varDurationSum201601);
+        arrayDurationMonth2016.push(varDurationSum201602);
+        arrayDurationMonth2016.push(varDurationSum201603);
+        arrayDurationMonth2016.push(varDurationSum201604);
+        arrayDurationMonth2016.push(varDurationSum201605);
+        arrayDurationMonth2016.push(varDurationSum201606);
+        arrayDurationMonth2016.push(varDurationSum201607);
+        arrayDurationMonth2016.push(varDurationSum201608);
+        arrayDurationMonth2016.push(varDurationSum201609);
+        arrayDurationMonth2016.push(varDurationSum201610);
+        arrayDurationMonth2016.push(varDurationSum201611);
+        arrayDurationMonth2016.push(varDurationSum201612);
         // Adding elements to array 2017
-        arrayDuration2017.push(varDurationSum201701);
-        arrayDuration2017.push(varDurationSum201702);
-        arrayDuration2017.push(varDurationSum201703);
-        arrayDuration2017.push(varDurationSum201704);
-        arrayDuration2017.push(varDurationSum201705);
-        arrayDuration2017.push(varDurationSum201706);
-        arrayDuration2017.push(varDurationSum201707);
-        arrayDuration2017.push(varDurationSum201708);
-        arrayDuration2017.push(varDurationSum201709);
-        arrayDuration2017.push(varDurationSum201710);
-        arrayDuration2017.push(varDurationSum201711);
-        arrayDuration2017.push(varDurationSum201712);
+        arrayDurationMonth2017.push(varDurationSum201701);
+        /* arrayDurationMonth2017.push(varDurationSum201702);
+        arrayDurationMonth2017.push(varDurationSum201703);
+        arrayDurationMonth2017.push(varDurationSum201704);
+        arrayDurationMonth2017.push(varDurationSum201705);
+        arrayDurationMonth2017.push(varDurationSum201706);
+        arrayDurationMonth2017.push(varDurationSum201707);
+        arrayDurationMonth2017.push(varDurationSum201708);
+        arrayDurationMonth2017.push(varDurationSum201709);
+        arrayDurationMonth2017.push(varDurationSum201710);
+        arrayDurationMonth2017.push(varDurationSum201711);
+        arrayDurationMonth2017.push(varDurationSum201712); */
 
         // Create variables with certain values
         // Create mean of duration as integer in minutes
@@ -600,14 +610,90 @@ $(function() {
 
         // Load data into and build chart durationYearPie
 
+        // Load data into and build chart durationYearBox
+        durYearBox = document.getElementById('durationYearBox');
+        var trace1 = {
+            y: arrayDuration2013,
+            type: 'box',
+            name: '2013',
+            jitter: 0.3,
+            pointpos: -1.8,
+            marker: {
+                color: 'rgb(65,105,225)',
+                opacity: 0.5
+            },
+            boxpoints: 'all'
+        };
+        var trace2 = {
+            y: arrayDuration2014,
+            type: 'box',
+            name: '2014',
+            jitter: 0.3,
+            pointpos: -1.8,
+            marker: {
+                color: 'rgb(0,139,69)',
+                opacity: 0.5
+            },
+            boxpoints: 'all'
+        };
+        var trace3 = {
+            y: arrayDuration2015,
+            type: 'box',
+            name: '2015',
+            jitter: 0.3,
+            pointpos: -1.8,
+            marker: {
+                color: 'rgb(205,0,0)',
+                opacity: 0.5
+            },
+            boxpoints: 'all'
+        };
+        var trace4 = {
+            y: arrayDuration2016,
+            type: 'box',
+            name: '2016',
+            jitter: 0.3,
+            pointpos: -1.8,
+            marker: {
+                color: 'rgb(238,154,0)',
+                opacity: 0.5
+            },
+            boxpoints: 'all'
+        };
+        var trace5 = {
+            y: arrayDuration2017,
+            type: 'box',
+            name: '2017',
+            jitter: 0.3,
+            pointpos: -1.8,
+            marker: {
+                color: 'rgb(125,38,205)',
+                opacity: 0.5
+            },
+            boxpoints: 'all'
+        };
+        var data = [trace1, trace2, trace3, trace4, trace5];
+        var layout = {
+            autosize: true,
+            margin: {
+                l: 50,
+                r: 50,
+                b: 50,
+                t: 50,
+                pad: 4
+            },
+            plot_bgcolor: '#c7c7c7'
+        };
+        Plotly.plot(durYearBox, data, layout);
+
 
 
         // Begin charts duration and month **************************************
         // Load data into and build chart durationMonthBar
-        durMonthsBar = document.getElementById('durationMonthBar');
+        durMonthBar = document.getElementById('durationMonthBar');
         var trace1 = {
             x: arrayMonths,
-            y: arrayDuration2013,
+            y: arrayDurationMonth2013,
             type: 'bar',
             name: '2013',
             marker: {
@@ -617,7 +703,7 @@ $(function() {
         };
         var trace2 = {
             x: arrayMonths,
-            y: arrayDuration2014,
+            y: arrayDurationMonth2014,
             type: 'bar',
             name: '2014',
             marker: {
@@ -627,7 +713,7 @@ $(function() {
         };
         var trace3 = {
             x: arrayMonths,
-            y: arrayDuration2015,
+            y: arrayDurationMonth2015,
             type: 'bar',
             name: '2015',
             marker: {
@@ -637,7 +723,7 @@ $(function() {
         };
         var trace4 = {
             x: arrayMonths,
-            y: arrayDuration2016,
+            y: arrayDurationMonth2016,
             type: 'bar',
             name: '2016',
             marker: {
@@ -647,7 +733,7 @@ $(function() {
         };
         var trace5 = {
             x: arrayMonths,
-            y: arrayDuration2017,
+            y: arrayDurationMonth2017,
             type: 'bar',
             name: '2017',
             marker: {
@@ -679,13 +765,94 @@ $(function() {
             },
             plot_bgcolor: '#c7c7c7'
         };
-        Plotly.plot(durMonthsBar, data, layout);
+        Plotly.plot(durMonthBar, data, layout);
 
         // Load data into and build chart durationMonthLine
 
         // Load data into and build chart durationMonthArea
 
         // Load data into and build chart durationMonthPie
+
+        // Load data into and build chart durationMonthBox
+        durMonthBox = document.getElementById('durationMonthBox');
+        var trace1 = {
+            y: arrayDurationMonth2013,
+            type: 'box',
+            name: '2013',
+            jitter: 0.3,
+            pointpos: -1.8,
+            marker: {
+                color: 'rgb(65,105,225)',
+                opacity: 0.5
+            },
+            boxmean: 'sd',
+            boxpoints: 'all'
+        };
+        var trace2 = {
+            y: arrayDurationMonth2014,
+            type: 'box',
+            name: '2014',
+            jitter: 0.3,
+            pointpos: -1.8,
+            marker: {
+                color: 'rgb(0,139,69)',
+                opacity: 0.5
+            },
+            boxmean: 'sd',
+            boxpoints: 'all'
+        };
+        var trace3 = {
+            y: arrayDurationMonth2015,
+            type: 'box',
+            name: '2015',
+            jitter: 0.3,
+            pointpos: -1.8,
+            marker: {
+                color: 'rgb(205,0,0)',
+                opacity: 0.5
+            },
+            boxmean: 'sd',
+            boxpoints: 'all'
+        };
+        var trace4 = {
+            y: arrayDurationMonth2016,
+            type: 'box',
+            name: '2016',
+            jitter: 0.3,
+            pointpos: -1.8,
+            marker: {
+                color: 'rgb(238,154,0)',
+                opacity: 0.5
+            },
+            boxmean: 'sd',
+            boxpoints: 'all'
+        };
+        var trace5 = {
+            y: arrayDurationMonth2017,
+            type: 'box',
+            name: '2017',
+            jitter: 0.3,
+            pointpos: -1.8,
+            marker: {
+                color: 'rgb(125,38,205)',
+                opacity: 0.5
+            },
+            boxmean: 'sd',
+            boxpoints: 'all'
+        };
+        var data = [trace1, trace2, trace3, trace4, trace5];
+        var layout = {
+            autosize: true,
+            margin: {
+                l: 50,
+                r: 50,
+                b: 50,
+                t: 50,
+                pad: 4
+            },
+            plot_bgcolor: '#c7c7c7'
+        };
+        Plotly.plot(durMonthBox, data, layout);
 
 
 

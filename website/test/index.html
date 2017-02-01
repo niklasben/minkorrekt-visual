@@ -11,10 +11,13 @@
 
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous" />
+
     <!-- Font Awesome -->
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+
     <!-- Bootstrap Table -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.11.0/bootstrap-table.min.css" integrity="sha256-eU4xmpfQx1HSi5q1q2rHNcMEzTNJov7r2Wr/6zF3ANc=" crossorigin="anonymous" />
+
     <!-- Own Styles -->
     <link rel="stylesheet" href="css/basis.css" />
 
@@ -29,9 +32,9 @@
 <body>
 
     <!-- Begin Navbar Left -->
-    <nav class="navbar navbar-inverse navbar-fixed-left">
+    <nav class="navbar navbar-default navbar-fixed-top">
         <a class="navbar-brand" href="#">
-            <img src="img/logo.jpg" width="50%" alt="Logo" />
+            test
         </a>
         <ul class="nav navbar-nav">
             <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <span class="caret"></span></a>
@@ -115,7 +118,23 @@
         <!-- Begin Table Complete -->
         <div class="container-tr">
             <section class="table-responsive">
-
+                <div id="toolbar"></div>
+                <table id="table" class="table-striped table-hover table-condensed highchart" data-id-field="number" data-toolbar="#toolbar" data-search="true" data-advanced-search="true" data-id-table="advancedTable" data-show-refresh="true" data-show-toggle="true"
+                    data-show-columns="true" data-show-pagination-switch="true" data-pagination="true" data-page-list="[10, 25, 50, 100, ALL]" data-graph-container-before="1" data-graph-type="column" data-sort-name="number" data-sort-order="desc" data-mobile-responsive="true"
+                    data-check-on-init="true">
+                    <thead>
+                        <tr>
+                            <th data-field="number" data-sortable="true">number</th>
+                            <th data-field="titlemain" data-sortable="true">titlemain</th>
+                            <th data-field="specials" data-sortable="true">specials</th>
+                            <th data-field="pubday" data-sortable="true">pubday</th>
+                            <th data-field="pubdate" data-sortable="true">pubdate</th>
+                            <th data-field="pubtime" data-sortable="true">pubtime</th>
+                            <th data-field="duration" data-sortable="true">duration</th>
+                            <th data-field="url">url</th>
+                        </tr>
+                    </thead>
+                    </table>
             </section>
         </div>
         <!-- End Table Complete -->
@@ -134,12 +153,35 @@
                             <i class="fa fa-bar-chart" aria-hidden="true"></i> Säulendiagramm
                         </a>
                     </li>
-
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#test2" role="tab">
+                            <i class="fa fa-line-chart" aria-hidden="true"></i> Liniendiagramm
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#test3" role="tab">
+                            <i class="fa fa-area-chart" aria-hidden="true"></i> Flächendiagramm
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#test4" role="tab">
+                            <i class="fa fa-pie-chart" aria-hidden="true"></i> Kreisdiagramm
+                        </a>
+                    </li>
                 </ul>
                 <div class="tab-content">
 
                     <div id="test1" class="tab-pane active" role="tabpanel">
                         <div id="testchart1"></div>
+                    </div>
+                    <div id="test2" class="tab-pane" role="tabpanel">
+                        <div id="testchart2"></div>
+                    </div>
+                    <div id="test3" class="tab-pane" role="tabpanel">
+                        <div id="testchart3"></div>
+                    </div>
+                    <div id="test4" class="tab-pane" role="tabpanel">
+                        <div id="testchart4"></div>
                     </div>
 
                 </div>
@@ -157,13 +199,22 @@
                             <i class="fa fa-line-chart" aria-hidden="true"></i> Liniendiagramm
                         </a>
                     </li>
-
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#durationDateAreaTab" role="tab">
+                            <i class="fa fa-area-chart" aria-hidden="true"></i> Flächendiagramm
+                        </a>
+                    </li>
                 </ul>
                 <div class="tab-content">
 
                     <div id="durationDateLineTab" class="tab-pane active" role="tabpanel">
                         <div id="durationDateLine"></div>
                     </div>
+                    <div id="durationDateAreaTab" class="tab-pane" role="tabpanel">
+                        <div id="durationDateArea"></div>
+                    </div>
+                </div>
+                <div id="durationDatePieHover"></div>
 
             </section>
         </div>
@@ -179,12 +230,43 @@
                             <i class="fa fa-bar-chart" aria-hidden="true"></i> Säulendiagramm
                         </a>
                     </li>
-
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#durationYearLineTab" role="tab">
+                            <i class="fa fa-line-chart" aria-hidden="true"></i> Liniendiagramm
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#durationYearAreaTab" role="tab">
+                            <i class="fa fa-area-chart" aria-hidden="true"></i> Flächendiagramm
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#durationYearPieTab" role="tab">
+                            <i class="fa fa-pie-chart" aria-hidden="true"></i> Kreisdiagramm
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#durationYearBoxTab" role="tab">
+                            Box-Plot (alle Folgen)
+                        </a>
+                    </li>
                 </ul>
                 <div class="tab-content">
 
                     <div id="durationYearBarTab" class="tab-pane active" role="tabpanel">
                         <div id="durationYearBar"></div>
+                    </div>
+                    <div id="durationYearLineTab" class="tab-pane" role="tabpanel">
+                        <div id="durationYearLine"></div>
+                    </div>
+                    <div id="durationYearAreaTab" class="tab-pane" role="tabpanel">
+                        <div id="durationYearArea"></div>
+                    </div>
+                    <div id="durationYearPieTab" class="tab-pane" role="tabpanel">
+                        <div id="durationYearPie"></div>
+                    </div>
+                    <div id="durationYearBoxTab" class="tab-pane" role="tabpanel">
+                        <div id="durationYearBox"></div>
                     </div>
 
                 </div>
@@ -202,12 +284,43 @@
                             <i class="fa fa-bar-chart" aria-hidden="true"></i> Säulendiagramm
                         </a>
                     </li>
-
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#durationMonthLineTab" role="tab">
+                            <i class="fa fa-line-chart" aria-hidden="true"></i> Liniendiagramm
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#durationMonthAreaTab" role="tab">
+                            <i class="fa fa-area-chart" aria-hidden="true"></i> Flächendiagramm
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#durationMonthPieTab" role="tab">
+                            <i class="fa fa-pie-chart" aria-hidden="true"></i> Kreisdiagramm
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#durationMonthBoxTab" role="tab">
+                            Box-Plot (einzelne Monate)
+                        </a>
+                    </li>
                 </ul>
                 <div class="tab-content">
 
                     <div id="durationMonthBarTab" class="tab-pane active" role="tabpanel">
                         <div id="durationMonthBar"></div>
+                    </div>
+                    <div id="durationMonthLineTab" class="tab-pane" role="tabpanel">
+                        <div id="durationMonthLine"></div>
+                    </div>
+                    <div id="durationMonthAreaTab" class="tab-pane" role="tabpanel">
+                        <div id="durationMonthArea"></div>
+                    </div>
+                    <div id="durationMonthPieTab" class="tab-pane" role="tabpanel">
+                        <div id="durationMonthPie"></div>
+                    </div>
+                    <div id="durationMonthBoxTab" class="tab-pane" role="tabpanel">
+                        <div id="durationMonthBox"></div>
                     </div>
 
                 </div>
@@ -215,12 +328,12 @@
         </div>
         <!-- End duration per month -->
 
-        <!-- Begin To-Do-Liste -->
+        <!-- xxxxxxx -->
         <div class="container-tr">
             <h3>To-Do-Liste</h3>
             <section id="bubbleday" class="charts"></section>
         </div>
-        <!-- End To-Do-Liste -->
+        <!-- xxxxxxx -->
 
     </div>
     <!-- End Container -->
@@ -240,10 +353,31 @@
     <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
     <!-- Bootstrap -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <!-- <script src="lib/bootstrap-tab.js"></script> -->
+
+    <!-- Bootstrap Table -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.11.0/bootstrap-table.min.js" integrity="sha256-eXHLyyVI+v6X1wbfg9NB05IWqOqY4E9185nHZgeDIhg=" crossorigin="anonymous"></script>
+
+    <script src="lib/bootstrap-table-toolbar.js"></script>
+    <script src="lib/bootstrap-table-mobile.js"></script>
+
     <!-- Plotly -->
     <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <!-- <script src="https://cdn.plot.ly/plotly-cartesian-latest.min.js"></script>
+    <script src="https://cdn.plot.ly/plotly-gl3d-latest.min.js"></script>
+
+    <!-- Highcharts
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highcharts/5.0.6/highcharts.js" integrity="sha256-QwUrND/LJhYUBcYRAAxtMNWjZhZI+Yr8N7fpvHSFd4E=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highcharts/5.0.6/js/modules/boost.js" integrity="sha256-8CwAqFrhNgTYXfuiHM7Kjq8PJlxKKxuDh54z5jf7vMc=" crossorigin="anonymous"></script> -->
+
+    <!-- HighchartTable
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highchartTable/2.0.0/jquery.highchartTable.min.js" integrity="sha256-j4pXcjEAHApZeVWq1JhNVg7a8wWj1vKNNF0ZzTszRJk=" crossorigin="anonymous"></script> -->
+
     <!-- Own Scripts -->
-    <script src="lib/datacrunching.js"></script>
+    <!-- <script src="lib/scrolling.js"></script> -->
+    <!-- <script src="lib/sizing.js"></script> -->
+    <!-- <script src="lib/test_bootstraptable.js"></script> -->
+    <script src="lib/test_plotly.js"></script>
 
 </body>
 
