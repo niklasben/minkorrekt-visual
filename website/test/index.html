@@ -10,7 +10,7 @@
     <title>Methodisch (in)korrekte Daten</title>
 
     <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous" />
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous" />
 
     <!-- Font Awesome -->
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
@@ -32,319 +32,88 @@
 <body>
 
     <!-- Begin Navbar Left -->
-    <nav class="navbar navbar-default navbar-fixed-top">
-        <a class="navbar-brand" href="#">
-            test
-        </a>
-        <ul class="nav navbar-nav">
-            <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <span class="caret"></span></a>
-                <ul class="dropdown-menu" role="menu">
-                    <li><a href="#">Sub Menu1</a></li>
-                    <li><a href="#">Sub Menu2</a></li>
-                    <li><a href="#">Sub Menu3</a></li>
-                    <li class="divider"></li>
-                    <li><a href="#">Sub Menu4</a></li>
-                    <li><a href="#">Sub Menu5</a></li>
+    <!-- <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+                <a class="navbar-brand" href="#">Project name</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">Dashboard</a></li>
+                    <li><a href="#">Settings</a></li>
+                    <li><a href="#">Profile</a></li>
+                    <li><a href="#">Help</a></li>
                 </ul>
-            </li>
-            <li><a href="#">Link2</a></li>
-            <li><a href="#">Link2</a></li>
-            <li><a href="#">Link2</a></li>
-            <li><a href="#">Link2</a></li>
-            <li><a href="#">Link2</a></li>
-            <li><a href="#">Link2</a></li>
-        </ul>
-    </nav>
+                <form class="navbar-form navbar-right">
+                    <input type="text" class="form-control" placeholder="Search...">
+                </form>
+            </div>
+        </div>
+    </nav> -->
     <!-- End Navbar Left -->
 
     <!-- Begin Container -->
-    <div class="container">
+    <div class="container-fluid">
 
-        <!-- Central Begin -->
-        <div id="main" class="container-main">
-
-            <!-- Begin Jumbotron -->
-            <div class="container-tr">
-                <section class="jumbotron">
-                    <h1>Methodisch (in)korrektes Zeugs</h1>
-                    <h3>
-                        <span class="mirrored">t</span><span class="mirrored">h</span><span class="mirrored">i</span><span class="mirrored">s</span>
-                        <span class="mirrored">w</span><span class="mirrored">o</span><span class="mirrored">r</span><span class="mirrored">k</span><span class="mirrored">s</span>
-                        <span class="mirrored">f</span><span class="mirrored">o</span><span class="mirrored">r</span>
-                        <span class="mirrored">m</span><span class="mirrored">e</span>
-                        <span class="mirrored">...</span>
-                    </h3>
-                    <p class="text-justify">
-                        Lorizzle ipsum my shizz sit amizzle, consectetuer adipiscing my shizz. Nullizzle fo shizzle my nizzle velizzle, for sure volutpat, its fo rizzle mammasay mammasa mamma oo sa, gravida hizzle, arcu. Pellentesque sizzle check out this. Sed erizzle. Break
-                        it down izzle dolor dapibus turpis i saw beyonces tizzles and my pizzle went crizzle hizzle. Maurizzle shit nibh izzle turpis. Gangster izzle tortizzle. Own yo' pot rhoncus dawg. In shizzle my nizzle crocodizzle yippiyo platea
-                        break yo neck, yall. Shit dapibizzle. Curabitizzle tellus gangster, pretium funky fresh, mattis ac, eleifend vitae, nunc. Boofron ghetto. Integizzle we gonna chung velit pot fizzle.
-                    </p>
-                </section>
+        <!-- Begin Navbar Left -->
+        <div class="row">
+            <div class="col-sm-3 col-md-2 sidebar">
+                <ul class="nav nav-sidebar">
+                    <li class="active"><a href="#">Overview <span class="sr-only">(current)</span></a></li>
+                    <li><a href="#">Reports</a></li>
+                    <li><a href="#">Analytics</a></li>
+                    <li><a href="#">Export</a></li>
+                </ul>
+                <ul class="nav nav-sidebar">
+                    <li><a href="">Nav item</a></li>
+                    <li><a href="">Nav item again</a></li>
+                    <li><a href="">One more nav</a></li>
+                    <li><a href="">Another nav item</a></li>
+                    <li><a href="">More navigation</a></li>
+                </ul>
+                <ul class="nav nav-sidebar">
+                    <li><a href="">Nav item again</a></li>
+                    <li><a href="">One more nav</a></li>
+                    <li><a href="">Another nav item</a></li>
+                </ul>
             </div>
-        </div>
-        <!-- End Jumbotron -->
+            <!-- End Navbar Left -->
 
-        <!-- All the other stuff -->
+            <!-- Central Begin -->
+            <div id="main" class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
 
-        <!-- Begin Page Header -->
-        <div class="container-tr">
-            <section class="page-header">
-                <h1>Aufgefallen ist...</h1>
-                <p class="text-justify">
-                    Praesent non mi shiznit mauris nizzle bibendum. Dang lacinia things lectizzle. Yo izzle yo izzle leo sodalizzle sure. Aliquam lobortizzle, funky fresh rizzle dapibus sizzle, nulla ligula bibendum doggy, break it down boofron augue fo shizzle doggy arcu.
-                    Vivamizzle bizzle lacizzle id go to hizzle. Crazy arcu dang, fermentizzle cool ma nizzle, faucibus izzle, placerat break yo neck, yall, shizzlin dizzle. Sed vehicula the bizzle funky fresh. Vestibulum erat uhuh ... yih!, hendrerit
-                    away, that's the shizzle izzle, malesuada a, arcu. Morbi aliquam placerizzle nulla. Fo shizzle malesuada erizzle id erizzle. Fusce metizzle you son of a bizzle, egestas my shizz, that's the shizzle quis, elementum for sure, neque.
-                    Shizzlin dizzle iaculizzle nunc da bomb orci tincidunt funky fresh. Fusce dope, nulla eget sollicitudizzle bling bling, lacizzle quam luctizzle erizzle, vitae shiznit augue purus shizznit arcu. Etizzle daahng dawg ma nizzle. Nunc fo
-                    shizzle my nizzle mi. Dizzle pimpin' turpizzle. Uhuh ... yih! fizzle magna. Sizzle pimpin' erizzle, consectetuer crunk, tempizzle izzle, sure in, pede. Nunc shizzle my nizzle crocodizzle. Nulla nisi erizzle, tristique fizzle amet,
-                    ultricizzle at, fo shizzle my nizzle nizzle, augue.
-                </p>
-            </section>
-        </div>
-        <!-- End Page Header -->
-
-        <!-- Begin Text with Information -->
-        <div class="container-tr">
-            <section class="page-header">
-                <h1>Text text text</h1>
-                <p class="text-justify">
-                    Zombie ipsum reversus ab viral inferno, nam rick grimes malum cerebro. De carne lumbering animata corpora quaeritis. Summus brains sit​​, morbo vel maleficia? De apocalypsi gorger omero undead survivor dictum mauris. Hi mindless mortuis soulless creaturas,
-                    imo evil stalking monstra adventus resi dentevil vultus comedat cerebella viventium. Qui animated corpse, cricket bat max brucks terribilem incessu zomby. The voodoo sacerdos flesh eater, suscitat mortuos comedere carnem virus. Zonbi
-                    tattered for solum oculi eorum defunctis go lum cerebro. Nescio brains an Undead zombies. Sicut malus putrid voodoo horror. Nigh tofth eliv ingdead.
-                </p>
-            </section>
-        </div>
-        <!-- End Text with Information -->
-
-        <!-- Begin Table Complete -->
-        <div class="container-tr">
-            <section class="table-responsive">
-                <div id="toolbar"></div>
-                <table id="table" class="table-striped table-hover table-condensed highchart" data-id-field="number" data-toolbar="#toolbar" data-search="true" data-advanced-search="true" data-id-table="advancedTable" data-show-refresh="true" data-show-toggle="true"
-                    data-show-columns="true" data-show-pagination-switch="true" data-pagination="true" data-page-list="[10, 25, 50, 100, ALL]" data-graph-container-before="1" data-graph-type="column" data-sort-name="number" data-sort-order="desc" data-mobile-responsive="true"
-                    data-check-on-init="true">
-                    <thead>
-                        <tr>
-                            <th data-field="number" data-sortable="true">number</th>
-                            <th data-field="titlemain" data-sortable="true">titlemain</th>
-                            <th data-field="specials" data-sortable="true">specials</th>
-                            <th data-field="pubday" data-sortable="true">pubday</th>
-                            <th data-field="pubdate" data-sortable="true">pubdate</th>
-                            <th data-field="pubtime" data-sortable="true">pubtime</th>
-                            <th data-field="duration" data-sortable="true">duration</th>
-                            <th data-field="url">url</th>
-                        </tr>
-                    </thead>
-                    </table>
-            </section>
-        </div>
-        <!-- End Table Complete -->
-
-        <!-- Begin Table Specials -->
-
-        <!-- End Table Specials -->
-
-        <!-- Begin duration per episode -->
-        <div class="container-tr">
-            <section id="sectionDurationEpisode" class="charts">
-                <h3>Dauer per Nummer</h3>
-                <ul class="nav nav-tabs" role="tablist">
-                    <li class="nav-item">
-                        <a class="nav-link active" data-toggle="tab" href="#test1" role="tab">
-                            <i class="fa fa-bar-chart" aria-hidden="true"></i> Säulendiagramm
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" data-toggle="tab" href="#test2" role="tab">
-                            <i class="fa fa-line-chart" aria-hidden="true"></i> Liniendiagramm
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" data-toggle="tab" href="#test3" role="tab">
-                            <i class="fa fa-area-chart" aria-hidden="true"></i> Flächendiagramm
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" data-toggle="tab" href="#test4" role="tab">
-                            <i class="fa fa-pie-chart" aria-hidden="true"></i> Kreisdiagramm
-                        </a>
-                    </li>
-                </ul>
-                <div class="tab-content">
-
-                    <div id="test1" class="tab-pane active" role="tabpanel">
-                        <div id="testchart1"></div>
-                    </div>
-                    <div id="test2" class="tab-pane" role="tabpanel">
-                        <div id="testchart2"></div>
-                    </div>
-                    <div id="test3" class="tab-pane" role="tabpanel">
-                        <div id="testchart3"></div>
-                    </div>
-                    <div id="test4" class="tab-pane" role="tabpanel">
-                        <div id="testchart4"></div>
-                    </div>
-
+                <!-- Begin Jumbotron -->
+                <div class="container-tr">
+                    <section class="jumbotron">
+                        <h1>Methodisch (in)korrektes Zeugs</h1>
+                        <h3>
+                            <span class="mirrored">t</span><span class="mirrored">h</span><span class="mirrored">i</span><span class="mirrored">s</span>
+                            <span class="mirrored">w</span><span class="mirrored">o</span><span class="mirrored">r</span><span class="mirrored">k</span><span class="mirrored">s</span>
+                            <span class="mirrored">f</span><span class="mirrored">o</span><span class="mirrored">r</span>
+                            <span class="mirrored">m</span><span class="mirrored">e</span>
+                            <span class="mirrored">...</span>
+                        </h3>
+                        <p class="text-justify">
+                            Lorizzle ipsum my shizz sit amizzle, consectetuer adipiscing my shizz. Nullizzle fo shizzle my nizzle velizzle, for sure volutpat, its fo rizzle mammasay mammasa mamma oo sa, gravida hizzle, arcu. Pellentesque sizzle check out this. Sed erizzle. Break
+                            it down izzle dolor dapibus turpis i saw beyonces tizzles and my pizzle went crizzle hizzle. Maurizzle shit nibh izzle turpis. Gangster izzle tortizzle. Own yo' pot rhoncus dawg. In shizzle my nizzle crocodizzle yippiyo platea
+                            break yo neck, yall. Shit dapibizzle. Curabitizzle tellus gangster, pretium funky fresh, mattis ac, eleifend vitae, nunc. Boofron ghetto. Integizzle we gonna chung velit pot fizzle.
+                        </p>
+                    </section>
                 </div>
-            </section>
+            </div>
+            <!-- End Jumbotron -->
+
+            <!-- All the other stuff -->
         </div>
-        <!-- End duration per episode -->
-
-        <!-- Begin duration per date -->
-        <div class="container-tr">
-            <section id="sectionDurationDate" class="charts">
-                <h3>Dauer per Datum</h3>
-                <ul class="nav nav-tabs" role="tablist">
-                    <li class="nav-item">
-                        <a class="nav-link active" data-toggle="tab" href="#durationDateLineTab" role="tab">
-                            <i class="fa fa-line-chart" aria-hidden="true"></i> Liniendiagramm
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" data-toggle="tab" href="#durationDateAreaTab" role="tab">
-                            <i class="fa fa-area-chart" aria-hidden="true"></i> Flächendiagramm
-                        </a>
-                    </li>
-                </ul>
-                <div class="tab-content">
-
-                    <div id="durationDateLineTab" class="tab-pane active" role="tabpanel">
-                        <div id="durationDateLine"></div>
-                    </div>
-                    <div id="durationDateAreaTab" class="tab-pane" role="tabpanel">
-                        <div id="durationDateArea"></div>
-                    </div>
-                </div>
-                <div id="durationDatePieHover"></div>
-
-            </section>
-        </div>
-        <!-- End duration per date -->
-
-        <!-- Begin duration per year -->
-        <div class="container-tr">
-            <section id="sectionDurationYear" class="charts">
-                <h3>Dauer per Jahr</h3>
-                <ul class="nav nav-tabs" role="tablist">
-                    <li class="nav-item">
-                        <a class="nav-link active" data-toggle="tab" href="#durationYearBarTab" role="tab">
-                            <i class="fa fa-bar-chart" aria-hidden="true"></i> Säulendiagramm
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" data-toggle="tab" href="#durationYearLineTab" role="tab">
-                            <i class="fa fa-line-chart" aria-hidden="true"></i> Liniendiagramm
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" data-toggle="tab" href="#durationYearAreaTab" role="tab">
-                            <i class="fa fa-area-chart" aria-hidden="true"></i> Flächendiagramm
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" data-toggle="tab" href="#durationYearPieTab" role="tab">
-                            <i class="fa fa-pie-chart" aria-hidden="true"></i> Kreisdiagramm
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" data-toggle="tab" href="#durationYearBoxTab" role="tab">
-                            Box-Plot (alle Folgen)
-                        </a>
-                    </li>
-                </ul>
-                <div class="tab-content">
-
-                    <div id="durationYearBarTab" class="tab-pane active" role="tabpanel">
-                        <div id="durationYearBar"></div>
-                    </div>
-                    <div id="durationYearLineTab" class="tab-pane" role="tabpanel">
-                        <div id="durationYearLine"></div>
-                    </div>
-                    <div id="durationYearAreaTab" class="tab-pane" role="tabpanel">
-                        <div id="durationYearArea"></div>
-                    </div>
-                    <div id="durationYearPieTab" class="tab-pane" role="tabpanel">
-                        <div id="durationYearPie"></div>
-                    </div>
-                    <div id="durationYearBoxTab" class="tab-pane" role="tabpanel">
-                        <div id="durationYearBox"></div>
-                    </div>
-
-                </div>
-            </section>
-        </div>
-        <!-- End duration per year -->
-
-        <!-- Begin duration per month -->
-        <div class="container-tr">
-            <section id="sectionDurationMonth" class="charts">
-                <h3>Dauer per Monat</h3>
-                <ul class="nav nav-tabs" role="tablist">
-                    <li class="nav-item">
-                        <a class="nav-link active" data-toggle="tab" href="#durationMonthBarTab" role="tab">
-                            <i class="fa fa-bar-chart" aria-hidden="true"></i> Säulendiagramm
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" data-toggle="tab" href="#durationMonthLineTab" role="tab">
-                            <i class="fa fa-line-chart" aria-hidden="true"></i> Liniendiagramm
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" data-toggle="tab" href="#durationMonthAreaTab" role="tab">
-                            <i class="fa fa-area-chart" aria-hidden="true"></i> Flächendiagramm
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" data-toggle="tab" href="#durationMonthPieTab" role="tab">
-                            <i class="fa fa-pie-chart" aria-hidden="true"></i> Kreisdiagramm
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" data-toggle="tab" href="#durationMonthBoxTab" role="tab">
-                            Box-Plot (einzelne Monate)
-                        </a>
-                    </li>
-                </ul>
-                <div class="tab-content">
-
-                    <div id="durationMonthBarTab" class="tab-pane active" role="tabpanel">
-                        <div id="durationMonthBar"></div>
-                    </div>
-                    <div id="durationMonthLineTab" class="tab-pane" role="tabpanel">
-                        <div id="durationMonthLine"></div>
-                    </div>
-                    <div id="durationMonthAreaTab" class="tab-pane" role="tabpanel">
-                        <div id="durationMonthArea"></div>
-                    </div>
-                    <div id="durationMonthPieTab" class="tab-pane" role="tabpanel">
-                        <div id="durationMonthPie"></div>
-                    </div>
-                    <div id="durationMonthBoxTab" class="tab-pane" role="tabpanel">
-                        <div id="durationMonthBox"></div>
-                    </div>
-
-                </div>
-            </section>
-        </div>
-        <!-- End duration per month -->
-
-        <!-- xxxxxxx -->
-        <div class="container-tr">
-            <h3>To-Do-Liste</h3>
-            <section id="bubbleday" class="charts"></section>
-        </div>
-        <!-- xxxxxxx -->
 
     </div>
     <!-- End Container -->
-
-    <!-- Begin Footer -->
-    <!-- <footer class="footer">
-        <div class="container">
-            <p class="text-muted">Place sticky footer content here.</p>
-        </div>
-    </footer> -->
-    <!-- End Footer -->
 
 
     <!-- Tether -->
@@ -352,32 +121,14 @@
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
     <!-- Bootstrap -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
-    <!-- <script src="lib/bootstrap-tab.js"></script> -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
     <!-- Bootstrap Table -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.11.0/bootstrap-table.min.js" integrity="sha256-eXHLyyVI+v6X1wbfg9NB05IWqOqY4E9185nHZgeDIhg=" crossorigin="anonymous"></script>
-
-    <script src="lib/bootstrap-table-toolbar.js"></script>
-    <script src="lib/bootstrap-table-mobile.js"></script>
 
     <!-- Plotly -->
-    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-    <!-- <script src="https://cdn.plot.ly/plotly-cartesian-latest.min.js"></script>
-    <script src="https://cdn.plot.ly/plotly-gl3d-latest.min.js"></script>
-
-    <!-- Highcharts
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/highcharts/5.0.6/highcharts.js" integrity="sha256-QwUrND/LJhYUBcYRAAxtMNWjZhZI+Yr8N7fpvHSFd4E=" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/highcharts/5.0.6/js/modules/boost.js" integrity="sha256-8CwAqFrhNgTYXfuiHM7Kjq8PJlxKKxuDh54z5jf7vMc=" crossorigin="anonymous"></script> -->
-
-    <!-- HighchartTable
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/highchartTable/2.0.0/jquery.highchartTable.min.js" integrity="sha256-j4pXcjEAHApZeVWq1JhNVg7a8wWj1vKNNF0ZzTszRJk=" crossorigin="anonymous"></script> -->
 
     <!-- Own Scripts -->
-    <!-- <script src="lib/scrolling.js"></script> -->
-    <!-- <script src="lib/sizing.js"></script> -->
-    <!-- <script src="lib/test_bootstraptable.js"></script> -->
-    <script src="lib/test_plotly.js"></script>
+
 
 </body>
 
