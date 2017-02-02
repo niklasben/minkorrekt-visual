@@ -45,6 +45,9 @@ Methodisch (in)korrekte Auswertung des Methodisch-Inkorrekt-Podcasts.
         -   Passende Thesauri?
     -   Länge der Titel zählen
     -   Hover Texte für Monat/Jahr
+    -   Bar Chart für das Jahr mit stacked Monaten
+    -   Pie Chart offen
+    -   Heatmap
 
 
 -   Javascript
