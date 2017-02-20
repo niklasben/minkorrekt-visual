@@ -9,32 +9,37 @@ Methodisch (in)korrekte Auswertung des Methodisch-Inkorrekt-Podcasts.
 -   Auffälligkeiten beschreiben
 
     -   Änderung Feed-URL
-    -   Fehlende Längen
-    -   Inkonsistente Titel
-
 
 -   Design
+
+    -   Für alles nochmal auf Mobile prüfen
+        -   Nutzung der Bootstrap col classes
+            -   Auch bei den Grafiken prüfen
     -   Navbar mit Menü auf Mobile anpassen
     -   Navbar-Tabs für alle Sections
         -   Javascript-Datei erstellen
         -   <https://v4-alpha.getbootstrap.com/components/navs/#using-data-attributes>
     -   Loading-Sign in den Tabs
-    -   Hover Info auf Datenpunkte
-    -   Navbar links und fixed
-    -   Uberspace-Badge
+        -   Laden erst beim Drüberscrollen
+    -   Scrolling nur bei den Sidebar-Links, nicht bei den Nav-Tabs
+    -   Breite der Grafik-Tabs = .content
+        -   Responsive Hack: <https://plot.ly/javascript/responsive-fluid-layout/>
+    -   Links im Jumbotron mit underline
 
 
 -   Datenvisualisierung
+
     -   Dynamisch
     -   Getrennt nach Sendung
         -   Normal
         -   Sonderfolge
             -   Aufgeschlüsselt
     -   Tabelle
-        -   Sorting Function für pubdate
-        -   Sorting Function für pubtime und duration (ideal HH:MM:SS)
+
         -   Sorting Function für pubday (Wochentage reihen)
         -   Datum ändern
+
+    -   Hover Info auf Datenpunkte
     -   Balkendiagramme
     -   Globale Variablen für wiederkehrende (Design)elemente erstellen
     -   Addierte Sendezeiten
@@ -46,17 +51,43 @@ Methodisch (in)korrekte Auswertung des Methodisch-Inkorrekt-Podcasts.
     -   Länge der Titel zählen
     -   Hover Texte für Monat/Jahr
     -   Bar Chart für das Jahr mit stacked Monaten
+        -   Zusätzliches Array mit 0 Werten oder andere auf NULL
+            -   Ggf. dann mit if bei Funktion raus filtern
     -   Pie Chart offen
     -   Heatmap
+    -   Plot Line für alle Monate
+    -   Monatsnamen mit deutschen Abkürzungen
+    -   arrayDurationIntegerMin -> arrayDurationIntegerMinutes
+    -   Funktionsnamen den neu benannten Tabs zuordnen = Renaming
+    -   Bar Chart so anpassen, dass 12a und 12b raus sind
+        -   If mit is != ?
 
 
--   Javascript
+-   Javascript-Dateien
+
     -   Header mit Autorenangaben
     -   minified Version?
+    -   Was hat Tether gemacht?
+    -   resize function bei plotly reparieren
 
+        -   Github-Tracker | Grafik overfull
+        -   Höhe passt nicht! Deshalb
+            -   If auf @media anpassen bezüglich
+                -   padding
+                -   menü oben (xs und sm)
+                -   Viewpoint dann auf section top springen lassen
 
--   Infos
-    -   Wenn was gewünscht ist via Twitter oder Issue-Tracker
+    -   Erst bei Bedarf Laden
+
+        -   Github
+        -   Visualisierungen
+        -   Tabelle
+
+    -   Ggf. nur eine große JS-Datei?
+
+-   Github Issue Tracker
+    -   Die einzelnen Fälle müssen nochmal sauber mit .append in JS dargestellt werden
+    -   I empty height != window.height()
 
 ## Crawler
 
@@ -65,6 +96,7 @@ Methodisch (in)korrekte Auswertung des Methodisch-Inkorrekt-Podcasts.
 -   datetime aus pubtime kreieren
 -   Descriptions aufräumen
 -   PoS-Tagging
+-   Prüfen ob Zeitangaben in UTC und passend mit MESZ
 
 * * *
 
@@ -105,10 +137,10 @@ Evtl. erst crawlen und nachfolgend mit Python oder Bash bearbeiten, um Folgennum
 ## Was genau?
 
 Vermutlich folgende JSON-Dateien:
-1.  Alle Folgen -> complete.json
-2.  Sonderfolgen (Nobelpreis, Ig-Nobelpreis und Jahresrückblick) -> specials.json
-3.  Chinagadgets -> chinagadgets.json
-4.  Word Count | NN/NE | Namen | Deskriptoren -> nlp.json
+1\.  Alle Folgen -> complete.json
+2\.  Sonderfolgen (Nobelpreis, Ig-Nobelpreis und Jahresrückblick) -> specials.json
+3\.  Chinagadgets -> chinagadgets.json
+4\.  Word Count | NN/NE | Namen | Deskriptoren -> nlp.json
 
 ## Inhalt der JSON-Dateien
 
@@ -151,8 +183,8 @@ Bilder
     -   Bootstrap Table
     -   bootstrap-table-toolbar.js
     -   bootstrap-table-mobile.js
-    -   Highchart
 -   Meine:
-    -   scrolling.js
-    -   sizing.js
-    -   bootstraptabletest.js
+        \-   scrolling.js
+        \-   sizing.js
+        \-   bootstraptabletest.js
+    .js
