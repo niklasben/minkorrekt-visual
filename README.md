@@ -25,6 +25,9 @@ Methodisch (in)korrekte Auswertung des Methodisch-Inkorrekt-Podcasts.
     -   Breite der Grafik-Tabs = .content
         -   Responsive Hack: <https://plot.ly/javascript/responsive-fluid-layout/>
     -   Links im Jumbotron mit underline
+    -   Breite evaluieren (Probleme Notebook)
+        -   sizing.js?
+    -   
 
 
 -   Datenvisualisierung
@@ -69,6 +72,8 @@ Methodisch (in)korrekte Auswertung des Methodisch-Inkorrekt-Podcasts.
     -   minified Version?
     -   Was hat Tether gemacht?
     -   resize function bei plotly reparieren
+        -   Höhe der Tabs abziehen
+        -   Kein margin
 
         -   Github-Tracker | Grafik overfull
         -   Höhe passt nicht! Deshalb
