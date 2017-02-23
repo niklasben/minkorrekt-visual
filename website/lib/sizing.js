@@ -12,7 +12,7 @@ $(function() {
 
     // Set the section height to window height minus margin
     $(".content").css({
-        "height": sectionheight + "px"
+        "min-height": sectionheight + "px"
     });
     $(".cell").css({
         "min-height": sectionheight + "px"
