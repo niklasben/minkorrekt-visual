@@ -35,7 +35,10 @@ $(function() {
     // Resize the height and width if the window is resized
     $(window).resize(function() {
         $(".content").css({
-            "height": sectionheight + "px"
+            "min-height": sectionheight + "px"
+        });
+        $(".cell").css({
+            "min-height": sectionheight + "px"
         });
     });
     console.log('sectionheight ' + sectionheight);
