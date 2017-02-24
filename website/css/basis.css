@@ -147,6 +147,7 @@ section {
         margin-top: 34px;
         margin-bottom: 34px;
         margin-left: 34px;
+        margin-right: 34px;
         padding-top: 34px;
     }
 }
@@ -154,7 +155,7 @@ section {
 @media (max-width: 767px) {
     /* For mobile */
     .content {
-        margin: 5px;
+        /* margin: 5px; */
     }
 }
 
