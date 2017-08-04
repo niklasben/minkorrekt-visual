@@ -15,7 +15,7 @@
 #==============================================================================
 
 # Define Variables
-BASEDIR=./~
+BASEDIR=~/Dokumente/Github/minkorrekt-visual
 CRAWLERDIR=${BASEDIR}/crawler
 DATADIR=${BASEDIR}/data
 WEBSITEDIR=${BASEDIR}/website
@@ -30,5 +30,7 @@ cp -a $JSON $WEBSITEDATADIR/$DATE.json
 # Start crawler
 echo "Starting crawling from $CRAWLERDIR with Crawler minkorrekt ..."
 scrapy $CRAWLERDIR minkorrekt
+
+# Copy Files to internal Apache Server
 
 # Build all JSONs
